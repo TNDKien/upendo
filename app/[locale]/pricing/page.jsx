@@ -11,7 +11,7 @@ async function fetchData(locale = "nl") {
   };
 
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/Pricing`, sbParams, {
+  return storyblokApi.get(`cdn/stories/pricing`, sbParams, {
     cache: "no-store",
   });
 }
@@ -25,7 +25,7 @@ const pricing = async ({ params }) => {
   return (
     <div>
       <h1>{data.story.name}</h1>
-      {/* <StoryblokStory story={data.story} /> */}
+      <StoryblokStory story={data.story} />
     </div>
   );
 };

@@ -1,13 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; 
-
-@layer base {
-}
-
-@layer utilities {
-}
-*/
+@tailwind utilities;
 
 :root {
   --DarkGreen: #012524;
