@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --grey: grey;
   --DarkGreen: #012524;
   --DarkTeal: #003846;
   --OffWhite: #fdfff9;
@@ -15,14 +16,7 @@
 }
 
 body {
-  background-color: var(--DarkTeal);
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  height: 2rem;
-  width: auto;
+  background-color: var(--DarkGreen);
 }
 
 h2 {
