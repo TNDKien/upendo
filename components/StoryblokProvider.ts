@@ -9,12 +9,14 @@ import Page from "./page.component";
 import Feature from "./Feature";
 import Kienblok from "./Kienblok";
 import Logo from "./Logo";
+import Navbar from "./Navbar";
 
 const components = {
   page: Page,
   feature: Feature,
   kienblok: Kienblok,
   logo: Logo,
+  navbar: Navbar,
 };
 
 storyblokInit({

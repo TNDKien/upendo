@@ -1,22 +1,37 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
 @layer base {
 }
 
 @layer utilities {
 }
+*/
 
-body {
-  background-color: darkgreen;
+:root {
+  --DarkGreen: #012524;
+  --DarkTeal: #003846;
+  --OffWhite: #fdfff9;
+  --Pink: #f4c5fe;
+  --LimeGreen: #a8ff1a;
+  --LightLime: #eaffbc;
+  --LimeGradient: linear-gradient(#a8ff1a, #eaffbc);
+  --PinkGradient: linear-gradient(#f4c5fe, #eaffbc);
+  --TealGradient: linear-gradient(#003846, #fdfff9);
 }
 
-.logo {
+body {
+  background-color: var(--DarkTeal);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
   height: 2rem;
   width: auto;
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 2rem;
 }
