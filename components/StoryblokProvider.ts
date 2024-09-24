@@ -7,10 +7,14 @@ import {
 } from "@storyblok/react/rsc";
 import Page from "./page.component";
 import Feature from "./Feature";
+import Kienblok from "./Kienblok";
+import Logo from "./Logo";
 
 const components = {
   page: Page,
   feature: Feature,
+  kienblok: Kienblok,
+  logo: Logo,
 };
 
 storyblokInit({

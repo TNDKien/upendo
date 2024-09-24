@@ -22,6 +22,7 @@ const Home: NextPage<Props> = async ({ params: { locale } }) => {
     <div>
       <h1>{data.story.name}</h1>
       <p>testtest</p>
+      <p>test2</p>
       <StoryblokStory story={data.story} />
     </div>
   );

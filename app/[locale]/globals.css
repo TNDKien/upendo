@@ -7,3 +7,16 @@
 
 @layer utilities {
 }
+
+body {
+  background-color: darkgreen;
+}
+
+.logo {
+  height: 2rem;
+  width: auto;
+}
+
+h2 {
+  font-size: 6rem;
+}
