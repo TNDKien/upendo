@@ -1,4 +1,5 @@
 import { getStoryblokApi } from "@storyblok/react/rsc";
+
 import StoryblokStory from "@storyblok/react/story";
 
 // Function to fetch data from Storyblok
@@ -10,12 +11,12 @@ async function fetchData(locale = "nl") {
   };
 
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/Home`, sbParams, {
+  return storyblokApi.get(`cdn/stories/Pricing`, sbParams, {
     cache: "no-store",
   });
 }
 
-const Home = async ({ params }) => {
+const pricing = async ({ params }) => {
   const locale = params?.locale || "nl"; // default to 'nl' if locale isn't passed
   const { data } = await fetchData(locale);
 
@@ -24,9 +25,9 @@ const Home = async ({ params }) => {
   return (
     <div>
       <h1>{data.story.name}</h1>
-      <StoryblokStory story={data.story} />
+      {/* <StoryblokStory story={data.story} /> */}
     </div>
   );
 };
 
-export default Home;
+export default pricing;
