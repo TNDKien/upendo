@@ -14,11 +14,16 @@ type PageProps = {
 
 const Page: React.FC<PageProps> = ({ blok }) => (
   <main {...storyblokEditable(blok)}>
-    {blok.body.map((nestedBlok) => (
-      // eslint-disable-next-line
-      <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-    ))}
+    {Array.isArray(blok.body) ? (
+      blok.body.map((nestedBlok) => (
+        // eslint-disable-next-line
+        <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+      ))
+    ) : (
+      <p>No content available.</p>
+    )}
   </main>
 );
+
 
 export default Page;

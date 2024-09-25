@@ -11,12 +11,12 @@ async function fetchData(locale = "nl") {
   };
 
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/home`, sbParams, {
+  return storyblokApi.get(`cdn/stories/contact`, sbParams, {
     cache: "no-store",
   });
 }
 
-const Home = async ({ params }) => {
+const contact = async ({ params }) => {
   const locale = params?.locale || "nl"; // default to 'nl' if locale isn't passed
   const { data } = await fetchData(locale);
 
@@ -24,10 +24,10 @@ const Home = async ({ params }) => {
 
   return (
     <div>
-      <h1>{data.story.name}</h1>
+      {/* <h1>{data.story.name}</h1> */}
       <StoryblokStory story={data.story} />
     </div>
   );
 };
 
-export default Home;
+export default contact;

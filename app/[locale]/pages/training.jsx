@@ -16,7 +16,7 @@ async function fetchData(locale = "nl") {
   });
 }
 
-const pricing = async ({ params }) => {
+const training = async ({ params }) => {
   const locale = params?.locale || "nl"; // default to 'nl' if locale isn't passed
   const { data } = await fetchData(locale);
 
@@ -30,4 +30,4 @@ const pricing = async ({ params }) => {
   );
 };
 
-export default pricing;
+export default training;

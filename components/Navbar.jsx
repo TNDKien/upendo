@@ -64,7 +64,7 @@ const Header = ({ blok }) => {
         </nav>
 
         {/* Contact Us */}
-        <a href="/contact-us" className="contact-button">
+        <a href="/contact" className="contact-button">
           Contact Us
         </a>
 
