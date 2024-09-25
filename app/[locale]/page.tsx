@@ -13,14 +13,22 @@ async function fetchData(locale = "nl") {
   };
 
   const storyblokApi = getStoryblokApi();
-  return storyblokApi.get(`cdn/stories/home`, sbParams, { cache: "no-store" });
+  try {
+    const response = await storyblokApi.get(`cdn/stories/${locale}`, sbParams, {
+      cache: "no-store",
+    });
+    return response;
+  } catch (error) {
+    console.error("Error fetching data from Storyblok API:", error);
+    throw error;
+  }
 }
 const Home: NextPage<Props> = async ({ params: { locale } }) => {
   const { data } = await fetchData(locale);
   console.log(data);
   return (
     <div>
-      {/* <h1>{data.story.name}</h1> */}
+      <h1>{data.story.name}</h1>
       <StoryblokStory story={data.story} />
     </div>
   );

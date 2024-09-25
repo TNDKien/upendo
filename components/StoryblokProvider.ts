@@ -10,6 +10,7 @@ import Feature from "./Feature";
 import Kienblok from "./Kienblok";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
+import Hero from "./hero";
 
 const components = {
   page: Page,
@@ -17,6 +18,7 @@ const components = {
   kienblok: Kienblok,
   logo: Logo,
   navbar: Navbar,
+  hero: Hero,
 };
 
 storyblokInit({
