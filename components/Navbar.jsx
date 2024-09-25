@@ -13,19 +13,20 @@ const Header = ({ blok }) => {
     <div className="header-container" {...storyblokEditable(blok)}>
       <div className="header-content">
         {/* Logo */}
-        <img
-          className="logo"
-          src={blok.logo.filename}
-          alt={blok.logo.alt || "Logo"}
-        />
-
+        <a href="/home">
+          <img
+            className="logo"
+            src={blok.logo.filename}
+            alt={blok.logo.alt || "Logo"}
+          />
+        </a>
         {/* Navigation */}
         <nav className={`navigation ${menuOpen ? "menu-open" : ""}`}>
           <ul className="navigation-list">
             {/* About Us */}
             <li>
               <a href="/about-us" className="nav-link">
-                {blok.heads}
+                About us
               </a>
             </li>
 

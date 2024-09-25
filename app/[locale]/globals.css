@@ -41,7 +41,7 @@ h2 {
 
 .logo {
   height: auto;
-  width: 30%;
+  width: 100%;
   max-width: 10rem;
 }
 
@@ -187,8 +187,8 @@ h2 {
   }
 }
 
-@media (min-width: 881px) {
+/* @media (min-width: 881px) {
   .navigation-list {
     gap: 2.5rem;
   }
-}
+} */
