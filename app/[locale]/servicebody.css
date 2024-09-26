@@ -1,0 +1,36 @@
+.servicebodytitel {
+    color: #FFF;
+    text-align: justify;
+    font-family: "Area Normal";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    width: 21rem;
+    margin-top: 6.25rem;
+}
+
+.servicebodytekst1 {
+    width: 21rem;
+    color: var(--Pink, #F4C5FE);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 5.625rem;
+}
+
+.servicebodytekst2 {
+    width: 21rem;
+    color: var(--Pink, #F4C5FE);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 3.375rem;
+}

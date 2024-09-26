@@ -11,6 +11,8 @@ import Kienblok from "./Kienblok";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Hero from "./hero";
+import Serviceintro from "./serviceintro"
+import Servicebody from "./servicebody"
 
 const components = {
   page: Page,
@@ -19,6 +21,8 @@ const components = {
   logo: Logo,
   navbar: Navbar,
   hero: Hero,
+  serviceintro: Serviceintro,
+  servicebody: Servicebody,
 };
 
 storyblokInit({
