@@ -7,6 +7,7 @@ type Props = {
 };
 async function fetchData(locale = "nl") {
   const sbParams: ISbStoriesParams = {
+    cv: Date.now(),
     version: "draft",
     resolve_links: "url",
     language: locale,

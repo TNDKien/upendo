@@ -1,0 +1,50 @@
+.servicesubtext {
+    display: flex;
+    flex-direction: column;
+    color: #F4C5FE;
+    margin-top: 2.625rem;
+    margin-left: 1.688rem;
+    font-size: 12px;
+}
+
+.headertekst {
+    margin-left: 1.688rem;
+    color: white;
+    line-height: 1.5;
+}
+
+.headertekstbold {
+    font-weight: bold;
+    color: #A8FF1A;
+}
+
+.serviceheadertekst {
+    margin-left: 1.688rem;
+    color: white;
+    width: 21rem;
+    height: 3.75rem;
+    margin-top: 4.5rem;
+}
+
+.servicebuttondesign {
+    margin-left: 1.688rem;
+    width: 10.063rem;
+    height: 2.75rem;
+    background-color: #003846;
+    margin-top: 3.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+}
+
+.servicebutton {
+    color: #A8FF1A;
+    font-size: 1rem;
+}
+
+.servicephoto {
+    margin-left: 1.688rem;
+    height: 13.438rem;
+    width: 21rem;
+}
