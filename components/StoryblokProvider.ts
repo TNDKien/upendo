@@ -13,6 +13,8 @@ import Navbar from "./Navbar";
 import Hero from "./hero";
 import Serviceintro from "./serviceintro"
 import Servicebody from "./servicebody"
+import Contact_intro from "./contact_intro";
+import Contact_form from "./contact_form";
 
 const components = {
   page: Page,
@@ -23,6 +25,8 @@ const components = {
   hero: Hero,
   serviceintro: Serviceintro,
   servicebody: Servicebody,
+  contact_intro: Contact_intro,
+  contact_form: Contact_form,
 };
 
 storyblokInit({
