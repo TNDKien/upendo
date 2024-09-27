@@ -1,5 +1,11 @@
 .aboutussubtext {
-    color: rgb(251, 161, 224);
-    font-size: 50%;
-    margin-left: 5%;
+  color: rgb(251, 161, 224);
+  font-size: 0.75rem;
+  margin-left: 5%;
+  margin-top: 2.625rem;
+}
+
+.icon-holder {
+  width: 32px;
+  height: 32px;
 }
