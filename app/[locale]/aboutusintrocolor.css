@@ -1,0 +1,9 @@
+.simpleText {
+    
+    color: greenyellow;
+    /* Of gebruik een specifieke groene kleurcode, bijvoorbeeld: #008000 */
+    font-size: 2rem;
+    /* Dit is optioneel, afhankelijk van de gewenste grootte */
+    margin-left: 4%;
+
+}

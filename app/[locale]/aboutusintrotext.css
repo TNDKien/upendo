@@ -1,0 +1,28 @@
+.aboutusintrotext {
+    margin-top: 1rem;
+    color: rgb(254, 254, 254);
+    font-size: 2rem;
+    margin-left: 5%;
+
+}
+
+.grotemiauw{
+    width: 16rem;
+}
+
+.white{
+    color: white;
+}
+
+.whitegroen{
+    color: greenyellow;
+    font-size: 2rem;
+    margin-left: 3%;
+}
+
+.aboutusend{
+    color: white;
+    font-size: 2rem;
+    margin-left: 3%;
+    margin-top: 14rem;
+}
