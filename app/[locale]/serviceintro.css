@@ -1,24 +1,34 @@
 .servicesubtext {
+    font-family: "Martian Mono", monospace;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     color: #F4C5FE;
     margin-top: 2.625rem;
     margin-left: 1.688rem;
-    font-size: 12px;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
 }
 
 .headertekst {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
     margin-left: 1.688rem;
     color: white;
-    line-height: 1.5;
+    line-height: normal;
 }
 
 .headertekstbold {
+    font-family: "Martian Mono", monospace;
+    font-weight: 500;
     font-weight: bold;
     color: #A8FF1A;
 }
 
 .serviceheadertekst {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     margin-left: 1.688rem;
     color: white;
     width: 21rem;
@@ -39,11 +49,15 @@
 }
 
 .servicebutton {
+    font-size: 1rem;
+    font-family: "area-normal", sans-serif;
+    font-weight: 700;
     color: #A8FF1A;
     font-size: 1rem;
 }
 
 .servicephoto {
+    margin-top: 4.75rem;
     margin-left: 1.688rem;
     height: 13.438rem;
     width: 21rem;
