@@ -4,9 +4,14 @@ import "../app/[locale]/globals.css";
 
 const Header = ({ blok }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleServices = () => {
+    setServicesOpen(!servicesOpen);
   };
 
   return (
@@ -20,8 +25,9 @@ const Header = ({ blok }) => {
             alt={blok.logo.alt || "Logo"}
           />
         </a>
+
         {/* Navigation */}
-        <nav className={`navigation ${menuOpen ? "menu-open" : ""}`}>
+        <nav className={`navigation ${menuOpen ? "menu-open" : "menu-closed"}`}>
           <ul className="navigation-list">
             {/* About Us */}
             <li>
@@ -32,25 +38,36 @@ const Header = ({ blok }) => {
 
             {/* Services Dropdown */}
             <li className="dropdown">
-              <a href="#" className="nav-link">
-                Services
-              </a>
-              <div className="dropdown-menu">
-                <a href="/service-1" className="dropdown-item">
-                  Service 1
-                </a>
-                <a href="/service-2" className="dropdown-item">
-                  Service 2
-                </a>
-                <a href="/service-3" className="dropdown-item">
-                  Service 3
-                </a>
-              </div>
+              <button
+                className="dropdown-button nav-link"
+                onClick={toggleServices}
+              >
+                <span className="nav-link btnservice">
+                  <div>Services</div>
+                  <div className="plusmin">{servicesOpen ? "-" : "+"}</div>
+                </span>{" "}
+              </button>
+              {servicesOpen && (
+                <div className="dropdown-menu">
+                  <a href="/configuration" className="dropdown-item">
+                    Configuration
+                  </a>
+                  <a href="/optimalisation" className="dropdown-item">
+                    Optimization
+                  </a>
+                  <a href="/visualisation" className="dropdown-item">
+                    Visualization
+                  </a>
+                  <a href="/analytics" className="dropdown-item">
+                    Analytics
+                  </a>
+                </div>
+              )}
             </li>
 
             {/* Pricing */}
             <li>
-              <a href="pricing" className="nav-link">
+              <a href="/pricing" className="nav-link">
                 Pricing
               </a>
             </li>
