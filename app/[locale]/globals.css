@@ -15,31 +15,14 @@
   --TealGradient: linear-gradient(#003846, #fdfff9);
 }
 
-/* //// FONTS
-////// AREA NORMAL
-  font-family: "area-normal", sans-serif;
-  font-weight: 700;
-
-  ////// MARTIAN MONO MEDIUM
-font-family: "Martian Mono", monospace;
-font-weight: 500;
-
-////// INTER REGULAR
-font-family: "Inter", sans-serif;
-font-weight: 400;
-
-*/
-
 body {
   background-color: var(--DarkGreen);
 }
-/* ////////////////////////////////// */
-/* navbar */
-/* ////////////////////////////////// */
+
 .header-container {
   display: flex;
   background-color: var(--DarkGreen);
-  margin: 0;
+  margin: 16px 0;
   width: 100%;
   z-index: 10;
 }
@@ -107,6 +90,14 @@ body {
   background-color: var(--LimeGreen);
 }
 
+.mobile-cta-container {
+  display: none;
+}
+
+.green-text {
+  color: var(--LimeGreen);
+}
+
 /* Animations */
 @keyframes slideIn {
   from {
@@ -129,11 +120,6 @@ body {
 @media (max-width: 880px) {
   .header-content {
     width: 95vw;
-  }
-  .navigation-list {
-    display: none;
-    background-color: var(--DarkGreen);
-    border-radius: 0;
   }
 
   .menu-button {
@@ -185,34 +171,39 @@ body {
     bottom: 0;
   }
 
+  .navigation-list {
+    border-radius: 0;
+    background-color: var(--DarkGreen);
+  }
+
   /* Slide-in and slide-out animations for mobile */
   .menu-open .navigation-list {
     display: flex;
     flex-direction: column;
+    height: 45rem;
     text-align: start;
     position: absolute;
-    top: 8rem;
+    top: 4rem;
     left: 0;
     right: 0;
     padding: 1rem;
     padding-top: 2rem;
     gap: 3rem;
-    transform: translateX(100%);
     animation: slideIn 0.5s forwards;
   }
 
   .menu-closed .navigation-list {
-    /* display: flex;
+    /* Removed display: none */
     flex-direction: column;
+    height: 45rem;
     text-align: start;
     position: absolute;
-    top: 6rem;
+    top: 4rem;
     left: 0;
     right: 0;
     padding: 1rem;
-    padding-top: 5rem;
-    gap: 3rem; */
-    transform: translateX(0);
+    padding-top: 2rem;
+    gap: 3rem;
     animation: slideOut 0.5s forwards;
   }
 
@@ -230,8 +221,7 @@ body {
     display: flex;
     background-color: transparent;
     border: none;
-    /* geen idee waarom maar dit werkt */
-    padding: 1rem 0;
+    padding: 0;
     width: 20rem;
   }
 
@@ -239,7 +229,7 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%;
+    margin-top: 2rem;
     left: 0;
     width: 100%;
     gap: 1rem;
@@ -254,6 +244,7 @@ body {
 
     text-decoration: none;
   }
+
   .btnservice {
     display: flex;
     flex-direction: row;
@@ -263,6 +254,67 @@ body {
   .contact-button {
     font-size: 0.75rem;
     white-space: nowrap;
+  }
+
+  .mobile-cta-container {
+    display: flex;
+    margin-top: 10rem;
+    background-color: var(--DarkTeal);
+    margin: 0 27px;
+    margin-top: 5rem;
+    padding: 32px 16px;
+    border-radius: 40px;
+  }
+
+  .mobile-cta-text {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .mobile-cta-text p {
+    font-size: 14px;
+  }
+
+  .mobile-cta-text span {
+    font-size: 10px;
+  }
+
+  .cta {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--DarkTeal);
+  }
+
+  .cta-text {
+    z-index: 1;
+    padding: 0px 10px;
+    margin: 0;
+    border-radius: 40px;
+    background-color: var(--LimeGreen);
+  }
+
+  .cta-arrow {
+    background-color: var(--Pink);
+    margin-left: -10px;
+    padding: 0 10px 0 15px;
+    border-radius: 0 40px 40px 0;
+  }
+
+  .cta_image {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0;
+    border-radius: 40px 40px 5px 5px;
+    object-fit: cover;
+    object-position: left;
   }
 
   @media (max-width: 880px) {

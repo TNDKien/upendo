@@ -31,7 +31,7 @@ const Header = ({ blok }) => {
           <ul className="navigation-list">
             {/* About Us */}
             <li>
-              <a href="/about-us" className="nav-link">
+              <a href="/aboutus" className="nav-link">
                 About us
               </a>
             </li>
@@ -77,6 +77,25 @@ const Header = ({ blok }) => {
               <a href="/training" className="nav-link">
                 Training
               </a>
+            </li>
+            <li className="mobile-cta-container">
+              <article className="nav-link mobile-cta-text">
+                <header className="green-text">
+                  Reach Out, We’re Here for You
+                </header>
+                <p>Want to visualize your data, seamlessly</p>
+                <a href="/contact" className="cta">
+                  <p className="cta-text">Call us Today!</p>
+                  <div className="cta-arrow">&rarr;</div>
+                </a>
+                <span className="green-text">Make an appointment</span>
+                <img src="" alt="" />
+              </article>
+              <img
+                className="cta_image"
+                src={blok.cta_image.filename}
+                alt={blok.cta_image.alt || "contact person of upendo"}
+              />
             </li>
           </ul>
         </nav>
