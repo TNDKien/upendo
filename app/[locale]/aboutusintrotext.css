@@ -33,3 +33,30 @@
 .visual {
   margin-top: 5rem;
 }
+
+.eerstetext {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-left: 5%;
+  color: white;
+  font-size: 16px;
+  width: 336px;
+}
+
+.tweedetext {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-left: 5%;
+  color: white;
+  font-size: 16px;
+  width: 336px;
+}
+
+.derdetext {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-left: 5%;
+  color: white;
+  font-size: 16px;
+  width: 336px;
+}
