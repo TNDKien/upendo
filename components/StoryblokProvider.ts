@@ -12,6 +12,7 @@ import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Hero from "./hero";
 import Aboutusintro from "./aboutusintro";
+import aboutusbodytexteen from "./aboutusbody";
 
 const components = {
   page: Page,
@@ -21,6 +22,7 @@ const components = {
   navbar: Navbar,
   hero: Hero,
   aboutusintro: Aboutusintro,
+  aboutusbody: aboutusbodytexteen,
 };
 
 storyblokInit({
