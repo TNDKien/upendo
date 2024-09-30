@@ -1,6 +1,5 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
-import "../app/[locale]/globals.css";
-import "../app/[locale]/contact.css";
+import "./contact.css";
 
 const contact_intro = ({ blok }) => {
     // Replace only the word "today" with a span tag that has a custom CSS class

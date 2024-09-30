@@ -1,6 +1,5 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
-import "../app/[locale]/globals.css";
-import "../app/[locale]/contact.css";
+import "./contact.css";
 
 const ContactForm = ({ blok }) => {
   // Set the field as active when focused
