@@ -14,6 +14,11 @@
     padding: 0rem 0.75rem;
 }
 
+.highlighted-word {
+    color: #a8ff1a; 
+    font-weight: 700; 
+  }
+
 .paragraph{
     font-family: "Inter", sans-serif;
     font-weight: 400; 
@@ -151,6 +156,7 @@
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    margin: 2rem 3rem;
 }
 
 /* Hover effect for submit button */
