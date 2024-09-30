@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
-import "../app/[locale]/globals.css";
 
 const Header = ({ blok }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +34,6 @@ const Header = ({ blok }) => {
                 About us
               </a>
             </li>
-
             {/* Services Dropdown */}
             <li className="dropdown">
               <button

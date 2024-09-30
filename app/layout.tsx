@@ -1,5 +1,4 @@
-import "./[locale]/globals.css";
-import "./[locale]/Feature.css";
+import "./globals.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 import StoryblokProvider from "../components/StoryblokProvider";
 
@@ -18,10 +17,9 @@ export default async function RootLayout({
   return (
     <StoryblokProvider>
       <html>
-        <head>
-          <link rel="stylesheet" href="https://use.typekit.net/mle1bdx.css"></link>
-        </head>
-        <body>{children}</body>
+        <body>
+          {children}
+        </body>
       </html>
     </StoryblokProvider>
   );

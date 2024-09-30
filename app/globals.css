@@ -15,6 +15,21 @@
   --TealGradient: linear-gradient(#003846, #fdfff9);
 }
 
+/* //// FONTS
+////// AREA NORMAL
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+ 
+  ////// MARTIAN MONO MEDIUM
+font-family: "Martian Mono", monospace;
+font-weight: 500;
+ 
+////// INTER REGULAR
+font-family: "Inter", sans-serif;
+font-weight: 400;
+ 
+*/
+
 body {
   background-color: var(--DarkGreen);
 }
@@ -62,6 +77,8 @@ body {
 
 .nav-link {
   color: var(--OffWhite);
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   padding: 0.5rem 2rem;
   border-radius: 9999px;
@@ -183,7 +200,7 @@ body {
     height: 45rem;
     text-align: start;
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: 0;
     right: 0;
     padding: 1rem;
@@ -193,12 +210,12 @@ body {
   }
 
   .menu-closed .navigation-list {
-    /* Removed display: none */
+    display: none;
     flex-direction: column;
     height: 45rem;
     text-align: start;
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: 0;
     right: 0;
     padding: 1rem;
@@ -264,6 +281,7 @@ body {
     margin-top: 5rem;
     padding: 32px 16px;
     border-radius: 40px;
+    max-width: 85vw;
   }
 
   .mobile-cta-text {
@@ -280,6 +298,8 @@ body {
 
   .mobile-cta-text span {
     font-size: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
   }
 
   .cta {

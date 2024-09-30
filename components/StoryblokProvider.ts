@@ -6,21 +6,17 @@ import {
   SbReactComponentsMap,
 } from "@storyblok/react/rsc";
 import Page from "./page.component";
-import Feature from "./Feature";
-import Kienblok from "./Kienblok";
-import Logo from "./Logo";
-import Navbar from "./Navbar";
-import Hero from "./hero";
-import Serviceintro from "./serviceintro"
-import Servicebody from "./servicebody"
-import Contact_intro from "./contact_intro";
-import Contact_form from "./contact_form";
+import Feature from "./feature/Feature";
+import Navbar from "./navbar/Navbar";
+import Hero from "./hero/hero";
+import Serviceintro from "./service/serviceintro";
+import Servicebody from "./service/servicebody";
+import Contact_intro from "./contact/contact_intro";
+import Contact_form from "./contact/contact_form";
 
 const components = {
   page: Page,
   feature: Feature,
-  kienblok: Kienblok,
-  logo: Logo,
   navbar: Navbar,
   hero: Hero,
   serviceintro: Serviceintro,
