@@ -13,6 +13,7 @@ import Navbar from "./Navbar";
 import Hero from "./hero";
 import Aboutusintro from "./aboutusintro";
 import aboutusbodytexteen from "./aboutusbody";
+import Visualtweelogo from "./visualtweelogo";
 
 const components = {
   page: Page,
@@ -23,6 +24,7 @@ const components = {
   hero: Hero,
   aboutusintro: Aboutusintro,
   aboutusbody: aboutusbodytexteen,
+  visualtweelogo: Visualtweelogo, 
 };
 
 storyblokInit({

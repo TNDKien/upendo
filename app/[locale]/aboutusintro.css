@@ -6,12 +6,20 @@
 }
 
 .icon-holder {
-  width: 32px;
-  height: 32px;
+  width: 90px;
+  height: 90px;
   margin-left: 5%;
+  margin-top: 10px;
 }
-.visualtwee {
-  width: 32px;
-  height: 32px;
+
+.blok-aboutustexteen {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   margin-left: 5%;
+  width: 320px;
+  margin-top: 1px;
+  display: grid;
+  grid-template-rows: auto auto auto; /* Twee rijen voor visual en tekst */
+  row-gap: 16px; /* Ruimte tussen de rijen */
 }

@@ -39,8 +39,21 @@ const AboutUsIntro = ({ blok }) => (
             alt={blok.visualfoto.alt || "visual"}
           />
         ) : (
-          <p>Image not available</p> // Fallback als de afbeelding niet bestaat
+          <p></p> // Fallback als de afbeelding niet bestaat
         )}
+      </div>
+      <div className="logotwee">
+        <div className="logotwo">
+          {blok.logotwee ? (
+            <img
+              className="logotwee"
+              src={blok.Logotwee.filename}
+              alt={blok.Logotwee.alt || "logotwee"}
+            />
+          ) : (
+            <p></p> // Fallback als de afbeelding niet bestaat
+          )}
+        </div>
       </div>
     </div>
   </div> // Sluit de buitenste div correct af
