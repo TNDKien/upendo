@@ -13,6 +13,8 @@ import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/servicebody";
 import Contact_intro from "./contact/contact_intro";
 import Contact_form from "./contact/contact_form";
+import Home_service_intro from "./home_content/Home_service_intro";
+import Home_servicecard from "./home_content/Home_servicecard";
 
 const components = {
   page: Page,
@@ -23,6 +25,8 @@ const components = {
   servicebody: Servicebody,
   contact_intro: Contact_intro,
   contact_form: Contact_form,
+  home_service_intro: Home_service_intro,
+  home_servicecard: Home_servicecard,
 };
 
 storyblokInit({

@@ -17,6 +17,9 @@ export default async function RootLayout({
   return (
     <StoryblokProvider>
       <html>
+        <head>
+          <link rel="stylesheet" href="https://use.typekit.net/mle1bdx.css"></link>
+        </head>
         <body>
           {children}
         </body>

@@ -34,19 +34,28 @@ body {
   background-color: var(--DarkGreen);
 }
 
+a,
+h1 {
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+}
+
 .header-container {
   display: flex;
+  justify-content: center;
+  position: fixed;
   background-color: var(--DarkGreen);
-  margin: 16px 0;
+  top: 0;
+  padding: 16px 0;
   width: 100%;
-  z-index: 10;
+  z-index: 99;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   width: 80vw;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 0.75rem 1rem;
   align-items: center;
   font-family: "area-normal", sans-serif;
@@ -149,8 +158,8 @@ body {
 
   .hamburger {
     display: block;
-    width: 1.5625rem;
-    height: 0.1875rem;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: var(--OffWhite);
     position: relative;
     transition: all 0.3s ease;
@@ -160,18 +169,18 @@ body {
   .hamburger::after {
     content: "";
     position: absolute;
-    width: 1.5625rem;
-    height: 0.1875rem;
+    width: 1.5rem;
+    height: 0.2rem;
     background-color: var(--OffWhite);
     transition: all 0.3s ease;
   }
 
   .hamburger::before {
-    top: -0.5rem;
+    top: -12px;
   }
 
   .hamburger::after {
-    bottom: -0.5rem;
+    bottom: -12px;
   }
 
   .hamburger.open {
@@ -197,7 +206,8 @@ body {
   .menu-open .navigation-list {
     display: flex;
     flex-direction: column;
-    height: 45rem;
+    height: 100vh;
+    width: 100vw;
     text-align: start;
     position: absolute;
     top: 5rem;
@@ -212,7 +222,8 @@ body {
   .menu-closed .navigation-list {
     display: none;
     flex-direction: column;
-    height: 45rem;
+    height: 100vh;
+    width: 100vw;
     text-align: start;
     position: absolute;
     top: 5rem;
@@ -270,6 +281,7 @@ body {
 
   .contact-button {
     font-size: 0.75rem;
+    padding: 0.5rem 1rem;
     white-space: nowrap;
   }
 
