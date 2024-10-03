@@ -25,6 +25,22 @@ module.exports = {
         pinkGradient: "var(--PinkGradient)",
         tealGradient: "var(--TealGradient)",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 30s linear infinite",
+      },
+      spacing: {
+        "min-image-size": "50px",
+        "max-image-size": "100px",
+      },
+      screens: {
+        "max-lg": { max: "900px" },
+      },
     },
   },
 };

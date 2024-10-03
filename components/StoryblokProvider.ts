@@ -16,6 +16,7 @@ import Contact_form from "./contact/Contact_form";
 import Home_service_intro from "./home_content/Home_service_intro";
 import Home_servicecard from "./home_content/Home_servicecard";
 import Footer from "./footer/Footer";
+import Infinite_banner from "./infinite_banner/Infinite_banner";
 
 const components = {
   page: Page,
@@ -29,6 +30,7 @@ const components = {
   home_service_intro: Home_service_intro,
   home_servicecard: Home_servicecard,
   footer: Footer,
+  infinite_banner: Infinite_banner,
 };
 
 storyblokInit({
