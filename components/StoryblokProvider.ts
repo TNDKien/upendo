@@ -8,13 +8,14 @@ import {
 import Page from "./page.component";
 import Feature from "./feature/Feature";
 import Navbar from "./navbar/Navbar";
-import Hero from "./hero/hero";
+import Hero from "./hero/Hero";
 import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/servicebody";
-import Contact_intro from "./contact/contact_intro";
-import Contact_form from "./contact/contact_form";
+import Contact_intro from "./contact/Contact_intro";
+import Contact_form from "./contact/Contact_form";
 import Home_service_intro from "./home_content/Home_service_intro";
 import Home_servicecard from "./home_content/Home_servicecard";
+import Footer from "./footer/Footer";
 
 const components = {
   page: Page,
@@ -27,6 +28,7 @@ const components = {
   contact_form: Contact_form,
   home_service_intro: Home_service_intro,
   home_servicecard: Home_servicecard,
+  footer: Footer,
 };
 
 storyblokInit({

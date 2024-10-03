@@ -87,7 +87,6 @@ const Header = ({ blok }) => {
                   <div className="cta-arrow">&rarr;</div>
                 </a>
                 <span className="green-text">Make an appointment</span>
-                <img src="" alt="" />
               </article>
               <img
                 className="cta_image"
