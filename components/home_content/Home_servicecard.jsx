@@ -8,9 +8,17 @@ const Home_servicecard = ({ blok }) => {
     setMenuOpen(!menuOpen);
   };
 
+  const textColorClass = blok.check ? "text-limeGreen" : "text-pink";
+  const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
+
   return (
-    <div className="flex flex-col h-full p-6 pt-0 pb-40 gap-20">
-      <h1 className="flex flex-grow flex-row text-pink items-end -ml-2">
+    <div
+      className="flex flex-col h-full p-6 pt-0 pb-40 gap-20"
+      {...storyblokEditable(blok)}
+    >
+      <h1
+        className={`flex flex-grow flex-row ${textColorClass} items-end -ml-2`}
+      >
         <span className="text-6xl mr-2">&#9687;</span>
         <span className="text-2xl mb-1">{blok.service_title}</span>
       </h1>
@@ -23,14 +31,22 @@ const Home_servicecard = ({ blok }) => {
       </div>
       <div className="flex flex-col gap-12">
         <p className="text-offWhite">{blok.service_sum}</p>
-        <a href="/contact" className="flex items-center text-base">
-          <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
-            See more
+        <div className="flex items-center text-base">
+          <p
+            className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal ${textColorClass}`}
+          >
+            {blok.see_more && (
+              <a href={blok.see_more.url} rel="noopener noreferrer">
+                {blok.see_more.name || "See More"}
+              </a>
+            )}
           </p>
-          <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
+          <div
+            className={`${bgColorClass} text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
+          >
             &rarr;
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );
