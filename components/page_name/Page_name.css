@@ -1,0 +1,8 @@
+/* dit word verander naar tailwind.css */
+.title {
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--Pink);
+  padding: 24px;
+}
