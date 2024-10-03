@@ -20,6 +20,10 @@ import Pricing_cards from "./pricing/Pricing_cards";
 import Pricing_services from "./pricing/Pricing_services";
 import Footer from "./footer/Footer";
 import Infinite_banner from "./infinite_banner/Infinite_banner";
+import Servicebody2 from "./service/servicebody2"
+import Servicebody3 from "./service/servicebody3"
+import servicebody from "./service/servicebody";
+import servicepackage from "./service/servicepackage";
 
 const components = {
   page: Page,
@@ -37,6 +41,9 @@ const components = {
   pricing_services: Pricing_services,
   footer: Footer,
   infinite_banner: Infinite_banner,
+  servicebody2: Servicebody2,
+  servicebody3: Servicebody3,
+  servicepackage: servicepackage,
 };
 
 storyblokInit({
