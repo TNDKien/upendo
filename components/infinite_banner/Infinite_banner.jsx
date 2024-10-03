@@ -8,10 +8,8 @@ const Infinite_banner = ({ blok }) => {
     setMenuOpen(!menuOpen);
   };
 
-  const textColorClass = blok.check ? "text-limeGreen" : "text-pink";
-  const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
-
-  return <div></div>;
+  return;
+  <div></div>;
 };
 
 export default Infinite_banner;
