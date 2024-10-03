@@ -43,3 +43,40 @@
   margin-left: 5%;
   margin-top: 52px;
 }
+
+.efficienttext {
+  font-family: "Martian Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5%;
+  margin-top: 45px;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5px;
+  color: #a8ff1a;
+  font-family: "Martian Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+.Value {
+  margin-left: 5%;
+}
+
+.colortext {
+  color: var(--OffWhite);
+  margin-left: 5%;
+}
+
+.koptext {
+  margin-left: 5%;
+}

@@ -17,7 +17,9 @@ import Visualtweelogo from "./visualtweelogo";
 import Toolskop from './toolskop';
 import Ourtoolsfoto from './Ourtoolsfoto';
 import Howweserve from './Howweserve';
-
+import Efficientkop from './efficientkop';
+import Logokopefficient from './Logokopefficient';
+import Value from "./Value";
 
 const components = {
   page: Page,
@@ -32,7 +34,9 @@ const components = {
   toolskop: Toolskop,
   ourtoolsfoto: Ourtoolsfoto,
   howweserve: Howweserve,
-
+  efficientkop: Efficientkop,
+  logokopefficient: Logokopefficient,
+  value: Value, 
 };
 
 storyblokInit({
