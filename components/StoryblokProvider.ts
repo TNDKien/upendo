@@ -14,6 +14,10 @@ import Hero from "./hero";
 import Aboutusintro from "./aboutusintro";
 import aboutusbodytexteen from "./aboutusbody";
 import Visualtweelogo from "./visualtweelogo";
+import Toolskop from './toolskop';
+import Ourtoolsfoto from './Ourtoolsfoto';
+import Howweserve from './Howweserve';
+
 
 const components = {
   page: Page,
@@ -25,6 +29,10 @@ const components = {
   aboutusintro: Aboutusintro,
   aboutusbody: aboutusbodytexteen,
   visualtweelogo: Visualtweelogo, 
+  toolskop: Toolskop,
+  ourtoolsfoto: Ourtoolsfoto,
+  howweserve: Howweserve,
+
 };
 
 storyblokInit({

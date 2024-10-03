@@ -23,3 +23,23 @@
   grid-template-rows: auto auto auto; /* Twee rijen voor visual en tekst */
   row-gap: 16px; /* Ruimte tussen de rijen */
 }
+
+.toolstext {
+  color: #a8ff1a;
+  font-family: "Martian Mono";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  margin-left: 5%;
+}
+
+.howtext {
+  font-family: "Martian Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5%;
+  margin-top: 52px;
+}

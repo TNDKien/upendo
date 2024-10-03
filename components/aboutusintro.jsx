@@ -42,21 +42,29 @@ const AboutUsIntro = ({ blok }) => (
           <p></p> // Fallback als de afbeelding niet bestaat
         )}
       </div>
+
       <div className="logotwee">
-        <div className="logotwo">
-          {blok.logotwee ? (
-            <img
-              className="logotwee"
-              src={blok.Logotwee.filename}
-              alt={blok.Logotwee.alt || "logotwee"}
-            />
-          ) : (
-            <p></p> // Fallback als de afbeelding niet bestaat
-          )}
-        </div>
+        {blok.logotwee ? (
+          <img
+            className="logotwee"
+            src={blok.logotwee.filename}
+            alt={blok.logotwee.alt || "logotwee"}
+          />
+        ) : (
+          <p></p> // Fallback als de afbeelding niet bestaat
+        )}
       </div>
     </div>
   </div> // Sluit de buitenste div correct af
 );
 
+// Deze component wordt nu als een "named export" geëxporteerd
+const Toolskop = ({ blok }) => (
+  <div {...storyblokEditable(blok)}>
+    <div className="toolstext">{blok.toolstext}</div>
+  </div>
+);
+
+// Je kunt slechts één "default export" hebben
 export default AboutUsIntro;
+export { Toolskop }; // Named export
