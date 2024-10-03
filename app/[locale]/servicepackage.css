@@ -1,0 +1,26 @@
+.flexboxrow {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+}
+
+.flexboxfiguur {
+    margin-top: 64px;
+    width: 5px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 50px 0px 0px 50px;
+    background: var(--Lime-Green, #A8FF1A);
+}
+
+.flexboxrowtekst {
+    width: 265px;
+    margin-left: 11px;
+    margin-top: 64px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}

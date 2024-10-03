@@ -5,18 +5,19 @@
     flex-direction: column;
     color: #F4C5FE;
     margin-top: 2.625rem;
-    margin-left: 1.688rem;
     font-size: 0.75rem;
     margin-bottom: 3rem;
+    margin-left: 1.5rem;
 }
 
 .headertekst {
+    width: 18rem;
+    height: 10.75rem;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 32px;
-    margin-left: 1.688rem;
-    color: white;
     line-height: normal;
+    margin-left: 1.5rem;
 }
 
 .headertekstbold {
@@ -24,20 +25,20 @@
     font-weight: 500;
     font-weight: bold;
     color: #A8FF1A;
+    margin-left: 1.5rem;
 }
 
 .serviceheadertekst {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    margin-left: 1.688rem;
     color: white;
     width: 21rem;
     height: 3.75rem;
     margin-top: 4.5rem;
+    margin-left: 1.5rem;
 }
 
 .servicebuttondesign {
-    margin-left: 1.688rem;
     width: 10.063rem;
     height: 2.75rem;
     background-color: #003846;
@@ -46,6 +47,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 2.5rem;
+    margin-left: 1.5rem;
 }
 
 .servicebutton {
@@ -58,7 +60,7 @@
 
 .servicephoto {
     margin-top: 4.75rem;
-    margin-left: 1.688rem;
     height: 13.438rem;
     width: 21rem;
+    margin-left: 1.5rem;
 }
