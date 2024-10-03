@@ -15,6 +15,9 @@ import Contact_intro from "./contact/contact_intro";
 import Contact_form from "./contact/contact_form";
 import Home_service_intro from "./home_content/Home_service_intro";
 import Home_servicecard from "./home_content/Home_servicecard";
+import Pricing_intro from "./pricing/Pricing_intro";
+import Pricing_cards from "./pricing/Pricing_cards";
+import Pricing_services from "./pricing/Pricing_services";
 
 const components = {
   page: Page,
@@ -27,6 +30,9 @@ const components = {
   contact_form: Contact_form,
   home_service_intro: Home_service_intro,
   home_servicecard: Home_servicecard,
+  pricing_intro: Pricing_intro,
+  pricing_cards: Pricing_cards,
+  pricing_services: Pricing_services,
 };
 
 storyblokInit({

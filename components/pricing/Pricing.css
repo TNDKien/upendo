@@ -1,0 +1,133 @@
+.pricing_title{
+    font-family: "area-normal", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.pricing_paragraph{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 2.5rem 2rem;
+}
+
+
+.pricing_cards {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1.5rem; 
+  padding: 2rem; 
+  justify-content: center; 
+}
+
+
+.cardOne, .cardMonthly, .cardAnnual {
+  border-radius: 20px; 
+  padding: 1.5rem; 
+  max-width: 300px; 
+  text-align: left; 
+}
+
+.cardOne {
+  background-color: #f4c5fe; 
+}
+
+.cardMonthly {
+  background-color: #003a47; 
+}
+
+.cardAnnual {
+  background-color: #a8ff1a; 
+}
+
+
+.card_titleOne, .card_titleAnnual {
+  font-family: "area-normal", sans-serif;
+  font-size: 1rem; 
+  color: black; 
+  margin-bottom: 1rem; 
+}
+.card_titleMonthly {
+  font-family: "area-normal", sans-serif;
+  font-size: 1rem; 
+  color: #ffffff; 
+  margin-bottom: 1rem; 
+}
+
+
+.card_paragraphOne, .card_paragraphAnnual {
+  font-size: 0.75rem; 
+  color: black; 
+  line-height: 1.5; 
+  margin-bottom: 2rem;
+}
+.card_paragraphMonthly {
+  font-size: 0.75rem; 
+  color: #ffffff; 
+  line-height: 1.5; 
+  margin-bottom: 2rem;
+}
+
+
+.card_imgOne, .card_imgMonthly, .card_imgAnnual {
+  width: 100%; 
+  border-radius: 10px; 
+  margin: 1rem 0; 
+}
+
+
+.service_title {
+  font-family: "area-normal", sans-serif;
+  font-size: 1rem; 
+  /* margin-bottom: 1rem; 
+  margin-left: 2rem; */
+  padding: 1rem 2rem;
+}
+
+.service_paragraph{	
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem; 
+  color: #ffffff; 
+  line-height: 1.5; 
+  /* margin-bottom: 2rem;
+  margin-left: 2rem; */
+  padding: 2rem;
+}
+
+.circle-text-container {
+  display: flex;              
+  flex-direction: column;     
+  gap: 1rem;                
+}
+
+
+.circle-text-item {
+  display: flex;              
+  align-items: center;        
+}
+
+
+.circle1, .circle2, .circle3, .circle4 {
+  color: #f4c5fe;             
+  font-size: 1.5rem;          
+  margin-right: 1rem;         
+  margin-left: 2rem;
+}
+
+/* Styling for text elements */
+.text1, .text2, .text3, .text4 {
+  font-size: 0.75rem;            
+  color: #ffffff;             
+  line-height: 1.5;          
+}
+
+
+.divider {
+  width: calc(100% - 4rem);   
+  margin: 2rem 2rem 0;        
+  border: 0;                  
+  border-top: 1px solid #ffffff; 
+}
+
