@@ -24,17 +24,6 @@ const TrainingCard = ({ blok }) => (
         </div>
       )}
 
-      {/* Render de Visual Ball */}
-      {blok.visual_ball && blok.visual_ball.filename && (
-        <div className="visual_ball_container">
-          <img
-            className="visual_ball"
-            src={blok.visual_ball.filename}
-            alt={blok.training_header?.content?.[0]?.text || "visual ball"}
-          />
-        </div>
-      )}
-
       {/* Render de Training Paragraph */}
       {blok.training_paragraph && (
         <div className="training_paragraph">
@@ -49,9 +38,32 @@ const TrainingCard = ({ blok }) => (
         </div>
       )}
     </div>
+
+    {/* Render de Leftvisual Ball */}
+    {blok.leftvisual_ball && blok.leftvisual_ball.filename && (
+      <div className="leftvisual_ball_container">
+        <img
+          className="leftvisual_ball"
+          src={blok.leftvisual_ball.filename}
+          alt={
+            blok.lefttraining_header?.content?.[0]?.text || "leftvisual ball"
+          }
+        />
+      </div>
+    )}
+
+    {blok.rightvisual_ball && blok.rightvisual_ball.filename && (
+      <div className="rightvisual_ball_container">
+        <img
+          className="rightvisual_ball"
+          src={blok.rightvisual_ball.filename}
+          alt={
+            blok.righttraining_header?.content?.[0]?.text || "rightvisual ball"
+          }
+        />
+      </div>
+    )}
   </div>
 );
-
-
 
 export default TrainingCard;

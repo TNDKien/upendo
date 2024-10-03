@@ -2,6 +2,7 @@
   display: flex;
   justify-content: left;
   margin-bottom: 30px;
+  margin-top: 64px;
   font-size: 20px;
   font-family: "area-normal", sans-serif;
   font-weight: 700;
@@ -21,6 +22,8 @@
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: none;
 }
 
 .schedule_training {
@@ -32,22 +35,30 @@
   margin-top: 20px;
 }
 
-.visual_ball_container {
+.leftvisual_ball {
   display: flex;
   justify-content: left;
-  align-items: center;
-  margin-top: -10px;
+  margin-top: -185px;
   z-index: -1;
 }
 
-.visual_ball {
-  margin-top: -10px;
+.leftvisual_ball_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -75px;
   z-index: -1;
 }
 
-.training_title {
-  font-size: 12px;
-  font-family: "Martian Mono", monospace;
-  font-weight: 500;
-  color: var(--Pink);
+.rightvisual_ball {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -240px;
+  z-index: -1;
+}
+
+.rightvisual_ball_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -50px;
+  z-index: -1;
 }
