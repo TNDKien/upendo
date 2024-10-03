@@ -14,11 +14,6 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkOne">
         &gt;
       </a>
-      <img
-        className="line_left"
-        src={blok.line_left?.filename}
-        alt={blok.line_left?.alt || "Left line Image"} 
-      />
     </div>
 
     <div className="cardMonthly">
@@ -33,11 +28,6 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkMonthly">
         &gt;
       </a>
-      <img
-        className="line_right"
-        src={blok.line_right?.filename}
-        alt={blok.line_right?.alt || "Right line Image"} 
-      />
     </div>
 
     <div className="cardAnnual">
@@ -52,12 +42,23 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkAnnual">
         &gt;
       </a>
+    </div>
+
+    <img
+        className="line_left"
+        src={blok.line_left?.filename}
+        alt={blok.line_left?.alt || "Left line Image"} 
+      />
+    <img
+        className="line_right"
+        src={blok.line_right?.filename}
+        alt={blok.line_right?.alt || "Right line Image"} 
+    />
       <img
         className="last_line"
         src={blok.last_line?.filename}
-        alt={blok.last_line?.alt || "Left line Image"} 
+        alt={blok.last_line?.alt || "Last line Image"} 
       />
-    </div>
   </div>
 );
 
