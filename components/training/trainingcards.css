@@ -1,0 +1,64 @@
+.training_header {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+  margin-top: 64px;
+  font-size: 20px;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+}
+
+.training_image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.training_paragraph {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: none;
+}
+
+.schedule_training {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.leftvisual_ball {
+  display: flex;
+  justify-content: left;
+  margin-top: -185px;
+  z-index: -1;
+}
+
+.leftvisual_ball_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -75px;
+  z-index: -1;
+}
+
+.rightvisual_ball {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -240px;
+  z-index: -1;
+}
+
+.rightvisual_ball_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -50px;
+  z-index: -1;
+}
