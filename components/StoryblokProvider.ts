@@ -24,6 +24,7 @@ import Servicebody2 from "./service/servicebody2"
 import Servicebody3 from "./service/servicebody3"
 import servicebody from "./service/servicebody";
 import servicepackage from "./service/servicepackage";
+import Prices_intro from "./FAQ/Prices_intro";
 
 const components = {
   page: Page,
@@ -44,6 +45,7 @@ const components = {
   servicebody2: Servicebody2,
   servicebody3: Servicebody3,
   servicepackage: servicepackage,
+  prices_intro: Prices_intro,
 };
 
 storyblokInit({

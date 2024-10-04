@@ -15,6 +15,7 @@
 
 
 .pricing_cards {
+  position: relative;
   display: flex; 
   flex-wrap: wrap; 
   gap: 1.5rem; 
@@ -26,8 +27,11 @@
 .cardOne, .cardMonthly, .cardAnnual {
   border-radius: 20px; 
   padding: 1.5rem; 
+  margin-bottom: 4rem;
   max-width: 300px; 
   text-align: left; 
+  position: relative;
+  z-index: 2;
 }
 
 .cardOne {
@@ -72,9 +76,44 @@
 
 
 .card_imgOne, .card_imgMonthly, .card_imgAnnual {
-  width: 100%; 
   border-radius: 10px; 
-  margin: 1rem 0; 
+  margin: 1rem auto;
+  max-width: 100%; /* Pas dit aan aan je ontwerpbehoeften */
+  height: auto; /* Behoudt de juiste verhouding */
+  display: block; /* Zorgt ervoor dat het element correct wordt weergegeven */
+}
+
+.card_numberOne, .card_numberMonthly, .card_numberAnnual {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+}
+.card_numberMonthly{
+  color: #ffffff;
+}
+
+.card_linkOne, .card_linkMonthly, .card_linkAnnual {
+  position: absolute;
+  right: 25px;
+  bottom: -10px;
+  font-size: 3rem;
+}
+.card_linkMonthly{
+  color: #ffffff;
+}
+
+.liner_left{
+  position: absolute;
+  left: -3rem;
+  bottom: -1rem;
+  z-index: 5;
+}
+
+.liner_right{
+  position: absolute;
+  right: -3rem;
+  bottom: -1rem;
+  z-index: 1;
 }
 
 
