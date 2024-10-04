@@ -20,6 +20,7 @@ import Howweserve from './Howweserve';
 import Efficientkop from './efficientkop';
 import Logokopefficient from './Logokopefficient';
 import Value from "./Value";
+import CompoKop from "./CompoKop";
 
 const components = {
   page: Page,
@@ -37,6 +38,7 @@ const components = {
   efficientkop: Efficientkop,
   logokopefficient: Logokopefficient,
   value: Value, 
+  compokop: CompoKop,
 };
 
 storyblokInit({

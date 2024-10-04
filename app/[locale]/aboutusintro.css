@@ -85,3 +85,10 @@
 .koptext {
   margin-left: 5%;
 }
+
+.visualblok {
+  width: 112px;
+  height: 301px;
+  flex-shrink: 0;
+  margin-top: 72px;
+}
