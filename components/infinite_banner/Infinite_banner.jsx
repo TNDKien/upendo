@@ -9,14 +9,14 @@ const Infinite_banner = ({ blok }) => {
   };
 
   return (
-    <div className="logo-slider relative border border-gray-500 p-5 overflow-hidden max-w-[900px] w-full mx-auto flex">
-      <div className="logo-track flex justify-around animate-marquee">
+    <div className="relative p-6 overflow-hidden max-w-[900px] w-full h-6 mx-auto flex">
+      <div className="flex justify-between animate-marquee">
         <img src={blok.banner_image.filename} className="" />
         <img src={blok.banner_image.filename} className="" />
         <img src={blok.banner_image.filename} className="" />
         <img src={blok.banner_image.filename} className="" />
       </div>
-      <div className="logo-track flex justify-around animate-marque">
+      <div className="flex justify-between animate-marque">
         <img src={blok.banner_image.filename} className="" />
         <img src={blok.banner_image.filename} className="" />
         <img src={blok.banner_image.filename} className="" />

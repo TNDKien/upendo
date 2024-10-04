@@ -20,17 +20,13 @@ import Pricing_cards from "./pricing/Pricing_cards";
 import Pricing_services from "./pricing/Pricing_services";
 import Footer from "./footer/Footer";
 import Infinite_banner from "./infinite_banner/Infinite_banner";
-import Servicebody2 from "./service/servicebody2"
-import Servicebody3 from "./service/servicebody3"
+import Servicebody2 from "./service/servicebody2";
+import Servicebody3 from "./service/servicebody3";
 import servicebody from "./service/servicebody";
 import servicepackage from "./service/servicepackage";
-import Contact_intro from "./contact/contact_intro";
-import Contact_form from "./contact/contact_form";
 import Trainingcard from "./training/Trainingcard";
 import Page_name from "./page_name/Page_name";
 import Intro_training from "./intro_training/Intro_training";
-
-
 
 const components = {
   page: Page,
@@ -54,7 +50,6 @@ const components = {
   trainingcard: Trainingcard,
   page_name: Page_name,
   intro_training: Intro_training,
-  
 };
 
 storyblokInit({
