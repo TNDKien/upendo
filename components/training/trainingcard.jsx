@@ -1,11 +1,15 @@
 import { render } from "storyblok-rich-text-react-renderer";
-import "./Trainingcards.css";
+import "./trainingcards.css";
 
 const TrainingCard = ({ blok }) => (
   <div className="trainingcard">
     <div style={{ padding: "24px" }}>
       {blok.training_title && (
         <div className="training_title">{render(blok.training_title)}</div>
+      )}
+
+      {blok.training_text && (
+        <div className="training_text">{render(blok.training_text)}</div>
       )}
 
       {/* Render de Training Header */}

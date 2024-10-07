@@ -16,6 +16,7 @@ import Contact_form from "./contact/contact_form";
 import Trainingcard from "./training/Trainingcard";
 import Page_name from "./page_name/Page_name";
 import Intro_training from "./intro_training/Intro_training";
+import Intro_schedule from "./intro_schedule/intro_schedule";
 
 
 
@@ -31,7 +32,7 @@ const components = {
   trainingcard: Trainingcard,
   page_name: Page_name,
   intro_training: Intro_training,
-  
+  intro_schedule: Intro_schedule,
 };
 
 storyblokInit({

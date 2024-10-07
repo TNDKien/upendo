@@ -1,9 +1,8 @@
 .training_title {
   color: white;
   font-size: 32px;
-  font-family: Area Normal;
+  font-family: "area-normal", sans-serif;
   font-weight: 700;
-  word-wrap: break-word;
 }
 
 .training_text {
