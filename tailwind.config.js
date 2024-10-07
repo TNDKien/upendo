@@ -28,15 +28,26 @@ module.exports = {
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-226%)" },
+        },
+        fadeInUp: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(50px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
         marquee: "marquee 30s linear infinite",
+        fadeInUp: "fadeInUp 1s ease-out",
       },
       spacing: {
-        "min-image-size": "50px",
-        "max-image-size": "100px",
+        "min-image-size": "48px",
+        "max-image-size": "50px",
       },
       screens: {
         "max-lg": { max: "900px" },

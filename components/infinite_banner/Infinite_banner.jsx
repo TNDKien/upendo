@@ -9,18 +9,16 @@ const Infinite_banner = ({ blok }) => {
   };
 
   return (
-    <div className="relative p-6 overflow-hidden max-w-[900px] w-full h-6 mx-auto flex">
-      <div className="flex justify-between animate-marquee">
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
-      </div>
-      <div className="flex justify-between animate-marque">
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
-        <img src={blok.banner_image.filename} className="" />
+    <div className="relative p-6 overflow-hidden max-w-[900px] w-full h-24 mx-auto flex">
+      <div className="flex gap-4 animate-marquee">
+        <img src={blok.banner_image1.filename} />
+        <img src={blok.banner_image2.filename} />
+        <img src={blok.banner_image3.filename} />
+        <img src={blok.banner_image4.filename} />
+        <img src={blok.banner_image1.filename} />
+        <img src={blok.banner_image2.filename} />
+        <img src={blok.banner_image3.filename} />
+        <img src={blok.banner_image4.filename} />
       </div>
     </div>
   );
