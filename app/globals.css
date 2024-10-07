@@ -54,7 +54,7 @@ h1 {
 .header-content {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 90vw;
   /* margin: 0 auto; */
   padding: 12px 16px;
   align-items: center;
@@ -63,9 +63,9 @@ h1 {
 }
 
 .logo {
-  height: auto;
-  width: 100%;
-  max-width: 10rem;
+  height: 43px;
+  width: 216px;
+  max-height: 10rem;
 }
 
 .menu-button {
@@ -85,6 +85,8 @@ h1 {
 }
 
 .nav-link {
+  display: inline-block;
+  text-wrap: nowrap;
   color: var(--OffWhite);
   font-family: "area-normal", sans-serif;
   font-weight: 700;
@@ -103,7 +105,56 @@ h1 {
   flex-direction: row;
 }
 
+.dropdown-button {
+  padding: 4px;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  left: 0;
+  background-color: var(--DarkGreen);
+  position: absolute;
+  padding: 3rem 6rem;
+  z-index: 10;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  color: var(--OffWhite);
+  background-color: var(--DarkTeal);
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  text-decoration: none;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.dropdown-item:hover {
+  color: var(--DarkGreen);
+  background-color: var(--OffWhite);
+}
+
+.dropdown-image {
+  display: block;
+  height: 100%;
+  width: 200px;
+  /* object-fit: cover; */
+}
+
+.dropdown-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  max-width: 200px;
+}
+
 .contact-button {
+  display: inline-block;
+  text-wrap: nowrap;
   margin-left: 1rem;
   padding: 12px 16px;
   border-radius: 9999px;
@@ -245,6 +296,12 @@ h1 {
   }
 
   /* Dropdown menu */
+
+  .dropdown-menu {
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+  }
   .dropdown-button {
     display: flex;
     background-color: transparent;
@@ -262,6 +319,7 @@ h1 {
     width: 100%;
     gap: 1rem;
     z-index: 10;
+    padding: 0;
   }
 
   .dropdown-item {
@@ -271,6 +329,11 @@ h1 {
     font-weight: 500;
 
     text-decoration: none;
+  }
+
+  .dropdown-text,
+  .dropdown-image {
+    display: none;
   }
 
   .btnservice {

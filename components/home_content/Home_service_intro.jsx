@@ -11,7 +11,7 @@ const Home_service_intro = ({ blok }) => {
   return (
     <div className="flex flex-col gap-36 pt-32" {...storyblokEditable(blok)}>
       <div className="flex flex-col p-6 gap-1">
-        <h1 className="text-2xl text-offWhite max-w-64">{blok.service_text}</h1>
+        <h2 className="text-4xl text-offWhite max-w-64">{blok.service_text}</h2>
         <a
           className="flex mt-10 py-2 px-6 w-auto bg-darkTeal text-pink rounded-3xl self-start whitespace-nowrap"
           href=""

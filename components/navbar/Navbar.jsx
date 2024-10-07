@@ -49,15 +49,54 @@ const Header = ({ blok }) => {
                 <div className="dropdown-menu">
                   <a href="/configuration" className="dropdown-item">
                     Configuration
+                    <img
+                      className="dropdown-image"
+                      src={blok.config_image.filename}
+                      alt={blok.config_image.alt}
+                    />
+                    <p className="dropdown-text">
+                      Together with you, we’ll identify your company’s goals and
+                      visualize this data from start to finish.
+                    </p>
                   </a>
+
                   <a href="/optimalisation" className="dropdown-item">
                     Optimization
+                    <img
+                      className="dropdown-image"
+                      src={blok.optimalization_image.filename}
+                      alt={blok.optimalization_image.alt}
+                    />
+                    <p className="dropdown-text">
+                      We fine-tune your existing setup to fix errors and improve
+                      data quality.
+                    </p>
                   </a>
+
                   <a href="/visualisation" className="dropdown-item">
                     Visualization
+                    <img
+                      className="dropdown-image"
+                      src={blok.visualization_image.filename}
+                      alt={blok.visualization_image.alt}
+                    />
+                    <p className="dropdown-text">
+                      We build custom dashboards that show your data in a clear
+                      and easy way.
+                    </p>
                   </a>
+
                   <a href="/analytics" className="dropdown-item">
                     Analytics
+                    <img
+                      className="dropdown-image"
+                      src={blok.analysis_image.filename}
+                      alt={blok.analysis_image.alt}
+                    />
+                    <p className="dropdown-text">
+                      We dig into your data to find trends, fix problems, and
+                      provide insights you can use.
+                    </p>
                   </a>
                 </div>
               )}
