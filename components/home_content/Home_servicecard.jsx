@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home_servicecard = ({ blok }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -11,17 +17,20 @@ const Home_servicecard = ({ blok }) => {
   const textColorClass = blok.check ? "text-limeGreen" : "text-pink";
   const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
 
+  console.log(blok.see_more);
+
   return (
     <div
+      data-aos="fade-up"
       className="flex flex-col h-full p-6 pt-0 pb-40 gap-20"
       {...storyblokEditable(blok)}
     >
-      <h1
+      <h3
         className={`flex flex-grow flex-row ${textColorClass} items-end -ml-2`}
       >
         <span className="text-6xl mr-2">&#9687;</span>
         <span className="text-2xl mb-1">{blok.service_title}</span>
-      </h1>
+      </h3>
       <div className="flex flex-grow w-full">
         <img
           className="w-full h-auto"
@@ -36,7 +45,7 @@ const Home_servicecard = ({ blok }) => {
             className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal ${textColorClass}`}
           >
             {blok.see_more && (
-              <a href={blok.see_more.url} rel="noopener noreferrer">
+              <a href={`/${blok.see_more.story.url}`} rel="noopener noreferrer">
                 {blok.see_more.name || "See More"}
               </a>
             )}
