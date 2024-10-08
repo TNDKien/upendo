@@ -4,16 +4,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home_servicecard = ({ blok }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+  // library for onscroll entrance animations
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+  // boolean check for text and background colors of buttons and headers
   const textColorClass = blok.check ? "text-limeGreen" : "text-pink";
   const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
 

@@ -2,12 +2,6 @@ import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Home_service_intro = ({ blok }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className="flex flex-col gap-36 pt-32" {...storyblokEditable(blok)}>
       <div className="flex flex-col p-6 gap-1">

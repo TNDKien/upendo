@@ -2,12 +2,6 @@ import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Footer = ({ blok }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className="relative">
       <div className="flex flex-col p-6 bg-pink gap-4">
