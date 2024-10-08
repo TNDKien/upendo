@@ -1,5 +1,7 @@
-Working fork of royvz-dev's Next + Storyblok boilerplate. This fork contains custom CSS and a demo component that is being loaded in the visual editor.
+Fontys Hogeschool project
+website: -
+company: 2manydots
+website: upendo
 
-## Notes
-* `npm run dev` gives you a local SSL certificatie for localhost so allow it please. Otherwise Storyblok's visual live editor won't work.
-* There is no `.env.local` or `.env` in this repository since it is in .gitignore. Please create it yourself and add the access token. Use the preview token for `.env.local` and the public token for `.env` when deploying 
+Overview
+Upendo is a data services label specializing in configuration, optimization, visualization, analysis, and training. This service is designed to make complex data management tasks simple and accessible for businesses. The target audience includes SMEs (MKB) and semi-governmental organizations, with services offered globally in English and Dutch.
