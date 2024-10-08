@@ -1,5 +1,5 @@
 import { render } from "storyblok-rich-text-react-renderer";
-import "./Trainingcards.css";
+import "./trainingcards.css";
 
 const TrainingCard = ({ blok }) => (
   <div className="trainingcard">
