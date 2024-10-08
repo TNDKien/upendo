@@ -8,11 +8,8 @@ import {
 import Page from "./page.component";
 import Feature from "./feature/Feature";
 import Navbar from "./navbar/Navbar";
-import Hero from "./hero/Hero";
 import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/servicebody";
-import Contact_intro from "./contact/Contact_intro";
-import Contact_form from "./contact/Contact_form";
 import Home_service_intro from "./home_content/Home_service_intro";
 import Home_servicecard from "./home_content/Home_servicecard";
 import Pricing_intro from "./pricing/Pricing_intro";
@@ -24,9 +21,12 @@ import Servicebody2 from "./service/servicebody2";
 import Servicebody3 from "./service/servicebody3";
 import servicebody from "./service/servicebody";
 import servicepackage from "./service/servicepackage";
-import Trainingcard from "./training/Trainingcard";
 import Page_name from "./page_name/Page_name";
 import Intro_training from "./intro_training/Intro_training";
+import Contact_intro from "./contact/Contact_intro";
+import Contact_form from "./contact/Contact_form";
+import Hero from "./hero/Hero";
+import Trainingcard from "./training/Trainingcard";
 
 const components = {
   page: Page,
