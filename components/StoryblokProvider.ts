@@ -23,10 +23,10 @@ import servicebody from "./service/servicebody";
 import servicepackage from "./service/servicepackage";
 import Page_name from "./page_name/Page_name";
 import Intro_training from "./intro_training/Intro_training";
-import Contact_intro from "./contact/Contact_intro";
-import Contact_form from "./contact/Contact_form";
-import Hero from "./hero/Hero";
-import Trainingcard from "./training/Trainingcard";
+import Contact_intro from "./contact/contact_intro";
+import Contact_form from "./contact/contact_form";
+import Hero from "./hero/hero";
+import Trainingcard from "./training/trainingcard";
 
 const components = {
   page: Page,
