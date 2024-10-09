@@ -5,7 +5,7 @@ const Value = ({ blok }) => (
     <div className="card-top">
       <h1 className="koptext">{blok.title}</h1>
       <img
-        className=""
+        className="Visual"
         src={blok.visual.filename}
         alt={blok.visual.alt || "Visual"}
       />
