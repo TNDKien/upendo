@@ -10,7 +10,7 @@ import Feature from "./feature/Feature";
 import Navbar from "./navbar/Navbar";
 import Hero from "./hero/Hero";
 import Serviceintro from "./service/serviceintro";
-import Servicebody from "./service/servicebody";
+import Servicebody from "./service/Servicebody";
 import Contact_intro from "./contact/Contact_intro";
 import Contact_form from "./contact/Contact_form";
 import Home_service_intro from "./home_content/Home_service_intro";
@@ -20,10 +20,13 @@ import Pricing_cards from "./pricing/Pricing_cards";
 import Pricing_services from "./pricing/Pricing_services";
 import Footer from "./footer/Footer";
 import Infinite_banner from "./infinite_banner/Infinite_banner";
-import Servicebody2 from "./service/servicebody2"
-import Servicebody3 from "./service/servicebody3"
-import servicebody from "./service/servicebody";
+import Servicebody2 from "./service/Servicebody2"
+import Servicebody3 from "./service/Servicebody3"
+import servicebody from "./service/Servicebody";
 import servicepackage from "./service/servicepackage";
+import Servicepricing from "./service/Servicepricing";
+import Servicepricing_basic from "./service/Servicepricing_basic";
+import Servicepricing_premium from "./service/Servicepricing_premium";
 
 const components = {
   page: Page,
@@ -44,6 +47,9 @@ const components = {
   servicebody2: Servicebody2,
   servicebody3: Servicebody3,
   servicepackage: servicepackage,
+  servicepricing: Servicepricing,
+  servicepricing_basic: Servicepricing_basic,
+  servicepricing_premium: Servicepricing_premium,
 };
 
 storyblokInit({

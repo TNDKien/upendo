@@ -1,4 +1,4 @@
-.servicebodyheader {
+.serviceoptimalisationheader {
     font-family: "Martian Mono";
     font-size: 24px;
     font-style: normal;
@@ -9,29 +9,7 @@
     margin-top: 5rem;
 }
 
-.servicebodyheadertekst {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    width: 20.625rem;
-    margin-top: 4.5rem;
-    margin-left: 1.5rem;
-}
-
-.servicebodyheadertekst2 {
-    font-family: "Martian Mono";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 15.5rem;
-    margin-left: 1.5rem;
-    margin-top: 4.5rem;
-}
-
-.servicebodyheadertekst3 {
+.serviceoptimalisationheadertekst {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -42,12 +20,14 @@
     margin-left: 1.5rem;
 }
 
-.servicepricing_title {
-    margin-top: 72px;
-    font-family: "Martian Mono", monospace;
-    margin-left: 1.5rem;
-    font-size: 16px;
+
+.serviceoptimalisationheadertekst2 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 20.625rem;
+    margin-top: 4.5rem;
+    margin-left: 1.5rem;
 }

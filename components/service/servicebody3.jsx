@@ -16,7 +16,11 @@ const servicebody3 = ({ blok }) => (
         <div className="servicebodyheadertekst3">
             {render(blok.servicebodyheadertekst3)}
         </div>
+        <div className="servicepricing_title">
+            {render(blok.servicepricing_title)}
+        </div>
     </div>
+
 );
 
 export default servicebody3;
