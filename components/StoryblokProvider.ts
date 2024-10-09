@@ -27,6 +27,8 @@ import servicepackage from "./service/servicepackage";
 import Trainingcard from "./training/Trainingcard";
 import Page_name from "./page_name/Page_name";
 import Intro_training from "./intro_training/Intro_training";
+import Service_plans from "./service/Service_plans";
+import Service_plans_text from "./service/Service_plans_text";
 
 const components = {
   page: Page,
@@ -50,6 +52,8 @@ const components = {
   trainingcard: Trainingcard,
   page_name: Page_name,
   intro_training: Intro_training,
+  service_plans: Service_plans,
+  service_plans_text: Service_plans_text,
 };
 
 storyblokInit({
