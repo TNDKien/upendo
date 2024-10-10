@@ -22,7 +22,7 @@ import Logokopefficient from './Logokopefficient';
 import Value from "./Value";
 import CompoKop from "./CompoKop";
 import Collaboratebutton from "./Collaboratebutton"
-
+import Learnmore from "./Learnmore"
 const components = {
   page: Page,
   feature: Feature,
@@ -41,6 +41,7 @@ const components = {
   value: Value, 
   compokop: CompoKop,
   collaboratebutton: Collaboratebutton,
+  learnmore: Learnmore,
 };
 
 storyblokInit({
