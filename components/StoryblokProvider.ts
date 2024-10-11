@@ -33,6 +33,8 @@ import Servicepricing_basic from "./service/Servicepricing_basic";
 import Servicepricing_advanced from "./service/Servicepricing_advanced";
 import Servicepricing_premium from "./service/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./service/Serviceoptimalisation_footer";
+import Service_plans from "./service/Service_plans";
+import Service_plans_text from "./service/Service_plans_text";
 
 const components = {
   page: Page,
@@ -62,6 +64,8 @@ const components = {
   servicepricing_advanced: Servicepricing_advanced,
   servicepricing_premium: Servicepricing_premium,
   Serviceoptimalisation_footer: Serviceoptimalisation_footer,
+  service_plans: Service_plans,
+  service_plans_text: Service_plans_text,
 };
 
 storyblokInit({

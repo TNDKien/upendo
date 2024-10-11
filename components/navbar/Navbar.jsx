@@ -97,6 +97,9 @@ const Header = ({ blok }) => {
                       We dig into your data to find trends, fix problems, and
                       provide insights you can use.
                     </p>
+                    <a href="/analysis" className="dropdown-item">
+                      Analysis
+                    </a>
                   </a>
                 </div>
               )}
