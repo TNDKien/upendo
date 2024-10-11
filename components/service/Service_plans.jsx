@@ -12,8 +12,9 @@ const service_plans = ({ blok }) => (
     </div>
 
     <div className="service_plans_text_opsomming">
+      {/* Visual */}
       <div className="service_lijntje"></div>
-
+      {/* De verschillende punten */}
       <div className="serviceplanstext1">
         {render(blok.service_plans_text1)}
       </div>
