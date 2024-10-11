@@ -1,3 +1,34 @@
+.servicepricing_blok_sub_5 {
+    width: 800px;
+    margin-left: 100px;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* Verdeel de kolommen gelijkmatig */
+    padding: 0 10px;
+    /* Voeg wat padding toe om ruimte te creëren tussen kolommen */
+    box-sizing: border-box;
+    /* Zorg ervoor dat de padding wordt meegenomen in de breedteberekening */
+}
+
+/* Zorg dat de rijen in de kolommen correct uitgelijnd zijn */
+.flexboxrow-premium {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* Zorg dat items links uitgelijnd zijn */
+    /* Gebruik de volledige beschikbare ruimte */
+}
+
+/* Controleer marges op individuele elementen */
+.servicepricing_blok_sub_basic {
+    margin-left: 0;
+    /* Verwijder onnodige marges die het blok naar rechts duwen */
+}
+
 .servicepricing_blok {
     width: 336px;
     height: 99px;
@@ -85,6 +116,17 @@
     margin-bottom: 16px;
 }
 
+.servicepricing_blok_premium {
+    width: 336px;
+    height: 135px;
+    border-radius: 10px 0px 10px 10px;
+    background: var(--Pink, #F4C5FF);
+    margin-top: 16px;
+    /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
+    margin-left: 1.5rem;
+    margin-bottom: 16px;
+}
+
 .servicepricing_blok_title_basic {
     padding-top: 8px;
     margin-left: 10px;
@@ -101,6 +143,8 @@
     width: 312px;
 }
 
+
+
 .servicepricing_blok_img {
     margin-top: 12px;
     margin-left: -14px;
@@ -108,13 +152,52 @@
     height: 16px;
 }
 
-.servicepricing_blok_sub_basic {
-    width: 500px;
+
+
+/* Voeg dit toe aan je bestaande CSS */
+/* Algemene stijl voor alle sub-blokken om dezelfde breedte te hebben */
+.servicepricing_blok_sub_basic,
+.servicepricing_blok_sub_5,
+.servicepricing_blok_sub_6 {
+    width: 336px;
     margin-top: 10px;
-    margin-left: 9px;
+    margin-left: 10px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
+}
+
+
+/* Zorg dat afbeeldingen in de flexbox niet groter zijn dan nodig */
+.servicepricing_blok_img_premium {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+}
+
+.servicepricing_blok_img_premium_2 {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.servicepricing_blok_img_premium_3 {
+    margin-top: 12px;
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+}
+
+.servicepricing_blok_sub_5,
+.servicepricing_blok_sub_6 {
+    margin-left: 9px;
+    /* Pas deze waarde aan om ze verder naar rechts te plaatsen */
+}
+
+.flexboxrow-premium .servicepricing_blok_sub_5 {
+    margin-right: 20px;
+    /* Zorgt voor extra ruimte tussen 5 en 6 */
 }
 
 .servicepricing_blok_price_basic {
@@ -123,6 +206,17 @@
     flex-shrink: 0;
     border-radius: 0px 0px 0px 20px;
     background: var(--Light-Lime, #EAFFBD);
+    margin-top: -31px;
+}
+
+.servicepricing_blok_price_premium {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 20px;
+    background: var(--Light-Lime, #EAFFBD);
+    margin-left: 244.5px;
     margin-top: -31px;
 }
 
@@ -138,14 +232,9 @@
     margin-top: 8px;
 }
 
+
 .flexbox-container {
     display: flex;
-    justify-content: space-between;
-    /* Zorgt voor ruimte tussen de kolommen */
-}
 
-.flexbox-column {
-    display: flex;
-    flex-direction: column;
-    /* Zet de elementen onder elkaar */
+    /* Zorgt voor ruimte tussen de kolommen */
 }
