@@ -6,7 +6,6 @@ import {
   SbReactComponentsMap,
 } from "@storyblok/react/rsc";
 import Page from "./page.component";
-import Feature from "./feature/Feature";
 import Navbar from "./navbar/Navbar";
 import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/Servicebody";
@@ -36,9 +35,20 @@ import Serviceoptimalisation_footer from "./service/Serviceoptimalisation_footer
 import Service_plans from "./service/Service_plans";
 import Service_plans_text from "./service/Service_plans_text";
 
+import Aboutusintro from "./aboutus/aboutusintro";
+import aboutusbodytexteen from "./aboutus/aboutusbody";
+import Visualtweelogo from "./aboutus/visualtweelogo";
+import Toolskop from './aboutus/toolskop';
+import Ourtoolsfoto from './aboutus/Ourtoolsfoto';
+import Howweserve from './aboutus/Howweserve';
+import Efficientkop from './aboutus/efficientkop';
+import Logokopefficient from './aboutus/Logokopefficient';
+import Value from "./aboutus/Value";
+import CompoKop from "./aboutus/CompoKop";
+import Collaboratebutton from "./aboutus/Collaboratebutton"
+import Learnmore from "./aboutus/Learnmore"
 const components = {
   page: Page,
-  feature: Feature,
   navbar: Navbar,
   hero: Hero,
   serviceintro: Serviceintro,
@@ -66,6 +76,18 @@ const components = {
   Serviceoptimalisation_footer: Serviceoptimalisation_footer,
   service_plans: Service_plans,
   service_plans_text: Service_plans_text,
+  aboutusintro: Aboutusintro,
+  aboutusbody: aboutusbodytexteen,
+  visualtweelogo: Visualtweelogo, 
+  toolskop: Toolskop,
+  ourtoolsfoto: Ourtoolsfoto,
+  howweserve: Howweserve,
+  efficientkop: Efficientkop,
+  logokopefficient: Logokopefficient,
+  value: Value, 
+  compokop: CompoKop,
+  collaboratebutton: Collaboratebutton,
+  learnmore: Learnmore,
 };
 
 storyblokInit({
