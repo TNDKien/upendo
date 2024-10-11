@@ -30,7 +30,7 @@ const servicepackage = ({ blok }) => (
         </div>
         <div className="flexboxrow">
             <div className="flexboxfiguur"></div>
-            <div className="flexboxrowtekst">
+            <div className="flexboxrowtekst2">
                 {render(blok.flexboxrowtekst5)}
             </div>
         </div>

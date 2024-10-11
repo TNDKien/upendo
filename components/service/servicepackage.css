@@ -24,3 +24,16 @@
     line-height: 24px;
     /* 150% */
 }
+
+.flexboxrowtekst2 {
+    margin-top: 64px;
+    width: 265px;
+    margin-left: 11px;
+    margin-bottom: 64px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
