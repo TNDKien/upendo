@@ -56,8 +56,8 @@ const Header = ({ blok }) => {
                   <a href="/visualisation" className="dropdown-item">
                     Visualization
                   </a>
-                  <a href="/analytics" className="dropdown-item">
-                    Analytics
+                  <a href="/analysis" className="dropdown-item">
+                    Analysis
                   </a>
                 </div>
               )}
