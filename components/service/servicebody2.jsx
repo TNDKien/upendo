@@ -29,10 +29,16 @@ const Servicebody2 = ({ blok }) => (
             {render(blok.servicebodyconfgititeltekst4)}
         </div>
         <div className="servicebodyconfigtitel">
-            {render(blok.servicebodyconfigtitel5)}
+            {render(blok.servicebodyconfigtixtel5)}
         </div>
         <div className="servicebodyconfgititeltekst">
             {render(blok.servicebodyconfigtiteltekst5)}
+        </div>
+        <div className="servicebodyconfigtitel">
+            {render(blok.servicebodyconfigtitel6)}
+        </div>
+        <div className="servicebodyconfgititeltekst">
+            {render(blok.servicebodyconfigtiteltekst6)}
         </div>
         <div className="servicebodybuttondesign">
             <div className="servicebodybutton">

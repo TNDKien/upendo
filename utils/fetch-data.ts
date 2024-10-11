@@ -13,10 +13,10 @@ interface FetchDataResult {
   status: number;
 }
 
-console.log("dit is de fetch data bestand");
+console.log("kusjes van teun <3");
 
 async function fetchData(slug?: string): Promise<FetchDataResult> {
-  console.log(`HEEUUUUH ${slug}`);
+  console.log(`Started ${slug}`);
   const storyblokApi = getStoryblokApi();
   const sbParams: ISbStoriesParams = {
     version: "draft",
