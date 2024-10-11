@@ -36,6 +36,18 @@ import Serviceoptimalisation_footer from "./service/Serviceoptimalisation_footer
 import Service_plans from "./service/Service_plans";
 import Service_plans_text from "./service/Service_plans_text";
 
+import Aboutusintro from "./aboutusintro";
+import aboutusbodytexteen from "./aboutusbody";
+import Visualtweelogo from "./visualtweelogo";
+import Toolskop from './toolskop';
+import Ourtoolsfoto from './Ourtoolsfoto';
+import Howweserve from './Howweserve';
+import Efficientkop from './efficientkop';
+import Logokopefficient from './Logokopefficient';
+import Value from "./Value";
+import CompoKop from "./CompoKop";
+import Collaboratebutton from "./Collaboratebutton"
+import Learnmore from "./Learnmore"
 const components = {
   page: Page,
   feature: Feature,
@@ -66,6 +78,18 @@ const components = {
   Serviceoptimalisation_footer: Serviceoptimalisation_footer,
   service_plans: Service_plans,
   service_plans_text: Service_plans_text,
+  aboutusintro: Aboutusintro,
+  aboutusbody: aboutusbodytexteen,
+  visualtweelogo: Visualtweelogo, 
+  toolskop: Toolskop,
+  ourtoolsfoto: Ourtoolsfoto,
+  howweserve: Howweserve,
+  efficientkop: Efficientkop,
+  logokopefficient: Logokopefficient,
+  value: Value, 
+  compokop: CompoKop,
+  collaboratebutton: Collaboratebutton,
+  learnmore: Learnmore,
 };
 
 storyblokInit({
