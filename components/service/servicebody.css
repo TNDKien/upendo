@@ -5,9 +5,10 @@
     font-size: 1.25rem;
     font-style: normal;
     line-height: 1.5rem;
-    width: 21rem;
+    min-width: 21rem;
     margin-top: 6.25rem;
     margin-left: 1.5rem;
+    margin-right: 0.75rem;
 }
 
 .servicebodytekst1 {
