@@ -59,7 +59,7 @@ const components = {
   servicepricing_basic: Servicepricing_basic,
   servicepricing_advanced: Servicepricing_advanced,
   servicepricing_premium: Servicepricing_premium,
-  serviceoptimalisation_footer: Serviceoptimalisation_footer,
+  Serviceoptimalisation_footer: Serviceoptimalisation_footer,
 };
 
 storyblokInit({
