@@ -8,7 +8,7 @@ const Hero = ({ blok }) => {
         <h1 className="text-4xl text-offWhite">Data made Simple</h1>
         <p className="text-pink">{blok.hero_text}</p>
       </div>
-      <div className="flex flex-row mr-0 ml-auto p-6">
+      <div className="flex flex-row mr-0 ml-auto p-6 lg:justify-between">
         <a
           className="flex mt-10 py-2 px-6 w-auto bg-limeGreen rounded-3xl self-start whitespace-nowrap"
           href=""

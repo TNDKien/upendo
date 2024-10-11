@@ -27,6 +27,7 @@ import Contact_intro from "./contact/Contact_intro";
 import Contact_form from "./contact/Contact_form";
 import Hero from "./hero/Hero";
 import Trainingcard from "./training/Trainingcard";
+import Strapi from "./strapi/Strapi";
 
 const components = {
   page: Page,
@@ -50,6 +51,7 @@ const components = {
   trainingcard: Trainingcard,
   page_name: Page_name,
   intro_training: Intro_training,
+  strapi: Strapi,
 };
 
 storyblokInit({

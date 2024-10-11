@@ -18,7 +18,7 @@ const Home_servicecard = ({ blok }) => {
   return (
     <div
       data-aos="fade-up"
-      className="flex flex-col h-full p-6 pt-0 pb-40 gap-20"
+      className="flex flex-col h-full p-6 pt-0 pb-40 gap-20 lg:hidden"
       {...storyblokEditable(blok)}
     >
       <h3
