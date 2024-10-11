@@ -1,7 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
-import "../app/[locale]/aboutusintro.css";
-import "../app/[locale]/aboutusintrotext.css";
-import "../app/[locale]/aboutusintrocolor.css";
+import "./aboutusintro.css";
+import "./aboutusintrotext.css";
+import "./aboutusintrocolor.css";
 import { render } from "storyblok-rich-text-react-renderer";
 
 const AboutUsIntro = ({ blok }) => (
