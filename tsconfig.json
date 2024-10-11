@@ -45,7 +45,7 @@
     "**/**/*.js",
     "**/**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "components/schedule/Date_Picker.jsx"  ],
   "exclude": [
     "node_modules"
   ]

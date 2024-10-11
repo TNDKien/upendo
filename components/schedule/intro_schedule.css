@@ -1,0 +1,26 @@
+.schedule_title {
+  color: white;
+  font-size: 32px;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.schedule_text {
+  color: white;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.schedule_appointment {
+  display: flex;
+  justify-content: center;
+  color: #fefff8;
+  font-size: 16px;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  margin-top: 65px;
+  margin-bottom:40px;
+}
