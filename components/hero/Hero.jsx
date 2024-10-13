@@ -5,8 +5,10 @@ const Hero = ({ blok }) => {
   return (
     <div className="mt-32">
       <div className="flex flex-col p-6 gap-14 lg:p-32 lg:pb-0">
-        <h1 className="text-4xl text-offWhite">Data made Simple</h1>
-        <p className="text-pink">{blok.hero_text}</p>
+        <h1 className="text-4xl text-offWhite lg:text[64px]">
+          Data made Simple
+        </h1>
+        <p className="text-pink lg:max-w-md">{blok.hero_text}</p>
       </div>
       <div className="flex flex-row mr-0 ml-auto p-6 lg:justify-between lg:p-32 lg:pt-0">
         <a
@@ -16,7 +18,7 @@ const Hero = ({ blok }) => {
           {blok.hero_cta}
         </a>
         <img
-          className="mr-auto ml-0 lg:mr-0 lg:ml-auto"
+          className="mr-auto h-[55vh] ml-0 lg:mr-0 lg:ml-auto"
           src={blok.visuals.filename}
           alt={blok.visuals.alt || ""}
         />
