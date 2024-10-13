@@ -17,7 +17,7 @@ const Header = ({ blok }) => {
     <div className="header-container" {...storyblokEditable(blok)}>
       <div className="header-content">
         {/* Logo */}
-        <a href="/home">
+        <a href="/">
           <img
             className="logo"
             src={blok.logo.filename}
