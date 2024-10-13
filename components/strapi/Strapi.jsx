@@ -20,8 +20,8 @@ const Strapi = ({ blok }) => {
           // Get the total height of the content (e.g., the div with paragraphs)
           const contentHeight = contentRef.current.scrollHeight;
 
-          // Adjust the scroll length per image to be 20% smaller
-          const scrollLengthPerImage = (contentHeight * 0.8) / totalPictures;
+          // Adjust the scroll length per image based on the content height
+          const scrollLengthPerImage = (contentHeight * 0.85) / totalPictures;
 
           // Calculate the current image index based on scroll length
           const index = Math.min(
@@ -50,7 +50,7 @@ const Strapi = ({ blok }) => {
       className="relative w-full min-h-[400vh] bg-transparent hidden lg:block"
     >
       {/* Sticky image container */}
-      <div className="sticky top-[25vh] h-[50vh] w-1/2 flex justify-center items-center">
+      <div className="sticky inset-0 top-[30vh] h-[50vh] w-1/2 flex justify-center items-center">
         {blok.pictures &&
           blok.pictures.length > 0 &&
           blok.pictures[currentIndex] && (
@@ -75,89 +75,79 @@ const Strapi = ({ blok }) => {
       {/* Scrolling content */}
       <div
         ref={contentRef}
-        className="relative flex flex-col gap-[110vh] z-10 text-offWhite p-40 pt-0 -mt-72"
+        className="relative flex flex-col gap-[110vh] z-10 text-offWhite p-32 pt-0 -mt-80 w-[90vw]"
       >
-        <div className="flex flex-col w-60">
-          <h3 className={`flex flex-grow flex-row items-end -ml-2`}>
-            <span className="text-6xl mr-2">&#9687;</span>
-            <span className="text-2xl mb-1">Configuration</span>
+        <div className="flex flex-col w-60 gap-8">
+          <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
+            <span className="text-6xl mr-4">&#9687;</span>
+            <span className="text-[32px]">Configuration</span>
           </h3>
-          <p>{blok.config_text}</p>
-          <div className="flex items-center text-base">
-            <p className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal`}>
+          <p className="w-96 ml-12">{blok.config_text}</p>
+          <div className="flex items-center text-base ml-12">
+            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
               See more
             </p>
-            <div
-              className={` text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
-            >
+            <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
               &rarr;
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-60 ml-auto mr-0">
-          <h3 className={`flex flex-grow flex-row items-end -ml-2`}>
-            <span className="text-6xl mr-2">&#9687;</span>
-            <span className="text-2xl mb-1">Configuration</span>
+        <div className="flex flex-col w-60 ml-auto mr-0 gap-8">
+          <h3 className="flex flex-grow flex-row items-end -ml-2 text-limeGreen">
+            <span className="text-6xl mr-4">&#9687;</span>
+            <span className="text-[32px]">Optimalization</span>
           </h3>
-          <p>{blok.config_text}</p>
-          <div className="flex items-center text-base">
-            <p className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal`}>
+          <p className="w-96 ml-12">{blok.optimalization_text}</p>
+          <div className="flex items-center text-base ml-12">
+            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-limeGreen">
               See more
             </p>
-            <div
-              className={` text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
-            >
+            <div className="bg-limeGreen text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
               &rarr;
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-60">
-          <h3 className={`flex flex-grow flex-row items-end -ml-2`}>
-            <span className="text-6xl mr-2">&#9687;</span>
-            <span className="text-2xl mb-1">Configuration</span>
+        <div className="flex flex-col w-60 gap-8">
+          <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
+            <span className="text-6xl mr-4">&#9687;</span>
+            <span className="text-[32px]">Visualization</span>
           </h3>
-          <p>{blok.config_text}</p>
-          <div className="flex items-center text-base">
-            <p className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal`}>
+          <p className="w-96 ml-12">{blok.visualization_text}</p>
+          <div className="flex items-center text-base ml-12">
+            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
               See more
             </p>
-            <div
-              className={` text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
-            >
+            <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
               &rarr;
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-60 ml-auto mr-0">
-          <h3 className={`flex flex-grow flex-row items-end -ml-2`}>
-            <span className="text-6xl mr-2">&#9687;</span>
-            <span className="text-2xl mb-1">Configuration</span>
+        <div className="flex flex-col w-60 ml-auto mr-0 gap-8">
+          <h3 className="flex flex-grow flex-row items-end -ml-2 text-limeGreen">
+            <span className="text-6xl mr-4">&#9687;</span>
+            <span className="text-[32px]">Analysis</span>
           </h3>
-          <p>{blok.config_text}</p>
-          <div className="flex items-center text-base">
-            <p className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal`}>
+          <p className="w-96 ml-12">{blok.analysis_text}</p>
+          <div className="flex items-center text-base ml-12">
+            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-limeGreen">
               See more
             </p>
-            <div
-              className={` text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
-            >
+            <div className="bg-limeGreen text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
               &rarr;
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-60">
-          <h3 className={`flex flex-grow flex-row items-end -ml-2`}>
-            <span className="text-6xl mr-2">&#9687;</span>
-            <span className="text-2xl mb-1">Configuration</span>
+        <div className="flex flex-col w-60 gap-8">
+          <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
+            <span className="text-6xl mr-4">&#9687;</span>
+            <span className="text-[32px]">Training</span>
           </h3>
-          <p>{blok.config_text}</p>
-          <div className="flex items-center text-base">
-            <p className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal`}>
+          <p className="w-96 ml-12">{blok.training_text}</p>
+          <div className="flex items-center text-base ml-12">
+            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
               See more
             </p>
-            <div
-              className={` text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
-            >
+            <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
               &rarr;
             </div>
           </div>
