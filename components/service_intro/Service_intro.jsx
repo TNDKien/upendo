@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
 
-const Home_service_intro = ({ blok }) => {
+const Service_intro = ({ blok }) => {
   return (
     <div
       className="flex flex-col gap-36 pt-32 lg:p-32 lg:pb-0"
       {...storyblokEditable(blok)}
     >
       <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="flex flex-col p-6 gap-1 lg:justify-center">
+        <div className="flex flex-col p-6 gap-1 lg:justify-center lg:p-6">
           <h2 className="text-2xl text-offWhite w-72 lg:text-2xl">
             {blok.service_text}
           </h2>
@@ -26,11 +26,11 @@ const Home_service_intro = ({ blok }) => {
         />
       </div>
 
-      <span className="flex mr-auto p-6 pb-0 text-pink text-xs font-mono lg:text-xl">
+      <span className="flex mr-auto p-6 pb-0 text-pink text-xs font-mono lg:text-xl lg:p-0">
         {blok.alt_text}
       </span>
     </div>
   );
 };
 
-export default Home_service_intro;
+export default Service_intro;

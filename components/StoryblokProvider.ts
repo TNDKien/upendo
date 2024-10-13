@@ -9,8 +9,8 @@ import Page from "./page.component";
 import Navbar from "./navbar/Navbar";
 import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/Servicebody";
-import Home_service_intro from "./home_content/Home_service_intro";
-import Home_servicecard from "./home_content/Home_servicecard";
+import Service_intro from "./service_intro/Service_intro";
+import Servicecard from "./servicecard/Servicecard";
 import Pricing_intro from "./pricing/Pricing_intro";
 import Pricing_cards from "./pricing/Pricing_cards";
 import Pricing_services from "./pricing/Pricing_services";
@@ -38,15 +38,16 @@ import Service_plans_text from "./service/Service_plans_text";
 import Aboutusintro from "./aboutus/aboutusintro";
 import aboutusbodytexteen from "./aboutus/aboutusbody";
 import Visualtweelogo from "./aboutus/visualtweelogo";
-import Toolskop from './aboutus/toolskop';
-import Ourtoolsfoto from './aboutus/Ourtoolsfoto';
-import Howweserve from './aboutus/Howweserve';
-import Efficientkop from './aboutus/efficientkop';
-import Logokopefficient from './aboutus/Logokopefficient';
+import Toolskop from "./aboutus/toolskop";
+import Ourtoolsfoto from "./aboutus/Ourtoolsfoto";
+import Howweserve from "./aboutus/Howweserve";
+import Efficientkop from "./aboutus/efficientkop";
+import Logokopefficient from "./aboutus/Logokopefficient";
 import Value from "./aboutus/Value";
 import CompoKop from "./aboutus/CompoKop";
-import Collaboratebutton from "./aboutus/Collaboratebutton"
-import Learnmore from "./aboutus/Learnmore"
+import Collaboratebutton from "./aboutus/Collaboratebutton";
+import Learnmore from "./aboutus/Learnmore";
+
 const components = {
   page: Page,
   navbar: Navbar,
@@ -55,8 +56,8 @@ const components = {
   servicebody: Servicebody,
   contact_intro: Contact_intro,
   contact_form: Contact_form,
-  home_service_intro: Home_service_intro,
-  home_servicecard: Home_servicecard,
+  service_intro: Service_intro,
+  servicecard: Servicecard,
   pricing_intro: Pricing_intro,
   pricing_cards: Pricing_cards,
   pricing_services: Pricing_services,
@@ -78,13 +79,13 @@ const components = {
   service_plans_text: Service_plans_text,
   aboutusintro: Aboutusintro,
   aboutusbody: aboutusbodytexteen,
-  visualtweelogo: Visualtweelogo, 
+  visualtweelogo: Visualtweelogo,
   toolskop: Toolskop,
   ourtoolsfoto: Ourtoolsfoto,
   howweserve: Howweserve,
   efficientkop: Efficientkop,
   logokopefficient: Logokopefficient,
-  value: Value, 
+  value: Value,
   compokop: CompoKop,
   collaboratebutton: Collaboratebutton,
   learnmore: Learnmore,

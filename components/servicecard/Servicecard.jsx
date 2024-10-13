@@ -3,7 +3,7 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Home_servicecard = ({ blok }) => {
+const Servicecard = ({ blok }) => {
   // library for onscroll entrance animations
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -57,4 +57,4 @@ const Home_servicecard = ({ blok }) => {
   );
 };
 
-export default Home_servicecard;
+export default Servicecard;
