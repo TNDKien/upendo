@@ -12,7 +12,7 @@ const Hero = ({ blok }) => {
       </div>
       <div className="flex flex-row mr-0 ml-auto p-6 lg:justify-between lg:p-32 lg:pt-0">
         <a
-          className="flex mt-10 py-2 px-6 w-auto bg-limeGreen rounded-3xl self-start whitespace-nowrap"
+          className="flex mt-10 py-2 px-6 w-auto bg-limeGreen rounded-full self-start whitespace-nowrap lg:py-4 lg:px-8 lg:text-xl"
           href=""
         >
           {blok.hero_cta}
