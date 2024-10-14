@@ -7,10 +7,10 @@ import {
 } from "@storyblok/react/rsc";
 import Page from "./page.component";
 import Navbar from "./navbar/Navbar";
-import Serviceintro from "./service/serviceintro";
-import Servicebody from "./service/Servicebody";
 import Service_intro from "./service_intro/Service_intro";
 import Servicecard from "./servicecard/Servicecard";
+import Home_service_intro from "./home_content/Home_service_intro";
+import Home_servicecard from "./home_content/Home_servicecard";
 import Pricing_intro from "./pricing/Pricing_intro";
 import Pricing_cards from "./pricing/Pricing_cards";
 import Pricing_services from "./pricing/Pricing_services";
@@ -23,17 +23,8 @@ import Contact_form from "./contact/Contact_form";
 import Hero from "./hero/Hero";
 import Trainingcard from "./training/Trainingcard";
 import Strapi from "./strapi/Strapi";
-import Servicebody2 from "./service/Servicebody2";
-import Servicebody3 from "./service/Servicebody3";
-import servicebody from "./service/Servicebody";
-import servicepackage from "./service/servicepackage";
-import Servicepricing from "./service/Servicepricing";
-import Servicepricing_basic from "./service/Servicepricing_basic";
-import Servicepricing_advanced from "./service/Servicepricing_advanced";
-import Servicepricing_premium from "./service/Servicepricing_premium";
-import Serviceoptimalisation_footer from "./service/Serviceoptimalisation_footer";
-import Service_plans from "./service/Service_plans";
-import Service_plans_text from "./service/Service_plans_text";
+import Service_plans from "./servicepricing/Service_plans";
+import Service_plans_text from "./servicepricing/Service_plans_text";
 
 import Aboutusintro from "./aboutus/aboutusintro";
 import aboutusbodytexteen from "./aboutus/aboutusbody";
@@ -47,6 +38,17 @@ import Value from "./aboutus/Value";
 import CompoKop from "./aboutus/CompoKop";
 import Collaboratebutton from "./aboutus/Collaboratebutton";
 import Learnmore from "./aboutus/Learnmore";
+import Serviceintro from "./serviceintro/Serviceintro";
+import Servicebody from "./servicebody/Servicebody";
+import Servicebody2 from "./servicebody2/servicebody2";
+import Servicebody3 from "./servicebody3/servicebody3";
+import servicebody from "./servicebody/Servicebody";
+import servicepackage from "./servicepackage/servicepackage";
+import Servicepricing from "./Servicepricing/Servicepricing";
+import Servicepricing_basic from "./Servicepricing/Servicepricing_basic";
+import Servicepricing_advanced from "./Servicepricing/Servicepricing_advanced";
+import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
+import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
 
 const components = {
   page: Page,
