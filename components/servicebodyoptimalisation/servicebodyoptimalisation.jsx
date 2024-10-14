@@ -1,6 +1,6 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
-import "./servicebody3.css";
+import "./servicebodyoptimalisation.css";
 
 const servicebodyoptimalisation = ({ blok }) => (
     <div {...storyblokEditable(blok)}>
