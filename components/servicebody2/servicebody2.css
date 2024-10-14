@@ -4,13 +4,11 @@
     font-size: 16px;
     font-style: normal;
     line-height: 1.5rem;
-    width: 21rem;
     margin-top: 6.25rem;
     margin-left: 1.5rem;
 }
 
 .servicebodyconfgititeltekst {
-    width: 20.938rem;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -18,6 +16,7 @@
     line-height: 1.5rem;
     margin-top: 1.688rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .servicebodybuttondesign {
@@ -38,4 +37,22 @@
     font-weight: 700;
     color: #003A47;
     font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .service_blok {
+        margin-left: 120px;
+        margin-right: 100px;
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        align-content: center;
+    }
+
+    .service_info {
+        width: 30%;
+    }
 }

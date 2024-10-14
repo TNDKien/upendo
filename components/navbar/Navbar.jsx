@@ -86,8 +86,8 @@ const Header = ({ blok }) => {
                     </p>
                   </a>
 
-                  <a href="/analytics" className="dropdown-item">
-                    Analytics
+                  <a href="/analysis" className="dropdown-item">
+                    Analysis
                     <img
                       className="dropdown-image"
                       src={blok.analysis_image.filename}
@@ -97,9 +97,6 @@ const Header = ({ blok }) => {
                       We dig into your data to find trends, fix problems, and
                       provide insights you can use.
                     </p>
-                    <a href="/analysis" className="dropdown-item">
-                      Analysis
-                    </a>
                   </a>
                 </div>
               )}

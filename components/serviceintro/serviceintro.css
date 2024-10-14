@@ -5,20 +5,21 @@
     display: flex;
     flex-direction: column;
     color: #F4C5FE;
-    margin-top: 118px;
+    margin-top: 36px;
     font-size: 0.75rem;
     margin-bottom: 3rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .headertekst {
-    width: 18rem;
-    height: 10.75rem;
+    min-width: 18rem;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: normal;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .headertekstbold {
@@ -33,11 +34,12 @@
     font-family: "area-normal", sans-serif;
     font-weight: 500;
     color: white;
-    width: 21rem;
-    height: 3.75rem;
+    min-width: 21rem;
+    min-height: 3.75rem;
     margin-top: 4.5rem;
     margin-left: 1.5rem;
     margin-bottom: 100px;
+    margin-right: 1.5rem;
 }
 
 .servicebuttondesign {
@@ -62,7 +64,47 @@
 
 .servicephoto {
     margin-top: 4.75rem;
-    height: 13.438rem;
-    width: 21rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 90%;
+}
+
+@media (min-width: 1200px) {
+
+    .headertekst {
+        max-width: 1000px;
+        font-weight: 500;
+        font-size: 64px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .serviceheadertekst {
+        font-weight: 500;
+        color: white;
+        margin-top: 72px;
+        margin-left: 120px;
+        max-width: 500px;
+    }
+
+    .servicebuttondesign {
+        margin-left: 120px;
+    }
+
+    .servicesubtext {
+        margin-left: 120px;
+    }
+
+    .servicephoto {
+        margin-left: 120px;
+        margin-top: -100px;
+        width: 45%;
+    }
+
+    .serviceblok {
+        display: flex;
+        flex-direction: row;
+        margin-right: 120px;
+        justify-content: space-between;
+    }
 }
