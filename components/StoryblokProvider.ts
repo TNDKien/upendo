@@ -25,7 +25,7 @@ import Trainingcard from "./training/Trainingcard";
 import Strapi from "./strapi/Strapi";
 import Service_plans from "./servicepricing/Service_plans";
 import Service_plans_text from "./servicepricing/Service_plans_text";
-
+import service_dashboard_button from "./service_dashboard_button/Service_dashboard_button";
 import Aboutusintro from "./aboutus/aboutusintro";
 import aboutusbodytexteen from "./aboutus/aboutusbody";
 import Visualtweelogo from "./aboutus/visualtweelogo";
@@ -77,6 +77,7 @@ const components = {
   servicepricing_advanced: Servicepricing_advanced,
   servicepricing_premium: Servicepricing_premium,
   Serviceoptimalisation_footer: Serviceoptimalisation_footer,
+  service_dashboard_button: service_dashboard_button,
   service_plans: Service_plans,
   service_plans_text: Service_plans_text,
   aboutusintro: Aboutusintro,
