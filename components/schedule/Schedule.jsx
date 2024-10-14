@@ -1,5 +1,6 @@
 import React from "react";
 import { render } from "storyblok-rich-text-react-renderer";
+import "./Schedule.css";
 
 const Schedule = ({ blok }) => (
   <div className="Schedule">

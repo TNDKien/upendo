@@ -1,0 +1,35 @@
+.schedule_section {
+  background-color: var(--DarkTeal);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.schedule_appointment {
+  display: flex;
+  justify-content: center;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 34px;
+}
+
+.schedule_time {
+  display: flex;
+  justify-content: center;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.schedule_timebutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: var(--LightLime);
+  border-radius: 30px;
+  width: 134px;
+  height: 30px;
+}

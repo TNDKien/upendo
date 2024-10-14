@@ -1,5 +1,5 @@
 import { render } from "storyblok-rich-text-react-renderer";
-import "./Intro_schedule.css";
+import "./intro_schedule.css";
 
 const Intro_schedule = ({ blok }) => (
   <div className="Intro_schedule">
@@ -12,11 +12,6 @@ const Intro_schedule = ({ blok }) => (
       {/* Render de training title*/}
       {blok.schedule_text && (
         <div className="schedule_text">{render(blok.schedule_text)}</div>
-      )}
-
-      {/* Render de Schedule appointment*/}
-      {blok.schedule_appointment && (
-        <div className="schedule_appointment"> {render(blok.schedule_appointment)}</div>
       )}
     </div>
   </div>
