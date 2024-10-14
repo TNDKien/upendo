@@ -8,12 +8,12 @@ const Service_intro = ({ blok }) => {
       {...storyblokEditable(blok)}
     >
       <div className="flex flex-col lg:flex-row lg:justify-between">
-        <div className="flex flex-col p-6 gap-1 lg:justify-center lg:p-6">
+        <div className="flex flex-col p-6 gap-10 lg:justify-center lg:p-6">
           <h2 className="text-2xl text-offWhite w-72 lg:text-2xl">
             {blok.service_text}
           </h2>
           <a
-            className="flex mt-10 py-2 px-6 w-auto bg-darkTeal text-pink rounded-3xl self-start whitespace-nowrap"
+            className="flex py-2 px-6 w-auto bg-darkTeal text-pink rounded-full self-start lg:bg-limeGreen lg:text-darkTeal"
             href=""
           >
             See all our services

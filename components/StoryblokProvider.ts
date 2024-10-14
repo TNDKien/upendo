@@ -9,7 +9,7 @@ import Page from "./page.component";
 import Navbar from "./navbar/Navbar";
 import Serviceintro from "./service/serviceintro";
 import Servicebody from "./service/Servicebody";
-import Service_intro from "./service_intro/Service_intro";
+import Intro from "./intro/Intro";
 import Servicecard from "./servicecard/Servicecard";
 import Pricing_intro from "./pricing/Pricing_intro";
 import Pricing_cards from "./pricing/Pricing_cards";
@@ -56,7 +56,7 @@ const components = {
   servicebody: Servicebody,
   contact_intro: Contact_intro,
   contact_form: Contact_form,
-  service_intro: Service_intro,
+  intro: Intro,
   servicecard: Servicecard,
   pricing_intro: Pricing_intro,
   pricing_cards: Pricing_cards,
