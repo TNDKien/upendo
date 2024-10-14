@@ -76,17 +76,18 @@
 .colortext {
   color: var(--OffWhite);
   margin-left: 5%;
-  font-family: Inter;
-  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+  padding-bottom: 15px;
 }
 
 .koptext {
   margin-left: 5%;
   color: var(--Lime-Green, #a8ff1a);
-  font-family: "Martian Mono";
+  font-family: "Martian Mono", monospace;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -106,8 +107,8 @@
   align-items: flex-start; /* Zorg ervoor dat ze links uitgelijnd zijn */
   color: white;
   width: 282px;
-  height: 238px;
   justify-content: flex-start;
+  margin-bottom: 16px;
 }
 
 .Kadertext {
@@ -139,6 +140,10 @@
 }
 
 .buttoncb {
-  margin-top: 30px;
   margin-left: 150px;
+  margin-top: -112px;
+}
+
+.container {
+  padding-left: 2%;
 }

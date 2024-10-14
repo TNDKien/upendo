@@ -37,16 +37,16 @@ import Service_plans_text from "./service/Service_plans_text";
 
 import Aboutusintro from "./aboutus/aboutusintro";
 import aboutusbodytexteen from "./aboutus/aboutusbody";
-import Visualtweelogo from "./aboutus/visualtweelogo";
-import Toolskop from "./aboutus/toolskop";
-import Ourtoolsfoto from "./aboutus/Ourtoolsfoto";
-import Howweserve from "./aboutus/Howweserve";
-import Efficientkop from "./aboutus/efficientkop";
-import Logokopefficient from "./aboutus/Logokopefficient";
-import Value from "./aboutus/Value";
-import CompoKop from "./aboutus/CompoKop";
-import Collaboratebutton from "./aboutus/Collaboratebutton";
-import Learnmore from "./aboutus/Learnmore";
+import Visualtweelogo from "./visualtweelogo/visualtweelogo";
+import Toolskop from "./toolskop/toolskop";
+import Ourtoolsfoto from "./ourtoolsfoto/Ourtoolsfoto";
+import Howweserve from "./howweserve/Howweserve";
+import Efficientkop from "./efficientkop/efficientkop";
+import Logokopefficient from "./logokopefficient/Logokopefficient";
+import Value from "./value/Value";
+import CompoKop from "./compokop/CompoKop";
+import Collaboratebutton from "./Collabarate/Collaboratebutton";
+import Learnmore from "./learnmore/Learnmore";
 
 const components = {
   page: Page,
