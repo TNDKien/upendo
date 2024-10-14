@@ -8,8 +8,8 @@ import {
 import Page from "./page.component";
 import Feature from "./feature/Feature";
 import Navbar from "./navbar/Navbar";
-import Serviceintro from "./service/serviceintro";
-import Servicebody from "./service/Servicebody";
+import Serviceintro from "./serviceintro/serviceintro";
+import Servicebody from "./servicebody/Servicebody";
 import Home_service_intro from "./home_content/Home_service_intro";
 import Home_servicecard from "./home_content/Home_servicecard";
 import Pricing_intro from "./pricing/Pricing_intro";
@@ -24,15 +24,15 @@ import Contact_form from "./contact/Contact_form";
 import Hero from "./hero/Hero";
 import Trainingcard from "./training/Trainingcard";
 import Strapi from "./strapi/Strapi";
-import Servicebody2 from "./service/Servicebody2";
-import Servicebody3 from "./service/Servicebody3";
-import servicebody from "./service/Servicebody";
-import servicepackage from "./service/servicepackage";
-import Servicepricing from "./service/Servicepricing";
-import Servicepricing_basic from "./service/Servicepricing_basic";
-import Servicepricing_advanced from "./service/Servicepricing_advanced";
-import Servicepricing_premium from "./service/Servicepricing_premium";
-import Serviceoptimalisation_footer from "./service/Serviceoptimalisation_footer";
+import Servicebody2 from "./servicebody2/servicebody2";
+import Servicebody3 from "./servicebody3/servicebody3";
+import servicebody from "./servicebody/Servicebody";
+import servicepackage from "./servicepackage/servicepackage";
+import Servicepricing from "./Servicepricing/Servicepricing";
+import Servicepricing_basic from "./Servicepricing/Servicepricing_basic";
+import Servicepricing_advanced from "./Servicepricing/Servicepricing_advanced";
+import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
+import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
 
 const components = {
   page: Page,
