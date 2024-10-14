@@ -33,3 +33,32 @@
     margin-bottom: 4rem;
     margin-left: 1.5rem;
 }
+
+@media (min-width: 1200px) {
+    .servicebodytekst1 {
+        margin-left: 120px;
+    }
+
+    .servicebodytekst1 {
+        margin-left: 120px;
+    }
+
+    .servicebodytitel {
+        margin-left: 120px;
+    }
+
+    .servicecontainer {
+        display: flex;
+        flex-direction: row;
+        margin-right: 120px;
+        align-items: baseline;
+        gap: 150px;
+    }
+
+    .servicebodytitel {
+        font-size: 36px;
+        line-height: 44px;
+        max-width: 500px;
+    }
+
+}

@@ -63,8 +63,9 @@
 
 .servicephoto {
     margin-top: 4.75rem;
-    width: 490px;
-    margin-left: 120px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 90%;
 }
 
 @media (min-width: 1200px) {
@@ -91,5 +92,18 @@
 
     .servicesubtext {
         margin-left: 120px;
+    }
+
+    .servicephoto {
+        margin-left: 120px;
+        margin-top: -100px;
+        width: 45%;
+    }
+
+    .serviceblok {
+        display: flex;
+        flex-direction: row;
+        margin-right: 120px;
+        justify-content: space-between;
     }
 }
