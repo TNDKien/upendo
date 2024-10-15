@@ -10,7 +10,7 @@ const Hero = ({ blok }) => {
         </h1>
         <p className="text-pink lg:max-w-md">{blok.hero_text}</p>
       </div>
-      <div className="flex flex-row mr-0 ml-auto p-6 lg:justify-between lg:p-32 lg:pt-0">
+      <div className="flex flex-row mr-0 ml-auto pl-6 pb-12 lg:justify-between lg:p-32 lg:pt-0">
         <a
           className="flex mt-10 py-2 px-6 w-auto bg-limeGreen rounded-full self-start whitespace-nowrap lg:py-4 lg:px-8 lg:text-xl"
           href=""
@@ -18,7 +18,7 @@ const Hero = ({ blok }) => {
           {blok.hero_cta}
         </a>
         <img
-          className="mr-auto h-[55vh] ml-0 lg:mr-0 lg:ml-auto"
+          className="ml-auto h-[50vh] mr-0 lg:mr-0 lg:ml-auto lg:h-[55vh]"
           src={blok.visuals.filename}
           alt={blok.visuals.alt || ""}
         />
