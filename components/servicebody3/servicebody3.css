@@ -14,9 +14,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    width: 20.625rem;
     margin-top: 4.5rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .servicebodyheadertekst2 {
@@ -25,9 +25,9 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    width: 15.5rem;
     margin-left: 1.5rem;
     margin-top: 4.5rem;
+    margin-right: 1.5rem;
 }
 
 .servicebodyheadertekst3 {
@@ -36,9 +36,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    width: 20.625rem;
     margin-top: 4.5rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .servicepricing_title {
@@ -60,5 +60,19 @@
     .servicebodyheadertekst {
         margin-left: 120px;
         font-size: 24px;
+        max-width: 790px;
+
+    }
+
+    .servicebodyheadertekst2 {
+        margin-left: 120px;
+        font-size: 24px;
+        max-width: 790px;
+    }
+
+    .servicebodyheadertekst3 {
+        margin-left: 120px;
+        font-size: 24px;
+        max-width: 790px;
     }
 }

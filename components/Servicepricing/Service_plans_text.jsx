@@ -6,8 +6,10 @@ import "./Service_plans_text.css";
 
 const service_plans_text = ({ blok }) => (
   <div {...storyblokEditable(blok)}>
-    <div className="servicetext">{render(blok.service_text)}</div>
-    <div className="servicelink">{render(blok.service_link)}</div>
+    <div className="text_service_blok">
+      <div className="servicetext">{render(blok.service_text)}</div>
+      <div className="servicelink">{render(blok.service_link)}</div>
+    </div>
   </div>
 );
 

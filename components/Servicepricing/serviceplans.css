@@ -37,12 +37,33 @@
 
 .plans_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* Verandert de layout naar een rij-indeling */
+    justify-content: space-between;
+    /* Optioneel: om ruimte tussen de items te creëren */
+}
+
+.plans_container>div {
+    flex: 1;
+    /* Zorgt ervoor dat elke component evenveel ruimte krijgt */
+    margin-right: 20px;
+    /* Optioneel: afstand tussen de componenten */
+}
+
+.plans_container>div:last-child {
+    margin-right: 0;
+    /* Zorgt ervoor dat de laatste component geen margin heeft aan de rechterkant */
 }
 
 @media (min-width: 1200px) {
     .plans_container {
-        margin-left: 120px;
-        display: flex;
+        .plans_container {
+            margin-left: 120px;
+            display: flex;
+            flex-direction: row;
+            /* Handhaaf rij-indeling ook voor grotere schermen */
+            max-width: none;
+            /* Verwijder de beperking van max-width voor grotere schermen */
+        }
     }
 }

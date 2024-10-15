@@ -19,3 +19,10 @@
     font-weight: 700;
     line-height: normal;
 }
+
+@media (min-width: 1200px) {
+    .dashboard_button_design {
+        display: flex;
+    }
+
+}
