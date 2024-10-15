@@ -40,7 +40,7 @@ const Header = ({ blok }) => {
                 className="dropdown-button nav-link"
                 onClick={toggleServices}
               >
-                <span className="nav-link btnservice">
+                <span className=" btnservice">
                   <div>Services</div>
                   <div className="plusmin">{servicesOpen ? "-" : "+"}</div>
                 </span>{" "}
