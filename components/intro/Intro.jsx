@@ -4,12 +4,12 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 const Service_intro = ({ blok }) => {
   return (
     <div
-      className="flex flex-col gap-36 pt-32 lg:p-32 lg:pb-0"
+      className="flex flex-col gap-36 pt-32 lg:pb-0"
       {...storyblokEditable(blok)}
     >
-      <div className="flex flex-col lg:flex-row lg:justify-between">
+      <div className="flex flex-col bg-lightLime lg:flex-row lg:justify-between lg:p-32">
         <div className="flex flex-col p-6 gap-10 lg:justify-center lg:p-6">
-          <h2 className="text-2xl text-offWhite w-72 lg:text-2xl">
+          <h2 className="text-2xl text-darkGreen w-72 lg:text-2xl">
             {blok.service_text}
           </h2>
           <a
@@ -26,7 +26,7 @@ const Service_intro = ({ blok }) => {
         />
       </div>
 
-      <span className="flex mr-auto p-6 pb-0 text-pink text-xs font-mono lg:text-xl lg:p-0">
+      <span className="flex mr-auto p-6 pb-0 text-pink text-xs font-mono lg:text-xl lg:px-32">
         {blok.alt_text}
       </span>
     </div>
