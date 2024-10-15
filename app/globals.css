@@ -19,7 +19,7 @@
 ////// AREA NORMAL
   font-family: "area-normal", sans-serif;
   font-weight: 700;
- 
+  
   ////// MARTIAN MONO MEDIUM
 font-family: "Martian Mono", monospace;
 font-weight: 500;
@@ -179,6 +179,7 @@ h1 {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -188,6 +189,7 @@ h1 {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(100%);
   }
@@ -197,6 +199,7 @@ h1 {
   .header-content {
     width: 95vw;
   }
+
   .logo {
     height: 28px;
     width: 142px;
@@ -305,6 +308,7 @@ h1 {
     left: 0;
     width: 100%;
   }
+
   .dropdown-button {
     display: flex;
     background-color: transparent;

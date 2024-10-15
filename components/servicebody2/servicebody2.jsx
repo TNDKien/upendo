@@ -54,8 +54,12 @@ const Servicebody2 = ({ blok }) => (
         </div>
       </div>
     </div>
-    <div className="servicebodybuttondesign">
-      <div className="servicebodybutton">{render(blok.servicebodybutton)}</div>
+    <div className="buttonservice">
+      <div className="servicebodybuttondesign">
+        <div className="servicebodybutton">
+          {render(blok.servicebodybutton)}
+        </div>
+      </div>
     </div>
   </div>
 );

@@ -23,12 +23,9 @@
     width: 10.063rem;
     height: 2.75rem;
     background-color: #A8FF1A;
-    margin-top: 4.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 2.5rem;
 }
+
 
 .servicebodybutton {
     font-size: 1rem;
@@ -42,20 +39,21 @@
     .service_blok {
         margin-left: 100px;
         margin-right: 100px;
-        width: 1200px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
         align-items: baseline;
         align-content: center;
-    }
-
-    .service_info {
-        width: 30%;
+        column-gap: 150px;
     }
 
     .servicebodybuttondesign {
-        margin-left: 120px;
+        margin-left: 1200px;
     }
+
+    .service_info {
+        max-width: 305px;
+    }
+
+
 }
