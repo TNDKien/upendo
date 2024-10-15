@@ -1,46 +1,33 @@
 import { useState, useEffect, useRef } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
 
-/// Strapi component, useRef connects the container and content divs to the scroll event listener
 const Strapi = ({ blok }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
   const contentRef = useRef(null);
+  const rowRefs = useRef([]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (containerRef.current && contentRef.current) {
-        // get the index of the current image array
-        const containerTop = containerRef.current.getBoundingClientRect().top;
-        const totalPictures = blok.pictures?.length || 0;
+    // Create an IntersectionObserver to track when each flex-row div enters the viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = rowRefs.current.indexOf(entry.target);
+            if (index !== -1 && index !== currentIndex) {
+              setCurrentIndex(index);
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
 
-        // calculates the scroll length per image
-        const contentHeight = contentRef.current.scrollHeight;
-        const scrollLengthPerImage = contentHeight / totalPictures;
-
-        // get the index of the current image
-        const index = Math.min(
-          Math.floor(Math.abs(containerTop) / scrollLengthPerImage),
-          totalPictures - 1
-        );
-
-        // set new index if it's different from the current index
-        if (index !== currentIndex) {
-          setCurrentIndex(index);
-        }
-      }
-    };
-
-    const optimizedHandleScroll = () => {
-      requestAnimationFrame(handleScroll);
-    };
-
-    window.addEventListener("scroll", optimizedHandleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", optimizedHandleScroll);
-    };
-  }, [blok.pictures, currentIndex]);
+    // Observe each flex-row div
+    rowRefs.current.forEach((row) => {
+      if (row) observer.observe(row);
+    });
+  }, [currentIndex, blok.pictures]);
 
   return (
     <div
@@ -59,7 +46,6 @@ const Strapi = ({ blok }) => {
               alt={
                 blok.pictures[currentIndex].alt || `Picture ${currentIndex + 1}`
               }
-              //style, because tailwind doesn't have inbuilt support for 3D transforms like rotateX and rotateY
               style={{
                 transform:
                   currentIndex % 2 === 0
@@ -77,7 +63,10 @@ const Strapi = ({ blok }) => {
         ref={contentRef}
         className="relative flex flex-col gap-[110vh] z-0 text-offWhite p-32 pt-0 -mt-80 w-[100vw]"
       >
-        <div className="flex flex-row">
+        <div
+          className="flex flex-row mb-32"
+          ref={(el) => (rowRefs.current[0] = el)} // Assign ref to the first row
+        >
           <div className="flex flex-col gap-8">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
               <span className="text-6xl mr-4">&#9687;</span>
@@ -99,7 +88,11 @@ const Strapi = ({ blok }) => {
             alt={blok.visual.alt}
           />
         </div>
-        <div className="flex flex-row">
+
+        <div
+          className="flex flex-row my-40"
+          ref={(el) => (rowRefs.current[1] = el)} // Assign ref to the second row
+        >
           <img
             className="w-1/2 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28"
             src={blok.visual.filename}
@@ -121,7 +114,11 @@ const Strapi = ({ blok }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row">
+
+        <div
+          className="flex flex-row my-40"
+          ref={(el) => (rowRefs.current[2] = el)} // Assign ref to the third row
+        >
           <div className="flex flex-col gap-8">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
               <span className="text-6xl mr-4">&#9687;</span>
@@ -143,7 +140,11 @@ const Strapi = ({ blok }) => {
             alt={blok.visual.alt}
           />
         </div>
-        <div className="flex flex-row">
+
+        <div
+          className="flex flex-row my-40"
+          ref={(el) => (rowRefs.current[3] = el)} // Assign ref to the fourth row
+        >
           <img
             className="w-1/2 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28"
             src={blok.visual.filename}
@@ -166,7 +167,10 @@ const Strapi = ({ blok }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div
+          className="flex flex-col gap-8"
+          ref={(el) => (rowRefs.current[4] = el)} // Assign ref to the fifth row
+        >
           <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
             <span className="text-6xl mr-4">&#9687;</span>
             <span className="text-[32px]">Training</span>
@@ -180,6 +184,11 @@ const Strapi = ({ blok }) => {
               &rarr;
             </div>
           </div>
+          <img
+            className="w-1/2 ml-auto -mr-32 self-end -mb-28"
+            src={blok.visual.filename}
+            alt={blok.visual.alt}
+          />
         </div>
       </div>
     </div>
