@@ -61,7 +61,7 @@ const Strapi = ({ blok }) => {
       {/* Scrolling content */}
       <div
         ref={contentRef}
-        className="relative flex flex-col gap-[110vh] z-0 text-offWhite p-32 pt-0 -mt-80 w-[100vw]"
+        className="relative flex flex-col gap-72 z-0 text-offWhite p-32 pt-0 -mt-80 w-[100vw]"
       >
         <div
           className="flex flex-row mb-32"
@@ -90,7 +90,7 @@ const Strapi = ({ blok }) => {
         </div>
 
         <div
-          className="flex flex-row my-40"
+          className="flex flex-row my-96"
           ref={(el) => (rowRefs.current[1] = el)} // Assign ref to the second row
         >
           <img
@@ -116,7 +116,7 @@ const Strapi = ({ blok }) => {
         </div>
 
         <div
-          className="flex flex-row my-40"
+          className="flex flex-row my-96"
           ref={(el) => (rowRefs.current[2] = el)} // Assign ref to the third row
         >
           <div className="flex flex-col gap-8">
@@ -142,7 +142,7 @@ const Strapi = ({ blok }) => {
         </div>
 
         <div
-          className="flex flex-row my-40"
+          className="flex flex-row my-96"
           ref={(el) => (rowRefs.current[3] = el)} // Assign ref to the fourth row
         >
           <img
@@ -168,7 +168,7 @@ const Strapi = ({ blok }) => {
         </div>
 
         <div
-          className="flex flex-col gap-8"
+          className="flex flex-col gap-8 mt-96"
           ref={(el) => (rowRefs.current[4] = el)} // Assign ref to the fifth row
         >
           <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
