@@ -31,16 +31,20 @@
     line-height: 1.5rem;
     margin-top: 3.375rem;
     margin-bottom: 4rem;
+    margin-right: 1.5rem;
     margin-left: 1.5rem;
 }
+
 
 @media (min-width: 1200px) {
     .servicebodytekst1 {
         margin-left: 120px;
+        width: 40%;
     }
 
-    .servicebodytekst1 {
-        margin-left: 120px;
+    .servicebodytekst2 {
+        margin-left: 20px;
+        width: 40%;
     }
 
     .servicebodytitel {
@@ -52,7 +56,7 @@
         flex-direction: row;
         margin-right: 120px;
         align-items: baseline;
-        gap: 150px;
+        gap: 130px;
     }
 
     .servicebodytitel {
