@@ -4,9 +4,7 @@ import "./Page_name.css";
 const Page_name = ({ blok }) => (
   <div className="">
     {/* Render de Training Header */}
-    {blok.title && (
-      <div className="title">{render(blok.title)}</div>
-    )}
+    {blok.title && <div className="title">{render(blok.title)}</div>}
   </div>
 );
 
