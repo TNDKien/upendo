@@ -5,7 +5,7 @@ const Hero = ({ blok }) => {
   return (
     <div className="mt-32">
       <div className="flex flex-col p-6 gap-14 lg:p-32 lg:pb-0">
-        <h1 className="text-4xl text-offWhite lg:text[64px]">
+        <h1 className="text-4xl text-offWhite lg:text-[64px]">
           Data made Simple
         </h1>
         <p className="text-pink lg:max-w-md">{blok.hero_text}</p>
