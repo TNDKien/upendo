@@ -5,9 +5,10 @@
     font-size: 1.25rem;
     font-style: normal;
     line-height: 1.5rem;
-    width: 21rem;
+    min-width: 21rem;
     margin-top: 6.25rem;
     margin-left: 1.5rem;
+    margin-right: 0.75rem;
 }
 
 .servicebodytekst1 {
@@ -30,5 +31,38 @@
     line-height: 1.5rem;
     margin-top: 3.375rem;
     margin-bottom: 4rem;
+    margin-right: 1.5rem;
     margin-left: 1.5rem;
+}
+
+
+@media (min-width: 1200px) {
+    .servicebodytekst1 {
+        margin-left: 120px;
+        width: 40%;
+    }
+
+    .servicebodytekst2 {
+        margin-left: 20px;
+        width: 40%;
+    }
+
+    .servicebodytitel {
+        margin-left: 120px;
+    }
+
+    .servicecontainer {
+        display: flex;
+        flex-direction: row;
+        margin-right: 120px;
+        align-items: baseline;
+        gap: 130px;
+    }
+
+    .servicebodytitel {
+        font-size: 36px;
+        line-height: 44px;
+        max-width: 500px;
+    }
+
 }
