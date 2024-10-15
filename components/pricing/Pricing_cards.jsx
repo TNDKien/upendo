@@ -1,4 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
+import Image from 'next/image';
+import linerLeft from "./linerLeft.png";
+import linerRight from "./linerRight.png";
 
 const pricing_cards = ({ blok }) => (
   <div className="pricing_cards" {...storyblokEditable(blok)}>
@@ -14,6 +17,13 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkOne">
         &gt;
       </a>
+      <div>
+        <Image
+          className="liner_left"
+          src={linerLeft}
+          alt="Liner Left Image"
+        />
+      </div>
     </div>
 
     <div className="cardMonthly">
@@ -28,6 +38,13 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkMonthly">
         &gt;
       </a>
+      <div>
+        <Image
+          className="liner_right"
+          src={linerRight}
+          alt="Liner right Image"
+        />
+      </div>
     </div>
 
     <div className="cardAnnual">
@@ -42,23 +59,14 @@ const pricing_cards = ({ blok }) => (
       <a href="/link-to-page-one" className="card_linkAnnual">
         &gt;
       </a>
+      <div>
+        <Image
+          className="liner_left"
+          src={linerLeft}
+          alt="Liner Left Image"
+        />
+      </div>
     </div>
-
-    <img
-        className="line_left"
-        src={blok.line_left?.filename}
-        alt={blok.line_left?.alt || "Left line Image"} 
-      />
-    <img
-        className="line_right"
-        src={blok.line_right?.filename}
-        alt={blok.line_right?.alt || "Right line Image"} 
-    />
-      <img
-        className="last_line"
-        src={blok.last_line?.filename}
-        alt={blok.last_line?.alt || "Last line Image"} 
-      />
   </div>
 );
 

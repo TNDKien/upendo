@@ -47,6 +47,11 @@ import Servicepricing_basic from "./Servicepricing/Servicepricing_basic";
 import Servicepricing_advanced from "./Servicepricing/Servicepricing_advanced";
 import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
+import Servicebody2 from "./service/servicebody2"
+import Servicebody3 from "./service/servicebody3"
+import servicebody from "./service/servicebody";
+import servicepackage from "./service/servicepackage";
+import Prices_intro from "./FAQ/Prices_intro";
 
 const components = {
   page: Page,
@@ -90,6 +95,7 @@ const components = {
   compokop: CompoKop,
   collaboratebutton: Collaboratebutton,
   learnmore: Learnmore,
+  prices_intro: Prices_intro,
 };
 
 storyblokInit({
