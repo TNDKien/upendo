@@ -6,23 +6,25 @@ const SeeMoreButton = ({ blok }) => {
   const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
 
   return (
-    <div className="flex items-center text-base" {...storyblokEditable(blok)}>
+    <div
+      className="relative flex items-center text-base overflow-hidden w-48 group"
+      {...storyblokEditable(blok)}
+    >
       {/* Button */}
       <p
-        className={`z-10 p-3 px-6 m-0 rounded-full bg-darkTeal ${textColorClass}`}
+        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-[36%]`}
       >
-        {blok.see_more && (
-          <a href={`/${blok.see_more.story.url}`} rel="noopener noreferrer">
-            {blok.see_more.name || "See More"}
-          </a>
-        )}
+        <a href={`/${blok.button_ref.story.url}`} rel="noopener noreferrer">
+          {blok.button_name}
+        </a>
       </p>
 
       {/* Right Arrow */}
       <div
-        className={`${bgColorClass} text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl`}
+        className={`${bgColorClass} flex items-center justify-between text-darkTeal px-3 py-1.5 w-full rounded-full text-3xl relative`}
       >
-        &rarr;
+        <span>&rarr;</span>
+        <span>&rarr;</span>
       </div>
     </div>
   );
