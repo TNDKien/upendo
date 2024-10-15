@@ -18,11 +18,12 @@ export default async function RootLayout({
     <StoryblokProvider>
       <html>
         <head>
-          <link rel="stylesheet" href="https://use.typekit.net/mle1bdx.css"></link>
+          <link
+            rel="stylesheet"
+            href="https://use.typekit.net/mle1bdx.css"
+          ></link>
         </head>
-        <body>
-          {children}
-        </body>
+        <body>{children}</body>
       </html>
     </StoryblokProvider>
   );
