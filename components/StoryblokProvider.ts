@@ -38,20 +38,13 @@ import Collaboratebutton from "./Collabarate/Collaboratebutton";
 import Learnmore from "./learnmore/Learnmore";
 import Serviceintro from "./serviceintro/Serviceintro";
 import Servicebody from "./servicebody/Servicebody";
-import Servicebody2 from "./servicebody2/servicebody2";
-import Servicebody3 from "./servicebody3/servicebody3";
-import servicebody from "./servicebody/Servicebody";
-import servicepackage from "./servicepackage/servicepackage";
 import Servicepricing from "./Servicepricing/Servicepricing";
 import Servicepricing_basic from "./Servicepricing/Servicepricing_basic";
 import Servicepricing_advanced from "./Servicepricing/Servicepricing_advanced";
 import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
-import Servicebody2 from "./service/servicebody2"
-import Servicebody3 from "./service/servicebody3"
-import servicebody from "./service/servicebody";
-import servicepackage from "./service/servicepackage";
 import Prices_intro from "./FAQ/Prices_intro";
+import Button from "./button/Button";
 
 const components = {
   page: Page,
@@ -96,6 +89,7 @@ const components = {
   collaboratebutton: Collaboratebutton,
   learnmore: Learnmore,
   prices_intro: Prices_intro,
+  button: Button,
 };
 
 storyblokInit({
