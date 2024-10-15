@@ -24,3 +24,9 @@
   margin-top: 65px;
   margin-bottom: 40px;
 }
+
+@media (min-width: 1200px) {
+  .schedule_title {
+    font-size: 64px; 
+  }
+}

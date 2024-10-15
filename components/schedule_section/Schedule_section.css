@@ -15,10 +15,12 @@
 
 .schedule_time {
   display: flex;
+  align-items: center;
   justify-content: center;
   font-family: "area-normal", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  margin-top: 30px;
 }
 
 .schedule_timebutton {
@@ -28,8 +30,18 @@
   font-family: "Martian Mono", monospace;
   font-weight: 500;
   font-size: 12px;
-  background-color: var(--LightLime);
+  background-color: var(--LimeGreen);
   border-radius: 30px;
   width: 134px;
   height: 30px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.DatePicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }

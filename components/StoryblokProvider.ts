@@ -19,7 +19,7 @@ import Intro_training from "./intro_training/Intro_training";
 import Schedule from"./schedule/Schedule";
 import Intro_schedule from "./intro_schedule/Intro_schedule";
 import Schedule_section from "./schedule_section/Schedule_section";
-import Date_picker from "./schedule/Date_Picker";
+import Date_picker from "./date_picker/Date_Picker";
 
 const components = {
   page: Page,

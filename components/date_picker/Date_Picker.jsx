@@ -2,7 +2,8 @@ import { Calendar } from "@nextui-org/react";
 import { today, getLocalTimeZone, isWeekend } from "@internationalized/date";
 import { useLocale } from "@react-aria/i18n";
 
-export default function App() {
+export default function DatePicker() {
+  // Dit is de component naam
   let now = today(getLocalTimeZone());
 
   let disabledRanges = [

@@ -19,11 +19,3 @@
   font-weight: 700;
 }
 
-.schedule_achtergrond {
-  background-color: #f0f4f8; /* Lichtgrijze achtergrondkleur */
-  padding: 40px; /* Padding om ruimte te creëren binnen het vlak */
-  border-radius: 12px; /* Voor afgeronde hoeken */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor diepte */
-  margin: 20px auto; /* Voeg ruimte boven en onder toe, en centreer het vlak horizontaal */
-  max-width: 800px; /* Maximaal breedte om het er netjes uit te laten zien */
-}
