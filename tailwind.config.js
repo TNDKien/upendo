@@ -25,7 +25,11 @@ module.exports = {
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-226%)" },
+          "100%": { transform: `translateX(-64.2%)` },
+        },
+        mobileMarquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: `translateX(-292%)` },
         },
         "bounce-to-left": {
           "0%": {
@@ -51,10 +55,12 @@ module.exports = {
         },
       },
       animation: {
-        marquee: "marquee 30s linear infinite",
+        marquee: "marquee 15s linear infinite",
+        mobileMarquee: "mobileMarquee 30s linear infinite",
         "bounce-to-left": "bounce-to-left 1s ease-in-out",
         "bounce-to-right": "bounce-to-right 1s ease-in-out",
       },
+
       spacing: {
         "min-image-size": "48px",
         "max-image-size": "50px",
