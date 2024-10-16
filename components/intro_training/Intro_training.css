@@ -3,6 +3,17 @@
   font-size: 32px;
   font-family: "area-normal", sans-serif;
   font-weight: 700;
+  margin-top: 94px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.trainingimage_meneer {
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 36px;
 }
 
 .training_text {
@@ -11,5 +22,69 @@
   line-height: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  margin-top: 72px;
+  margin-top: 0;
 }
+
+.training_content_container {
+  display: block; /* Standaard voor mobiel */
+  margin-top: 72px;
+  padding-left: 24px; /* Voeg padding links toe voor mobiel */
+  padding-right: 24px; /* Voeg padding rechts toe voor mobiel */
+}
+
+/* Voor desktop */
+@media (min-width: 1200px) {
+  .training_content_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 120px; /* Voeg padding links toe voor desktop */
+    padding-right: 120px; /* Voeg padding rechts toe voor desktop */
+  }
+
+  .training_title {
+    font-size: 32px;
+    max-width: 1000px;
+    padding-left: 120px; /* Voeg padding links toe voor desktop */
+    padding-right: 120px; /* Voeg padding rechts toe voor desktop */
+    margin-left: 0; /* Margin links wordt niet meer toegepast, padding doet het werk */
+  }
+
+  .training_text {
+    flex: 1;
+    margin-right: 24px;
+    order: 1; /* Zet de tekst links */
+  }
+
+  .trainingimage_meneer {
+    flex: 1;
+    display: block;
+    max-width: 90%; /* Zorg ervoor dat de afbeelding maximaal 90% van de ruimte inneemt */
+    margin-left: 24px;
+    order: 2;
+  }
+}
+
+/* 
+@media (max-width: 1250px) {
+  .training_content_container {
+    margin-left: 0; 
+    margin-right: 0; 
+    padding-left: 24px; 
+    padding-right: 24px; 
+  }
+
+  .training_title {
+    font-size: 32px;
+    margin-left: 0; 
+     padding-left: 24px; 
+    padding-right: 24px; 
+  }
+
+  .training_text {
+    max-width: 486px;
+     padding-left: 24px; 
+  }
+} */
