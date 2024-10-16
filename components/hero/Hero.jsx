@@ -1,27 +1,38 @@
 import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
+import Button from "../button/Button";
 
 const Hero = ({ blok }) => {
   return (
-    <div className="mt-32">
+    <div className="mt-32 lg:mt-24">
       <div className="flex flex-col p-6 gap-14 lg:p-32 lg:pb-0">
-        <h1 className="text-4xl text-offWhite lg:text-[64px]">
+        <h1 className="text-4xl text-limeGreen lg:text-[64px]">
           Data made Simple
         </h1>
-        <p className="text-pink lg:max-w-md">{blok.hero_text}</p>
+        <p className="text-offWhite lg:max-w-md">{blok.hero_text}</p>
       </div>
-      <div className="flex flex-row mr-0 ml-auto pl-6 pb-12 lg:justify-between lg:p-32 lg:pt-0">
-        <a
-          className="flex mt-10 py-2 px-6 w-auto bg-limeGreen rounded-full self-start whitespace-nowrap lg:py-4 lg:px-8 lg:text-xl"
-          href=""
-        >
-          {blok.hero_cta}
-        </a>
+      <div className="flex flex-col mr-0 ml-auto pl-6 pb-12 lg:justify-between lg:flex-row lg:p-32 lg:pt-0 overflow-x-visible">
+        <div className="lg:mt-12 ">
+          {blok.button &&
+            blok.button.map((nestedBlok) => {
+              if (nestedBlok.component === "button") {
+                return <Button blok={nestedBlok} key={nestedBlok._uid} />;
+              }
+              return null;
+            })}
+        </div>
         <img
-          className="ml-auto h-[50vh] mr-0 lg:mr-0 lg:ml-auto lg:h-[55vh]"
-          src={blok.visuals.filename}
-          alt={blok.visuals.alt || ""}
+          className="hidden rounded-[80px] lg:block lg:h-[45vh] lg:mt-12 ml-24 z-10"
+          src={blok.image.filename}
+          alt={blok.image.alt || ""}
         />
+        <div className="flex flex-row relative">
+          <img
+            className="ml-auto h-[50vh] lg:h-[60vh]  lg:mr-0"
+            src={blok.visuals.filename}
+            alt={blok.visuals.alt || ""}
+          />
+        </div>
       </div>
     </div>
   );

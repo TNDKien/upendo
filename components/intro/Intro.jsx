@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
+import Button from "../button/Button";
 
 const Service_intro = ({ blok }) => {
   return (
@@ -12,12 +13,13 @@ const Service_intro = ({ blok }) => {
           <h2 className="text-2xl text-darkGreen w-72 lg:text-2xl">
             {blok.service_text}
           </h2>
-          <a
-            className="flex py-2 px-6 w-auto bg-darkTeal text-pink rounded-full self-start lg:bg-limeGreen lg:text-darkTeal"
-            href=""
-          >
-            See all our services
-          </a>
+          {blok.button &&
+            blok.button.map((nestedBlok) => {
+              if (nestedBlok.component === "button") {
+                return <Button blok={nestedBlok} key={nestedBlok._uid} />;
+              }
+              return null;
+            })}
         </div>
         <img
           className="p-6 ml-auto lg:w-1/2 lg:mr-0 lg:p-0"

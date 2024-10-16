@@ -37,17 +37,31 @@ const Footer = ({ blok }) => {
   return (
     <div className="relative bg-pink lg:px-32">
       <div className="flex flex-col p-6 gap-4">
-        <div className="flex flex-row gap-24 font-inter">
+        <div className="flex flex-row gap-24 font-inter z-10">
           <ul className="leading-loose">
-            <li>Configuration</li>
-            <li>Optimalization</li>
-            <li>Visualization</li>
-            <li>Analysis</li>
-            <li>Training</li>
+            <li>
+              <a href="/configuration">Configuration</a>
+            </li>
+            <li>
+              <a href="/optimalisation">Optimalization</a>
+            </li>
+            <li>
+              <a href="/visualisation">Visualization</a>
+            </li>
+            <li>
+              <a href="/analysis">Analysis</a>
+            </li>
+            <li>
+              <a href="/training">Training</a>
+            </li>
           </ul>
           <ul className="leading-loose">
-            <li>About us</li>
-            <li>Pricing</li>
+            <li>
+              <a href="/aboutus">About us</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col font-mono text-xs border-t-[1px] border-darkTeal pt-6 lg:flex-row lg:gap-24">
