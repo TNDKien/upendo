@@ -43,11 +43,6 @@ import Servicepricing_basic from "./servicepricing/Servicepricing_basic";
 import Servicepricing_advanced from "./servicepricing/Servicepricing_advanced";
 import Servicepricing_premium from "./servicepricing/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
-import Prices_intro from "./FAQ/Prices_intro";
-import Button from "./button/Button";
-import Schedule from "./schedule/Schedule";
-import Intro_schedule from "./intro_schedule/Intro_schedule";
-import Schedule_section from "./schedule_section/Schedule_section";
 
 const components = {
   page: Page,
@@ -88,11 +83,6 @@ const components = {
   compokop: CompoKop,
   collaboratebutton: Collaboratebutton,
   learnmore: Learnmore,
-  prices_intro: Prices_intro,
-  button: Button,
-  intro_schedule: Intro_schedule,
-  schedule_section: Schedule_section,
-  schedule: Schedule,
 };
 
 storyblokInit({
