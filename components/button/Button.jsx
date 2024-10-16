@@ -1,30 +1,29 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 
-const SeeMoreButton = ({ blok }) => {
-  // boolean check for text and background colors of buttons
+const Button = ({ blok }) => {
   const textColorClass = blok.check ? "text-limeGreen" : "text-pink";
   const bgColorClass = blok.check ? "bg-limeGreen" : "bg-pink";
 
   return (
     <div
-      className="relative flex items-center text-base overflow-hidden w-48 group"
+      className="relative flex items-center text-base overflow-hidden w-auto group"
       {...storyblokEditable(blok)}
     >
-      {/* Button */}
+      {/* Moving part */}
       <p
-        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-[37%]`}
+        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-1/3`}
       >
-        <a href={`/${blok.button_ref.story.url}`} rel="noopener noreferrer">
+        <a href={`/${blok.button_ref.story?.url}`} rel="noopener noreferrer">
           {blok.button_name}
         </a>
       </p>
 
-      {/* Right Arrow */}
+      {/* Fixed part */}
       <div
-        className={`${bgColorClass} flex items-center justify-between text-darkTeal px-3 py-1.5 w-full rounded-full text-3xl relative`}
+        className={`${bgColorClass} flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative`}
       >
         <span>&rarr;</span>
-        <span className={`${textColorClass} whitespace-nowrap`}>
+        <span className={`${textColorClass} whitespace-nowrap text-2xl`}>
           {blok.button_name}
         </span>
         <span>&rarr;</span>
@@ -33,4 +32,4 @@ const SeeMoreButton = ({ blok }) => {
   );
 };
 
-export default SeeMoreButton;
+export default Button;
