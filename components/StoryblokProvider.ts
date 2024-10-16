@@ -45,6 +45,10 @@ import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
 import Prices_intro from "./FAQ/Prices_intro";
 import Button from "./button/Button";
+import Schedule from"./schedule/Schedule";
+import Intro_schedule from "./intro_schedule/Intro_schedule";
+import Schedule_section from "./schedule_section/Schedule_section";
+import Date_picker from "./date_picker/Date_Picker";
 
 const components = {
   page: Page,
@@ -87,6 +91,10 @@ const components = {
   learnmore: Learnmore,
   prices_intro: Prices_intro,
   button: Button,
+  intro_schedule: Intro_schedule,
+  schedule_section: Schedule_section,
+  schedule: Schedule,
+  date_picker: Date_picker,
 };
 
 storyblokInit({

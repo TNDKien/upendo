@@ -1,64 +1,119 @@
-.training_header {
-  display: flex;
-  justify-content: left;
-  margin-bottom: 30px;
-  margin-top: 64px;
-  font-size: 20px;
-  font-family: "area-normal", sans-serif;
-  font-weight: 700;
+.trainingcard {
+  padding: 24px;
 }
 
-.training_image_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+.training_image {
+  width: 100%;
+  height: auto;
+}
+
+.text_content {
+  margin-top: 24px;
+}
+
+.training_header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 42px;
+  margin-bottom: 24px;
 }
 
 .training_paragraph {
-  display: flex;
-  justify-content: center;
   font-size: 16px;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  margin-top: 30px;
-  margin-bottom: none;
+  margin-top: 42px;
+  margin-bottom: 24px;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .schedule_training {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 12px;
-  font-family: "Martian Mono", monospace;
-  font-weight: 500;
-  margin-top: 20px;
+  font-size: 14px;
+  color: #a5ff00;
+  text-align: right;
+  margin-top: 42px;
+  margin-bottom: 24px;
 }
 
-.leftvisual_ball {
-  display: flex;
-  justify-content: left;
-  margin-top: -185px;
-  z-index: -1;
+@media (min-width: 1250px) {
+  .card_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 165px;
+  }
+
+  .left_image_layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  .training_image_left {
+    flex: 1;
+    margin-right: 24px;
+    max-width: 45%;
+  }
+
+  .right_image_layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  .training_image_right {
+    order: 2;
+    flex: 1;
+    margin-left: 24px;
+    max-width: 45%;
+  }
+
+  .text_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    order: 1;
+    margin: 25px;
+  }
+
+  .training_paragraph {
+    margin-top: 0;
+    margin-bottom: 24px;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .schedule_training {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.leftvisual_ball_container {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: -75px;
-  z-index: -1;
-}
+@media (max-width: 1250px) {
+  .left_image_layout,
+  .right_image_layout {
+    display: block;
+  }
 
-.rightvisual_ball {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -240px;
-  z-index: -1;
-}
+  .training_image_left,
+  .training_image_right {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
 
-.rightvisual_ball_container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -50px;
-  z-index: -1;
+  .training_header,
+  .training_paragraph,
+  .schedule_training {
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
 }
