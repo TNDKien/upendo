@@ -1,6 +1,5 @@
 import { render } from "storyblok-rich-text-react-renderer";
 import "./Schedule_section.css";
-import DatePicker from "../date_picker/Date_Picker";
 
 const Schedule_section = ({ blok }) => (
   <div style={{ padding: "24px" }}>
