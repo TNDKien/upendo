@@ -2,7 +2,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 import AOS from "aos";
 import "aos/dist/aos.css"; // AOS CSS importeren
 import { useEffect } from "react"; // useEffect toevoegen om AOS te initialiseren
-import "./trainingcards.css";
+import "./Trainingcards.css";
 
 const TrainingCard = ({ blok }) => {
   useEffect(() => {
@@ -65,7 +65,7 @@ const TrainingCard = ({ blok }) => {
                 </div>
               )}
             </div>
-            
+
             <div className="training_image_right" data-aos="fade-left">
               <img
                 className="training_image"
