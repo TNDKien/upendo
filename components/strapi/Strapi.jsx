@@ -63,10 +63,10 @@ const Strapi = ({ blok }) => {
     <div
       {...storyblokEditable(blok)}
       ref={containerRef}
-      className="relative w-full min-h-[380vh] bg-transparent hidden lg:block"
+      className="relative w-full min-h-[300vh] bg-transparent hidden lg:block"
     >
       {/* Sticky image container */}
-      <div className="sticky inset-0 top-[25vh] h-[50vh] w-1/2 flex justify-center items-center z-0">
+      <div className="sticky inset-0 top-[25vh] h-[50vh] w-1/2 flex justify-center items-center z-30 pointer-events-none">
         {blok.pictures &&
           blok.pictures.length > 0 &&
           blok.pictures[currentIndex] && (
@@ -97,23 +97,32 @@ const Strapi = ({ blok }) => {
           className="flex flex-row mb-64"
           ref={(el) => (rowRefs.current[0] = el)} // Assign ref to the first row
         >
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 z-40">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
               <span className="text-6xl mr-4">&#9687;</span>
               <span className="text-[32px]">Configuration</span>
             </h3>
             <p className="w-96 ml-12">{blok.config_text}</p>
-            <div className="flex items-center text-base ml-12">
-              <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
-                <a href="/configuration">See more</a>
+            <div className="relative flex items-center text-base w-auto group pointer-events-auto ml-12">
+              {/* Moving part */}
+              <p className="z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal text-pink transition-transform duration-300 ease-out group-hover:translate-x-1/3">
+                <a href="/configuration" rel="noopener noreferrer">
+                  See more
+                </a>
               </p>
-              <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
-                &rarr;
+
+              {/* Fixed part */}
+              <div className="bg-pink flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative">
+                <span>&rarr;</span>
+                <span className="text-pink whitespace-nowrap text-2xl">
+                  See more
+                </span>
+                <span>&rarr;</span>
               </div>
             </div>
           </div>
           <img
-            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28"
+            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28 relative -z-10 pointer-events-none" // Lower z-index for the image
             src={blok.visual.filename}
             alt={blok.visual.alt}
           />
@@ -124,22 +133,31 @@ const Strapi = ({ blok }) => {
           ref={(el) => (rowRefs.current[1] = el)} // Assign ref to the second row
         >
           <img
-            className="w-1/2 z-5 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28"
+            className="w-1/2 z-5 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28 relative -z-10 pointer-events-none" // Lower z-index for the image
             src={blok.visual.filename}
             alt={blok.visual.alt}
           />
-          <div className="flex flex-col ml-auto mr-0 gap-8">
+          <div className="flex flex-col ml-auto mr-0 gap-8 z-40">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-limeGreen">
               <span className="text-6xl mr-4">&#9687;</span>
               <span className="text-[32px]">Optimalization</span>
             </h3>
             <p className="w-96 ml-12">{blok.optimalization_text}</p>
-            <div className="flex items-center text-base ml-12">
-              <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-limeGreen">
-                <a href="/optimalization">See more</a>
+            <div className="relative flex items-center text-base w-auto group pointer-events-auto ml-12">
+              {/* Moving part */}
+              <p className="z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal text-limeGreen transition-transform duration-300 ease-out group-hover:translate-x-1/3">
+                <a href="/optimalisation" rel="noopener noreferrer">
+                  See more
+                </a>
               </p>
-              <div className="bg-limeGreen text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
-                &rarr;
+
+              {/* Fixed part */}
+              <div className="bg-limeGreen flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative">
+                <span>&rarr;</span>
+                <span className="text-limeGreen whitespace-nowrap text-2xl">
+                  See more
+                </span>
+                <span>&rarr;</span>
               </div>
             </div>
           </div>
@@ -149,23 +167,32 @@ const Strapi = ({ blok }) => {
           className="flex flex-row my-64"
           ref={(el) => (rowRefs.current[2] = el)} // Assign ref to the third row
         >
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 z-40">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-pink">
               <span className="text-6xl mr-4">&#9687;</span>
               <span className="text-[32px]">Visualization</span>
             </h3>
             <p className="w-96 ml-12">{blok.visualization_text}</p>
-            <div className="flex items-center text-base ml-12">
-              <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
-                <a href="/visualisation">See more</a>
+            <div className="relative flex items-center text-base w-auto group pointer-events-auto ml-12">
+              {/* Moving part */}
+              <p className="z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal text-pink transition-transform duration-300 ease-out group-hover:translate-x-1/3">
+                <a href="/visualisation" rel="noopener noreferrer">
+                  See more
+                </a>
               </p>
-              <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
-                &rarr;
+
+              {/* Fixed part */}
+              <div className="bg-pink flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative">
+                <span>&rarr;</span>
+                <span className="text-pink whitespace-nowrap text-2xl">
+                  See more
+                </span>
+                <span>&rarr;</span>
               </div>
             </div>
           </div>
           <img
-            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28"
+            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28 relative -z-10 pointer-events-none" // Lower z-index for the image
             src={blok.visual.filename}
             alt={blok.visual.alt}
           />
@@ -176,22 +203,31 @@ const Strapi = ({ blok }) => {
           ref={(el) => (rowRefs.current[3] = el)} // Assign ref to the fourth row
         >
           <img
-            className="w-1/2 z-5 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28"
+            className="w-1/2 z-5 mr-auto -ml-32 transform scale-x-[-1] self-end -mb-28 relative -z-10 pointer-events-none" // Lower z-index for the image
             src={blok.visual.filename}
             alt={blok.visual.alt}
           />
-          <div className="flex flex-col ml-auto mr-0 gap-8">
+          <div className="flex flex-col ml-auto mr-0 gap-8 z-40">
             <h3 className="flex flex-grow flex-row items-end -ml-2 text-limeGreen">
               <span className="text-6xl mr-4">&#9687;</span>
               <span className="text-[32px]">Analysis</span>
             </h3>
             <p className="w-96 ml-12">{blok.analysis_text}</p>
-            <div className="flex items-center text-base ml-12">
-              <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-limeGreen">
-                <a href="/analysis">See more</a>
+            <div className="relative flex items-center text-base w-auto group pointer-events-auto ml-12">
+              {/* Moving part */}
+              <p className="z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal text-limeGreen transition-transform duration-300 ease-out group-hover:translate-x-1/3">
+                <a href="/analysis" rel="noopener noreferrer">
+                  See more
+                </a>
               </p>
-              <div className="bg-limeGreen text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
-                &rarr;
+
+              {/* Fixed part */}
+              <div className="bg-limeGreen flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative">
+                <span>&rarr;</span>
+                <span className="text-limeGreen whitespace-nowrap text-2xl">
+                  See more
+                </span>
+                <span>&rarr;</span>
               </div>
             </div>
           </div>
@@ -206,16 +242,25 @@ const Strapi = ({ blok }) => {
             <span className="text-[32px]">Training</span>
           </h3>
           <p className="w-96 ml-12">{blok.training_text}</p>
-          <div className="flex items-center text-base ml-12">
-            <p className="z-10 p-3 px-6 m-0 rounded-full bg-darkTeal text-pink">
-              <a href="/training">See more</a>
+          <div className="relative flex items-center text-base w-auto group pointer-events-auto ml-12">
+            {/* Moving part */}
+            <p className="z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal text-pink transition-transform duration-300 ease-out group-hover:translate-x-1/3">
+              <a href="/training" rel="noopener noreferrer">
+                See more
+              </a>
             </p>
-            <div className="bg-pink text-darkTeal -ml-10 pl-12 pr-4 pb-2 pt-1 rounded-r-full text-3xl">
-              &rarr;
+
+            {/* Fixed part */}
+            <div className="bg-pink flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative">
+              <span>&rarr;</span>
+              <span className="text-pink whitespace-nowrap text-2xl">
+                See more
+              </span>
+              <span>&rarr;</span>
             </div>
           </div>
           <img
-            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28"
+            className="w-1/2 z-5 ml-auto -mr-32 self-end -mb-28 relative -z-10 pointer-events-none" // Lower z-index for the image
             src={blok.visual.filename}
             alt={blok.visual.alt}
           />
