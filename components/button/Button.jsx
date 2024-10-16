@@ -12,7 +12,7 @@ const SeeMoreButton = ({ blok }) => {
     >
       {/* Button */}
       <p
-        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-[36%]`}
+        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-[37%]`}
       >
         <a href={`/${blok.button_ref.story.url}`} rel="noopener noreferrer">
           {blok.button_name}
@@ -24,6 +24,9 @@ const SeeMoreButton = ({ blok }) => {
         className={`${bgColorClass} flex items-center justify-between text-darkTeal px-3 py-1.5 w-full rounded-full text-3xl relative`}
       >
         <span>&rarr;</span>
+        <span className={`${textColorClass} whitespace-nowrap`}>
+          {blok.button_name}
+        </span>
         <span>&rarr;</span>
       </div>
     </div>
