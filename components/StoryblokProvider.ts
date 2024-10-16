@@ -49,6 +49,7 @@ import Schedule from "./schedule/Schedule";
 import Intro_schedule from "./intro_schedule/Intro_schedule";
 import Schedule_section from "./schedule_section/Schedule_section";
 import Cta from "./cta/Cta";
+import Blok_container from "./blok_container/Blok_container";
 
 const components = {
   page: Page,
@@ -95,6 +96,7 @@ const components = {
   schedule_section: Schedule_section,
   schedule: Schedule,
   cta: Cta,
+  blok_container: Blok_container,
 };
 
 storyblokInit({
