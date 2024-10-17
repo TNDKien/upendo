@@ -15,17 +15,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* Zorg dat items links uitgelijnd zijn */
-  /* Gebruik de volledige beschikbare ruimte */
-}
-
-/* Controleer marges op individuele elementen */
-.servicepricing_blok_sub_basic {
-  margin-left: 0;
-  /* Verwijder onnodige marges die het blok naar rechts duwen */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 .servicepricing_blok {
@@ -39,19 +28,6 @@
 }
 
 .servicepricing_blok_title {
-  padding-top: 8px;
-  margin-left: 10px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: inline-block;
-}
-
-.flexboxrow {
-  display: flex;
-  flex-direction: row;
-  width: 312px;
   padding-top: 8px;
   margin-left: 10px;
   font-size: 16px;
@@ -145,13 +121,6 @@
   display: flex;
   flex-direction: row;
   width: 312px;
-}
-
-.servicepricing_blok_img {
-  margin-top: 12px;
-  margin-left: -14px;
-  width: 16px;
-  height: 16px;
 }
 
 /* Voeg dit toe aan je bestaande CSS */
