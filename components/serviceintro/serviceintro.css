@@ -1,120 +1,118 @@
 .servicesubtext {
-    padding-top: 90px;
-    font-family: "Martian Mono", monospace;
-    font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    color: #F4C5FE;
-    margin-top: 28px;
-    font-size: 0.75rem;
-    margin-bottom: 3rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  padding-top: 90px;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  color: #f4c5fe;
+  margin-top: 28px;
+  font-size: 0.75rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .headertekst {
-    min-width: 18rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: normal;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  min-width: 18rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: normal;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .headertekstbold {
-    font-family: "Martian Mono", monospace;
-    font-weight: 500;
-    font-weight: bold;
-    color: #A8FF1A;
-    margin-left: 1.5rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-weight: bold;
+  color: #a8ff1a;
+  margin-left: 1.5rem;
 }
 
 .serviceheadertekst {
-    font-family: "area-normal", sans-serif;
-    font-weight: 500;
-    color: white;
-    min-width: 21rem;
-    min-height: 3.75rem;
-    margin-top: 4.5rem;
-    margin-left: 1.5rem;
-    margin-bottom: 100px;
-    margin-right: 1.5rem;
+  font-family: "area-normal", sans-serif;
+  font-weight: 500;
+  color: white;
+  min-width: 21rem;
+  min-height: 3.75rem;
+  margin-top: 4.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 100px;
+  margin-right: 1.5rem;
 }
 
 .servicebuttondesign {
-    width: 10.063rem;
-    height: 2.75rem;
-    background-color: #003846;
-    margin-top: 3.375rem;
+  width: 10.063rem;
+  height: 2.75rem;
+  background-color: #003846;
+  margin-top: 3.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.servicebutton {
+  font-size: 1rem;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+  color: #a8ff1a;
+  font-size: 1rem;
+}
+
+.servicephoto {
+  margin-top: 4.75rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 90%;
+}
+
+@media (min-width: 1200px) {
+  .buttonservice {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2.5rem;
-    margin-left: 1.5rem;
-}
+    margin-bottom: 61px;
+  }
 
-.servicebutton {
-    font-size: 1rem;
-    font-family: "area-normal", sans-serif;
-    font-weight: 700;
-    color: #A8FF1A;
-    font-size: 1rem;
-}
+  .headertekst {
+    max-width: 1000px;
+    font-weight: 500;
+    font-size: 64px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 
-.servicephoto {
-    margin-top: 4.75rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    width: 90%;
-}
+  .serviceheadertekst,
+  .servicebodyheadertekst2 {
+    font-weight: 500;
+    color: white;
+    margin-top: 72px;
+    margin-left: 120px;
+    max-width: 500px;
+  }
 
-@media (min-width: 1200px) {
+  .servicebuttondesign {
+    margin-left: 120px;
+  }
 
-    .buttonservice {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2.5rem;
-        margin-bottom: 61px;
-    }
+  .servicesubtext {
+    margin-left: 120px;
+  }
 
-    .headertekst {
-        max-width: 1000px;
-        font-weight: 500;
-        font-size: 64px;
-        margin-left: 120px;
-        margin-right: 120px;
-    }
+  .servicephoto {
+    margin-left: 120px;
+    margin-top: -100px;
+    width: 45%;
+  }
 
-    .serviceheadertekst,
-    .servicebodyheadertekst2 {
-        font-weight: 500;
-        color: white;
-        margin-top: 72px;
-        margin-left: 120px;
-        max-width: 500px;
-    }
-
-    .servicebuttondesign {
-        margin-left: 120px;
-    }
-
-    .servicesubtext {
-        margin-left: 120px;
-    }
-
-    .servicephoto {
-        margin-left: 120px;
-        margin-top: -100px;
-        width: 45%;
-    }
-
-    .serviceblok {
-        display: flex;
-        flex-direction: row;
-        margin-right: 120px;
-        justify-content: space-between;
-    }
-
+  .serviceblok {
+    display: flex;
+    flex-direction: row;
+    margin-right: 120px;
+    justify-content: space-between;
+  }
 }

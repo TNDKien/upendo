@@ -35,6 +35,7 @@
   font-weight: 700;
   line-height: normal;
   display: inline-block;
+  color: #f4c5ff;
 }
 
 .servicepricing_blok_img {
@@ -51,6 +52,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
+  color: #f4c5ff;
 }
 
 .servicepricing_blok_price {
@@ -64,6 +66,7 @@
 }
 
 .servicepricing_blok_price_tekst {
+  color: #003a47;
   font-family: "area-normal", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -115,6 +118,7 @@
   font-weight: 700;
   line-height: normal;
   display: inline-block;
+  color: #003a47;
 }
 
 .flexboxrow {
@@ -128,6 +132,7 @@
 .servicepricing_blok_sub_basic,
 .servicepricing_blok_sub_5,
 .servicepricing_blok_sub_6 {
+  color: #003a47;
   width: 336px;
   margin-top: 10px;
   margin-left: 10px;
@@ -189,6 +194,10 @@
   margin-top: -31px;
 }
 
+.service_optimalisation_monthly {
+  padding-left: 0;
+}
+
 .servicepricing_blok_price_tekst {
   font-family: "area-normal", sans-serif;
   font-size: 20px;
@@ -205,4 +214,35 @@
   display: flex;
 
   /* Zorgt voor ruimte tussen de kolommen */
+}
+
+@media (min-width: 1200px) {
+  .service_optimalisation_monthly {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .service_optimalisation {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .servicepricing_title {
+    margin-left: 120px;
+    margin-top: 40px;
+  }
+
+  .servicepricing_blok {
+    margin-left: 100px;
+  }
+
+  .servicepricing_blok_basic {
+    margin-left: 100px;
+  }
+
+  .servicepricing_blok_premium {
+    margin-left: 100px;
+  }
 }

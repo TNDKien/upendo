@@ -9,7 +9,7 @@ const Serviceoptimalisation_footer = ({ blok }) => {
     };
 
     return (
-        <div {...storyblokEditable(blok)}>
+        <div className="serviceoptimalisation_footer" {...storyblokEditable(blok)}>
             <div className="footer_header">
                 {render(blok.footer_header)}
             </div>
