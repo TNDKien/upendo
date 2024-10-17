@@ -5,7 +5,7 @@ import "./aboutusintrocolor.css";
 import { render } from "storyblok-rich-text-react-renderer";
 
 const AboutUsIntro = ({ blok }) => (
-  <div {...storyblokEditable(blok)}>
+  <div {...storyblokEditable(blok)} className="aboutus-container">
     <div className="aboutussubtext">{blok.aboutussubtext}</div>
 
     <div className="grotemiauw">
@@ -24,47 +24,7 @@ const AboutUsIntro = ({ blok }) => (
         </p>
       </div>
     </div>
-
-    <div className="aboutusend">
-      <p>Data simplified.</p>
-    </div>
-
-    {/* Visual 1 */}
-    <div className="visual">
-      <div className="icon-holder">
-        {blok.visualfoto ? (
-          <img
-            className="logo"
-            src={blok.visualfoto.filename}
-            alt={blok.visualfoto.alt || "visual"}
-          />
-        ) : (
-          <p></p> // Fallback als de afbeelding niet bestaat
-        )}
-      </div>
-
-      <div className="logotwee">
-        {blok.logotwee ? (
-          <img
-            className="logotwee"
-            src={blok.logotwee.filename}
-            alt={blok.logotwee.alt || "logotwee"}
-          />
-        ) : (
-          <p></p> // Fallback als de afbeelding niet bestaat
-        )}
-      </div>
-    </div>
-  </div> // Sluit de buitenste div correct af
-);
-
-// Deze component wordt nu als een "named export" geëxporteerd
-const Toolskop = ({ blok }) => (
-  <div {...storyblokEditable(blok)}>
-    <div className="toolstext">{blok.toolstext}</div>
   </div>
 );
 
-// Je kunt slechts één "default export" hebben
 export default AboutUsIntro;
-export { Toolskop }; // Named export
