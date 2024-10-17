@@ -1,5 +1,6 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
+import Button from "../button/Button";
 import "./Pricing.css";
 
 const pricing_services = ({ blok }) => (
@@ -13,6 +14,7 @@ const pricing_services = ({ blok }) => (
       <div className="circle-text-item">
         <span className="circle1">&#11044;</span>
         <p className="text1">{blok.text1}</p>
+        
       </div>
 
       <div className="circle-text-item">
@@ -31,10 +33,15 @@ const pricing_services = ({ blok }) => (
       </div>
     </div>
 
-    <a href="/target-page" className="see-more-button">
-    <span className="button-text">See More</span>
-    <span className="button-arrow">&#8594;</span>
-  </a>
+    <div className="p-6">
+          {blok.button &&
+            blok.button.map((nestedBlok) => {
+              if (nestedBlok.component === "button") {
+                return <Button blok={nestedBlok} key={nestedBlok._uid} />;
+              }
+              return null;
+            })}
+        </div>
 
     <hr className="divider" />
   </div>
