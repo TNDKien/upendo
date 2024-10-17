@@ -14,9 +14,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  width: 20.625rem;
   margin-top: 4.5rem;
   margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .servicebodyheadertekst2 {
@@ -42,7 +42,6 @@
 }
 
 .servicepricing_title {
-  margin-top: 72px;
   font-family: "Martian Mono", monospace;
   margin-left: 1.5rem;
   font-size: 16px;
@@ -60,6 +59,8 @@
   .servicebodyheadertekst {
     margin-left: 120px;
     font-size: 24px;
+    max-width: 800px;
+    line-height: 24px;
   }
 
   .servicebodyheadertekst2,
