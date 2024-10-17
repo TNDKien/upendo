@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 const aboutusbody = ({ blok }) => (
-  <div className="flex flex-col gap-2 w-80" {...storyblokEditable(blok)}>
+  <div className="flex flex-col p-6 gap-2 lg:w-80" {...storyblokEditable(blok)}>
     <img
       className="w-6 h-6"
       src={blok.visualfototwee.filename}

@@ -1,7 +1,7 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Value = ({ blok }) => (
-  <div className="w-80" {...storyblokEditable(blok)}>
+  <div className="p-6 lg:w-80" {...storyblokEditable(blok)}>
     <div className="flex justify-between py-6">
       <h1 className="font-mono font-medium text-limeGreen">{blok.title}</h1>
       <img
