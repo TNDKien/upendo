@@ -8,6 +8,7 @@
 
 .grotemiauw {
   width: 21rem;
+  padding-bottom: 10px;
 }
 
 .white {
@@ -63,6 +64,12 @@
 }
 
 .learnmoretext {
+  margin-left: 5%;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+}
+
+.containerbody {
   margin-left: 5%;
   font-family: "Martian Mono", monospace;
   font-weight: 500;
