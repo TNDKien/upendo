@@ -40,10 +40,10 @@ import Serviceintro from "./serviceintro/Serviceintro";
 import Servicebody from "./servicebody/Servicebody";
 import Servicebody2 from "./servicebody2/Servicebody2";
 import Servicebody3 from "./servicebody3/Servicebody3";
-import Servicepricing from "./servicepricing/Servicepricing";
-import Servicepricing_basic from "./servicepricing/Servicepricing_basic";
-import Servicepricing_advanced from "./servicepricing/Servicepricing_advanced";
-import Servicepricing_premium from "./servicepricing/Servicepricing_premium";
+import Servicepricing from "./Servicepricing/Servicepricing";
+import Servicepricing_basic from "./Servicepricing/Servicepricing_basic";
+import Servicepricing_advanced from "./Servicepricing/Servicepricing_advanced";
+import Servicepricing_premium from "./Servicepricing/Servicepricing_premium";
 import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Serviceoptimalisation_footer";
 import Prices_intro from "./FAQ/Prices_intro";
 import Button from "./button/Button";
@@ -57,8 +57,8 @@ import Prices_accordion from "./FAQ/Prices_accordion";
 import Prices_cardAnnual from "./FAQ/Prices_cardAnnual";
 import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
 import Prices_cardOne from "./FAQ/Prices_cardOne";
-import Service_optimalisation_monthly from "./servicepricing/Service_optimalisation_monthly";
-import Service_optimalisation_onetime from "./servicepricing/Service_optimalisation_onetime";
+import Service_optimalisation_monthly from "./Servicepricing/Service_optimalisation_monthly";
+import Service_optimalisation_onetime from "./Servicepricing/Service_optimalisation_onetime";
 import Accordion from "./accordion/Accordion";
 
 const components = {
