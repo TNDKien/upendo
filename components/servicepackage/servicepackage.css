@@ -52,14 +52,15 @@
     font-weight: 400;
     line-height: 24px;
     /* 150% */
+  }
 }
 
 @media (min-width: 1200px) {
-    .flexboxrow {
-        margin-left: 120px;
-      align-content: center;
-     flex-wrap: wrap;
-      flex-direction: row;
+  .flexboxrow {
+    margin-left: 120px;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .flexboxrow2 {

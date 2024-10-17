@@ -38,6 +38,8 @@ import Collaboratebutton from "./Collabarate/Collaboratebutton";
 import Learnmore from "./learnmore/Learnmore";
 import Serviceintro from "./serviceintro/Serviceintro";
 import Servicebody from "./servicebody/Servicebody";
+import Servicebody2 from "./servicebody2/Servicebody2";
+import Servicebody3 from "./servicebody3/Servicebody3";
 import Servicepricing from "./servicepricing/Servicepricing";
 import Servicepricing_basic from "./servicepricing/Servicepricing_basic";
 import Servicepricing_advanced from "./servicepricing/Servicepricing_advanced";
@@ -50,6 +52,7 @@ import Intro_schedule from "./intro_schedule/Intro_schedule";
 import Schedule_section from "./schedule_section/Schedule_section";
 import Cta from "./cta/Cta";
 import Blok_container from "./blok_container/Blok_container";
+import Servicepackage from "./servicepackage/Servicepackage";
 
 const components = {
   page: Page,
@@ -97,6 +100,10 @@ const components = {
   schedule: Schedule,
   cta: Cta,
   blok_container: Blok_container,
+  servicebody2: Servicebody2,
+  servicebody3: Servicebody3,
+  servicepackage: Servicepackage,
+
 };
 
 storyblokInit({
