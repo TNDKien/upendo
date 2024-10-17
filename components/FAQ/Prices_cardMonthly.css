@@ -1,0 +1,84 @@
+/* Algemene opmaak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #002626;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.squareMonthly {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.squareMonthly h2 {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: white;
+}
+
+.square-tableMonthly{
+    border: 2px solid #003a47;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+
+.square-tableMonthly .headerMonthly,
+.square-tableMonthly .tableMonthly {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 25px; 
+    padding: 5px 20px;
+}
+
+
+.square-tableMonthly .headerMonthly {
+    font-weight: bold;
+    font-size: 0.75rem;
+    background-color: #003a47;
+    color: #222;
+    text-transform: uppercase;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
+}
+
+.square-tableMonthly .tableMonthly{
+    background-color: transparent;
+}
+
+
+.left-columnMonthly, .right-columnMonthly{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftMonthly{
+    color: white;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.rightMonthly{
+    color: white;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+
+.headerMonthly .leftMonthly {
+    color: white;
+}
+
+.headerMonthly .rightMonthly {
+    color: white;
+}
