@@ -1,240 +1,208 @@
 .servicepricing_blok_sub_5 {
-    width: 800px;
-    margin-left: 100px;
+  width: 800px;
+  margin-left: 100px;
 }
 
 .flexbox-column {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    /* Verdeel de kolommen gelijkmatig */
-    padding: 0 10px;
-    /* Voeg wat padding toe om ruimte te creëren tussen kolommen */
-    box-sizing: border-box;
-    /* Zorg ervoor dat de padding wordt meegenomen in de breedteberekening */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-/* Zorg dat de rijen in de kolommen correct uitgelijnd zijn */
 .flexboxrow-premium {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    /* Zorg dat items links uitgelijnd zijn */
-    /* Gebruik de volledige beschikbare ruimte */
-}
-
-/* Controleer marges op individuele elementen */
-.servicepricing_blok_sub_basic {
-    margin-left: 0;
-    /* Verwijder onnodige marges die het blok naar rechts duwen */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .servicepricing_blok {
-    width: 336px;
-    height: 99px;
-    border-radius: 10px 0px 10px 10px;
-    background: var(--Dark-Teal, #003A47);
-    margin-top: 16px;
-    /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
-    margin-left: 1.5rem;
-    margin-bottom: 16px;
-    /* Dit is de ruimte onder elk blok */
+  width: 336px;
+  height: 99px;
+  border-radius: 10px 0px 10px 10px;
+  background: var(--Dark-Teal, #003a47);
+  margin-top: 16px;
+  margin-left: 1.5rem;
+  margin-bottom: 16px;
 }
 
 .servicepricing_blok_title {
-    padding-top: 8px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: inline-block;
-}
-
-.flexboxrow {
-    display: flex;
-    flex-direction: row;
-    width: 312px;
+  padding-top: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
 }
 
 .servicepricing_blok_img {
-    margin-top: 12px;
-    margin-left: -14px;
-    width: 16px;
-    height: 16px;
+  margin-top: 12px;
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 .servicepricing_blok_sub {
-    width: 500px;
-    margin-top: 10px;
-    margin-left: 9px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 9px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .servicepricing_blok_price {
-    width: 81px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 0px 20px;
-    background: var(--Pink, #F4C5FF);
-    margin-top: -31px;
+  width: 81px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 20px;
+  background: var(--Pink, #f4c5ff);
+  margin-top: -31px;
+  margin-right: -23.5px;
 }
 
 .servicepricing_blok_price_tekst {
-    font-family: "area-normal", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    z-index: 1;
-    position: relative;
-    text-align: center;
-    margin-top: 8px;
+  font-family: "area-normal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-top: 8px;
 }
 
 .servicepricing_footer_tekst {
-    margin-left: 271px;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
+  margin-left: 271px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
-
 .servicepricing_blok_basic {
-    width: 336px;
-    height: 99px;
-    border-radius: 10px 0px 10px 10px;
-    background: var(--Pink, #F4C5FF);
-    margin-top: 16px;
-    /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
-    margin-left: 1.5rem;
-    margin-bottom: 16px;
+  width: 336px;
+  height: 99px;
+  border-radius: 10px 0px 10px 10px;
+  background: var(--Pink, #f4c5ff);
+  margin-top: 16px;
+  /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
+  margin-left: 1.5rem;
+  margin-bottom: 16px;
 }
 
 .servicepricing_blok_premium {
-    width: 336px;
-    height: 135px;
-    border-radius: 10px 0px 10px 10px;
-    background: var(--Pink, #F4C5FF);
-    margin-top: 16px;
-    /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
-    margin-left: 1.5rem;
-    margin-bottom: 16px;
+  width: 336px;
+  height: 135px;
+  border-radius: 10px 0px 10px 10px;
+  background: var(--Pink, #f4c5ff);
+  margin-top: 16px;
+  /* Of verwijder deze regel als je geen extra ruimte bovenaan wilt */
+  margin-left: 1.5rem;
+  margin-bottom: 16px;
 }
 
 .servicepricing_blok_title_basic {
-    padding-top: 8px;
-    margin-left: 10px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: inline-block;
+  padding-top: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
 }
 
 .flexboxrow {
-    display: flex;
-    flex-direction: row;
-    width: 312px;
+  display: flex;
+  flex-direction: row;
+  width: 312px;
 }
-
-
-
-.servicepricing_blok_img {
-    margin-top: 12px;
-    margin-left: -14px;
-    width: 16px;
-    height: 16px;
-}
-
-
 
 /* Voeg dit toe aan je bestaande CSS */
 /* Algemene stijl voor alle sub-blokken om dezelfde breedte te hebben */
 .servicepricing_blok_sub_basic,
 .servicepricing_blok_sub_5,
 .servicepricing_blok_sub_6 {
-    width: 336px;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
+  width: 336px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
-
 
 /* Zorg dat afbeeldingen in de flexbox niet groter zijn dan nodig */
 .servicepricing_blok_img_premium {
-    margin-top: 12px;
-    width: 16px;
-    height: 16px;
+  margin-top: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 .servicepricing_blok_img_premium_2 {
-    margin-top: 12px;
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
+  margin-top: 12px;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
 }
 
 .servicepricing_blok_img_premium_3 {
-    margin-top: 12px;
-    width: 16px;
-    height: 16px;
-    margin-left: -10px;
+  margin-top: 12px;
+  width: 16px;
+  height: 16px;
+  margin-left: -10px;
 }
 
 .servicepricing_blok_sub_5,
 .servicepricing_blok_sub_6 {
-    margin-left: 9px;
-    /* Pas deze waarde aan om ze verder naar rechts te plaatsen */
+  margin-left: 9px;
+  /* Pas deze waarde aan om ze verder naar rechts te plaatsen */
 }
 
 .flexboxrow-premium .servicepricing_blok_sub_5 {
-    margin-right: 20px;
-    /* Zorgt voor extra ruimte tussen 5 en 6 */
+  margin-right: 20px;
+  /* Zorgt voor extra ruimte tussen 5 en 6 */
 }
 
 .servicepricing_blok_price_basic {
-    width: 81px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 0px 20px;
-    background: var(--Light-Lime, #EAFFBD);
-    margin-top: -31px;
+  width: 81px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 20px;
+  background: var(--Light-Lime, #eaffbd);
+  margin-top: -31px;
+  margin-right: -23.5px;
 }
 
 .servicepricing_blok_price_premium {
-    position: absolute;
-    width: 81px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 0px 0px 0px 20px;
-    background: var(--Light-Lime, #EAFFBD);
-    margin-left: 244.5px;
-    margin-top: -31px;
+  position: absolute;
+  width: 81px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 20px;
+  background: var(--Light-Lime, #eaffbd);
+  margin-left: 244.5px;
+  margin-top: -31px;
 }
 
 .servicepricing_blok_price_tekst {
-    font-family: "area-normal", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    z-index: 1;
-    position: relative;
-    text-align: center;
-    margin-top: 8px;
+  font-family: "area-normal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin-top: 8px;
 }
 
-
 .flexbox-container {
-    display: flex;
+  display: flex;
 
-    /* Zorgt voor ruimte tussen de kolommen */
+  /* Zorgt voor ruimte tussen de kolommen */
 }
