@@ -71,6 +71,14 @@
 
 @media (min-width: 1200px) {
 
+    .buttonservice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.5rem;
+        margin-bottom: 61px;
+    }
+
     .headertekst {
         max-width: 1000px;
         font-weight: 500;
@@ -79,7 +87,8 @@
         margin-right: 120px;
     }
 
-    .serviceheadertekst {
+    .serviceheadertekst,
+    .servicebodyheadertekst2 {
         font-weight: 500;
         color: white;
         margin-top: 72px;
@@ -107,4 +116,5 @@
         margin-right: 120px;
         justify-content: space-between;
     }
+
 }
