@@ -6,7 +6,7 @@ const Button = ({ blok }) => {
 
   return (
     <div
-      className="relative flex items-center text-base overflow-hidden w-auto group"
+      className="relative flex items-center text-base overflow-visible w-auto group"
       {...storyblokEditable(blok)}
     >
       {/* Moving part */}
