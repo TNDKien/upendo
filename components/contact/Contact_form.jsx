@@ -58,6 +58,12 @@ const ContactForm = ({ blok }) => {
           Send
         </button>
       </form>
+
+      <img
+        className="contactphoto"
+        src={blok.contactphoto.filename}
+        alt={blok.contactphoto.alt || "contactphoto"}
+      />
     </div>
   );
 };
