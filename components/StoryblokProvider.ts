@@ -81,7 +81,6 @@ const components = {
   servicepricing_basic: Servicepricing_basic,
   servicepricing_advanced: Servicepricing_advanced,
   servicepricing_premium: Servicepricing_premium,
-  Serviceoptimalisation_footer: Serviceoptimalisation_footer,
   service_dashboard_button: service_dashboard_button,
   service_plans: Service_plans,
   service_plans_text: Service_plans_text,
@@ -111,6 +110,8 @@ const components = {
   prices_cardAnnual: Prices_cardAnnual,
   prices_cardMonthly: Prices_cardMonthly,
   prices_cardOne: Prices_cardOne,
+  serviceoptimalisation_footer: Serviceoptimalisation_footer,
+
 };
 
 storyblokInit({

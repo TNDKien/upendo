@@ -56,7 +56,7 @@
 }
 
 @media (min-width: 1200px) {
-  .flexboxrow {
+  .flexboxrow2 {
     margin-left: 120px;
     align-content: center;
     flex-wrap: wrap;
