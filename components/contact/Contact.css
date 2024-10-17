@@ -39,7 +39,7 @@
 }
 
 .link {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .contact {
@@ -171,17 +171,55 @@
 
 @media (min-width: 1200px) {
 
-  .accent {
+  .form-field {
+    max-width: 380px;
+  }
+
+  .contact-intro {
     margin-left: 120px;
   }
 
-  .title {
-    margin-left: 120px;
-    font-size: 64px;
-    max-width: 1100px;
+  .contact-form {
+    margin-left: 135px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
   }
 
-  .paragraph {
-    margin-left: 120px;
+  .contact-form .form-field input,
+  .contact-form .form-field textarea {
+    background-color: #f4c5fe;
+    font-size: 20px;
+    color: #00222e;
+    padding: 2.5rem 2rem;
+    margin-left: 64px;
+    border-bottom: 1px solid var(--DarkTeal);
   }
+
+  .contact-form .form-field label {
+    margin-left: 64px;
+    margin-top: -16px;
+    font-size: 24px;
+    color: #00222e;
+    background-color: #f4c5fe;
+    padding: 0rem 0.5rem;
+    padding-top: 1rem;
+
+  }
+
+  .contact-form .form-field[data-active="true"] label,
+  .contact-form .form-field input:focus+label,
+  .contact-form .form-field textarea:focus+label {
+    color: #00222e;
+    top: 1rem;
+    font-size: 20px
+  }
+
+  .contact-form .form-field input:focus,
+  .contact-form .form-field textarea:focus {
+    color: #FEFFF8;
+  }
+
+
 }
