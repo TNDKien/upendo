@@ -35,7 +35,7 @@ const Footer = ({ blok }) => {
   }, [blok.footer_contact, blok.desktop_image]);
 
   return (
-    <div className="relative bg-pink lg:px-32">
+    <div className="relative bg-pink text-darkGreen lg:px-32">
       <div className="flex flex-col p-6 gap-4">
         <div className="flex flex-row gap-24 font-inter z-10">
           <ul className="leading-loose">
@@ -61,6 +61,9 @@ const Footer = ({ blok }) => {
             </li>
             <li>
               <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="/follow-up-prices">FAQ</a>
             </li>
           </ul>
         </div>
