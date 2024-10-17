@@ -1,16 +1,24 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 
 const Value = ({ blok }) => (
-  <div className="blok-feature" {...storyblokEditable(blok)}>
-    <div className="card-top">
-      <h1 className="koptext">{blok.title}</h1>
+  <div className="w-80" {...storyblokEditable(blok)}>
+    <div className="flex justify-between py-6">
+      <h1 className="font-mono font-medium text-limeGreen">{blok.title}</h1>
       <img
-        className="Visual"
+        className="w-6 h-6"
         src={blok.visual.filename}
         alt={blok.visual.alt || "Visual"}
       />
     </div>
-    <p className="colortext">{blok.paragraph}</p>
+    <p className="font-inter">{blok.paragraph}</p>
+    <p className="py-6 ">
+      <a
+        className="font-mono underline underline-offset-2"
+        href={`/${blok.link.story.url}`}
+      >
+        Learn more
+      </a>
+    </p>
   </div>
 );
 
