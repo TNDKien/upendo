@@ -61,7 +61,7 @@ const Header = ({ blok }) => {
                   </a>
 
                   <a href="/optimalisation" className="dropdown-item">
-                    Optimization
+                    Optimalization
                     <img
                       className="dropdown-image"
                       src={blok.optimalization_image.filename}
