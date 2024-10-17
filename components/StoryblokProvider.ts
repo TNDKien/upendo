@@ -77,7 +77,6 @@ const components = {
   servicepricing_basic: Servicepricing_basic,
   servicepricing_advanced: Servicepricing_advanced,
   servicepricing_premium: Servicepricing_premium,
-  Serviceoptimalisation_footer: Serviceoptimalisation_footer,
   service_dashboard_button: service_dashboard_button,
   service_plans: Service_plans,
   service_plans_text: Service_plans_text,
@@ -103,6 +102,7 @@ const components = {
   servicebody2: Servicebody2,
   servicebody3: Servicebody3,
   servicepackage: Servicepackage,
+  serviceoptimalisation_footer: Serviceoptimalisation_footer,
 
 };
 
