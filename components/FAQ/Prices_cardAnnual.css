@@ -1,0 +1,84 @@
+/* Algemene opmaak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #002626;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.squareAnnual {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.squareAnnual h2 {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: #a8ff1a;
+}
+
+.square-tableAnnual {
+    border: 2px solid #a8ff1a;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+
+.square-tableAnnual .headerAnnual,
+.square-tableAnnual .tableAnnual {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 25px; 
+    padding: 5px 20px;
+}
+
+
+.square-tableAnnual .headerAnnual {
+    font-weight: bold;
+    font-size: 0.75rem;
+    background-color: #a8ff1a;
+    color: #222;
+    text-transform: uppercase;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
+}
+
+.square-tableAnnual .tableAnnual {
+    background-color: transparent;
+}
+
+
+.left-columnAnnual, .right-columnAnnual {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftAnnual {
+    color: white;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.rightAnnual {
+    color: #a8ff1a;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+
+.headerAnnual .leftAnnual {
+    color: black;
+}
+
+.headerAnnual .rightAnnual {
+    color: black;
+}

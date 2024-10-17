@@ -1,172 +1,271 @@
+.accent{
+  margin-left: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: -2rem;
+}
+
 .pricing_title{
-    font-family: "area-normal", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    padding: 2rem;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 .pricing_paragraph{
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #ffffff;
-    padding: 2.5rem 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 2.5rem 2rem;
 }
 
 
 .pricing_cards {
-  position: relative;
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 1.5rem; 
-  padding: 2rem; 
-  justify-content: center; 
+position: relative;
+display: flex; 
+flex-wrap: wrap; 
+gap: 1.5rem; 
+padding: 2rem; 
+justify-content: center; 
 }
 
 
 .cardOne, .cardMonthly, .cardAnnual {
-  border-radius: 20px; 
-  padding: 1.5rem; 
-  margin-bottom: 4rem;
-  max-width: 300px; 
-  text-align: left; 
-  position: relative;
-  z-index: 2;
+border-radius: 20px; 
+padding: 1.5rem; 
+margin-bottom: 4rem;
+max-width: 300px; 
+text-align: left; 
+position: relative;
+
 }
 
 .cardOne {
-  background-color: #f4c5fe; 
+background-color: #f4c5fe; 
 }
 
 .cardMonthly {
-  background-color: #003a47; 
+background-color: #003a47; 
 }
 
 .cardAnnual {
-  background-color: #a8ff1a; 
+background-color: #a8ff1a; 
 }
 
 
 .card_titleOne, .card_titleAnnual {
-  font-family: "area-normal", sans-serif;
-  font-size: 1rem; 
-  color: black; 
-  margin-bottom: 1rem; 
+font-family: "area-normal", sans-serif;
+font-size: 1rem; 
+color: black; 
+margin-bottom: 1rem; 
 }
 .card_titleMonthly {
-  font-family: "area-normal", sans-serif;
-  font-size: 1rem; 
-  color: #ffffff; 
-  margin-bottom: 1rem; 
+font-family: "area-normal", sans-serif;
+font-size: 1rem; 
+color: #ffffff; 
+margin-bottom: 1rem; 
 }
 
 
 .card_paragraphOne, .card_paragraphAnnual {
-  font-size: 0.75rem; 
-  color: black; 
-  line-height: 1.5; 
-  margin-bottom: 2rem;
+font-size: 0.75rem; 
+color: black; 
+line-height: 1.5; 
+margin-bottom: 2rem;
 }
 .card_paragraphMonthly {
-  font-size: 0.75rem; 
-  color: #ffffff; 
-  line-height: 1.5; 
-  margin-bottom: 2rem;
+font-size: 0.75rem; 
+color: #ffffff; 
+line-height: 1.5; 
+margin-bottom: 2rem;
 }
 
 
 .card_imgOne, .card_imgMonthly, .card_imgAnnual {
-  border-radius: 10px; 
-  margin: 1rem auto;
-  max-width: 100%; /* Pas dit aan aan je ontwerpbehoeften */
-  height: auto; /* Behoudt de juiste verhouding */
-  display: block; /* Zorgt ervoor dat het element correct wordt weergegeven */
+border-radius: 10px; 
+margin: 1rem auto;
+max-width: 100%; 
+height: auto; 
+display: block; 
 }
 
 .card_numberOne, .card_numberMonthly, .card_numberAnnual {
-  position: absolute;
-  right: 25px;
-  top: 20px;
+position: absolute;
+right: 25px;
+top: 24.5px;
 }
 .card_numberMonthly{
-  color: #ffffff;
+color: #ffffff;
+}
+.card_numberOne, .card_numberAnnual {
+color: black;
 }
 
 .card_linkOne, .card_linkMonthly, .card_linkAnnual {
-  position: absolute;
-  right: 25px;
-  bottom: -10px;
-  font-size: 3rem;
+position: absolute;
+right: 25px;
+bottom: -10px;
+font-size: 3rem;
 }
 .card_linkMonthly{
-  color: #ffffff;
+color: #ffffff;
+}
+.card_linkOne, .card_linkAnnual {
+color: black;
 }
 
 .liner_left{
-  position: absolute;
-  left: -3rem;
-  bottom: -1rem;
-  z-index: 5;
+position: absolute;
+left: -3rem;
+bottom: -1rem;
+z-index: -10;
 }
 
 .liner_right{
-  position: absolute;
-  right: -3rem;
-  bottom: -1rem;
-  z-index: 1;
+position: absolute;
+right: -3rem;
+bottom: -1rem;
+z-index: -10;
 }
 
 
 .service_title {
-  font-family: "area-normal", sans-serif;
-  font-size: 1rem; 
-  /* margin-bottom: 1rem; 
-  margin-left: 2rem; */
-  padding: 1rem 2rem;
+font-family: "area-normal", sans-serif;
+font-size: 1rem; 
+/* margin-bottom: 1rem; 
+margin-left: 2rem; */
+padding: 1rem 2rem;
 }
 
 .service_paragraph{	
-  font-family: "Inter", sans-serif;
-  font-size: 0.75rem; 
-  color: #ffffff; 
-  line-height: 1.5; 
-  /* margin-bottom: 2rem;
-  margin-left: 2rem; */
-  padding: 2rem;
+font-family: "Inter", sans-serif;
+font-size: 0.75rem; 
+color: #ffffff; 
+line-height: 1.5; 
+/* margin-bottom: 2rem;
+margin-left: 2rem; */
+padding: 2rem;
 }
 
 .circle-text-container {
-  display: flex;              
-  flex-direction: column;     
-  gap: 1rem;                
+display: flex;              
+flex-direction: column;     
+gap: 1rem;                
 }
 
 
 .circle-text-item {
-  display: flex;              
-  align-items: center;        
+display: flex;              
+align-items: center;        
 }
 
 
 .circle1, .circle2, .circle3, .circle4 {
-  color: #f4c5fe;             
-  font-size: 1.5rem;          
-  margin-right: 1rem;         
-  margin-left: 2rem;
+color: #f4c5fe;             
+font-size: 1.5rem;          
+margin-right: 1rem;         
+margin-left: 2rem;
 }
 
 /* Styling for text elements */
 .text1, .text2, .text3, .text4 {
-  font-size: 0.75rem;            
-  color: #ffffff;             
-  line-height: 1.5;          
+font-size: 0.75rem;            
+color: #ffffff;             
+line-height: 1.5;          
 }
 
 
 .divider {
-  width: calc(100% - 4rem);   
-  margin: 2rem 2rem 0;        
-  border: 0;                  
-  border-top: 1px solid #ffffff; 
+width: calc(100% - 4rem);   
+margin: 2rem 2rem 0;        
+border: 0;                  
+border-top: 1px solid #ffffff; 
 }
 
+
+/* Standaard mobiele weergave blijft hetzelfde */
+
+
+
+.intro_img_container {
+  display: none; 
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column; /* Zet paragraaf en afbeelding onder elkaar in mobiele weergave */
+}
+
+
+@media (min-width: 768px) {
+  
+  .pricing_intro {
+    margin-left: 8rem;
+  }
+
+  .accent{
+    margin-left: 1.5rem;
+    margin-top: 7rem;
+    margin-bottom: -2rem;
+  }
+  
+  .pricing_title {
+    font-size: 4rem;
+    white-space: normal; 
+    max-width: 22ch; 
+    line-height: 1.2; 
+  }
+
+  .content_wrapper {
+    display: flex;
+    flex-direction: row; /* Zet paragraaf en afbeelding naast elkaar op desktop */
+    justify-content: space-between;
+    align-items: flex-start; /* Zorg dat de tekst en afbeelding bovenaan zijn uitgelijnd */
+  }
+  
+  .pricing_paragraph {
+    flex: 1;
+    padding-right: 2rem;
+    max-width: 60ch; 
+    margin-top: 2rem;
+  }
+
+  .intro_img_container {
+    display: block;
+    margin-right: 8rem;
+    padding: 2rem;
+    max-width: 50%; /* Maak de afbeelding kleiner op desktop */
+  }
+
+  .intro_img {
+    width: 100%; 
+    height: auto; 
+  }
+
+
+  .cardOne, .cardMonthly, .cardAnnual {
+    max-width: 25%;  
+    height: 450px;   
+    padding: 2rem;  
+    margin-bottom: 1rem;  
+  }
+
+
+  .card_imgOne, .card_imgMonthly, .card_imgAnnual {
+    max-width: 80%;
+    height: auto;
+    margin: 2.5rem auto;
+  }
+
+
+  .pricing_cards {
+    flex-direction: row;
+    gap: 4rem;  
+    justify-content: center;  
+  }
+
+  .liner_left, .liner_right {
+    display: none;
+  }
+
+}

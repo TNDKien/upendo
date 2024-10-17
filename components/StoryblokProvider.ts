@@ -53,6 +53,10 @@ import Schedule_section from "./schedule_section/Schedule_section";
 import Cta from "./cta/Cta";
 import Blok_container from "./blok_container/Blok_container";
 import Servicepackage from "./servicepackage/Servicepackage";
+import Prices_accordion from "./FAQ/Prices_accordion";
+import Prices_cardAnnual from "./FAQ/Prices_cardAnnual";
+import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
+import Prices_cardOne from "./FAQ/Prices_cardOne";
 
 const components = {
   page: Page,
@@ -102,6 +106,10 @@ const components = {
   servicebody2: Servicebody2,
   servicebody3: Servicebody3,
   servicepackage: Servicepackage,
+  prices_accordion: Prices_accordion,
+  prices_cardAnnual: Prices_cardAnnual,
+  prices_cardMonthly: Prices_cardMonthly,
+  prices_cardOne: Prices_cardOne,
   serviceoptimalisation_footer: Serviceoptimalisation_footer,
 
 };
