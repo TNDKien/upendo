@@ -1,6 +1,8 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 import "./serviceintro.css";
+import Button from "../button/Button";
+ 
 
 const serviceintro = ({ blok }) => {
   const buttonIsActive = blok.boolean;
@@ -14,9 +16,15 @@ const serviceintro = ({ blok }) => {
       <div className="headertekst">{render(blok.headertekst)}</div>
       <div className="serviceheadertekst">{blok.serviceheadertekst}</div>
       <div className="serviceblok">
-        <div className="servicebuttondesign" style={buttonStyle}>
-          <div className="servicebutton">{render(blok.servicebutton)}</div>
-        </div>
+        <div className="p-6 lg:ml-24">
+          {blok.button &&
+            blok.button.map((nestedBlok) => {
+              if (nestedBlok.component === "button") {
+                return <Button blok={nestedBlok} key={nestedBlok._uid} />;
+              }
+              return null;
+            })}
+          </div>
         <img
           className="servicephoto"
           src={blok.servicephoto.filename}

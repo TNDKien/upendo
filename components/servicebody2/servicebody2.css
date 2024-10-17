@@ -1,59 +1,66 @@
 .servicebodyconfigtitel {
-    font-family: "Martian Mono", monospace;
-    font-weight: 500;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.5rem;
-    margin-top: 6.25rem;
-    margin-left: 1.5rem;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5rem;
+  margin-top: 6.25rem;
+  margin-left: 1.5rem;
+}
+
+.buttonservice {
+  margin-top: 72px;
+  margin-left: 1.5rem;
 }
 
 .servicebodyconfgititeltekst {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    font-style: normal;
-    line-height: 1.5rem;
-    margin-top: 1.688rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  margin-top: 1.688rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .servicebodybuttondesign {
-    width: 10.063rem;
-    height: 2.75rem;
-    background-color: #A8FF1A;
-    border-radius: 2.5rem;
+  width: 10.063rem;
+  height: 2.75rem;
+  background-color: #a8ff1a;
+  border-radius: 2.5rem;
 }
 
-
 .servicebodybutton {
-    font-size: 1rem;
-    font-family: "area-normal", sans-serif;
-    font-weight: 700;
-    color: #003A47;
-    font-size: 1rem;
+  font-size: 1rem;
+  font-family: "area-normal", sans-serif;
+  font-weight: 700;
+  color: #003a47;
+  font-size: 1rem;
 }
 
 @media (min-width: 1200px) {
-    .service_blok {
-        margin-left: 100px;
-        margin-right: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: baseline;
-        align-content: center;
-        column-gap: 150px;
-    }
+  .service_blok {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    column-gap: 150px;
+  }
 
-    .servicebodybuttondesign {
-        margin-left: 1200px;
-    }
+  .servicebodybuttondesign {
+    margin-left: 1200px;
+  }
 
-    .service_info {
-        max-width: 305px;
-    }
+  .service_info {
+    max-width: 305px;
+  }
 
-
+  .buttonservice {
+    margin-top: 100px;
+    padding-bottom: 200px;
+  }
 }
