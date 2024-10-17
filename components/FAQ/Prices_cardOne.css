@@ -1,0 +1,84 @@
+/* Algemene opmaak */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #002626;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.squareOne {
+    min-width: 100%;
+    padding: 20px;
+}
+
+.squareOne h2 {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: pink;
+}
+
+.square-tableOne {
+    border: 2px solid pink;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+
+.square-tableOne .headerOne,
+.square-tableOne .tableOne {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 25px; 
+    padding: 5px 20px;
+}
+
+
+.square-tableOne .headerOne {
+    font-weight: bold;
+    font-size: 0.75rem;
+    background-color: pink;
+    color: #222;
+    text-transform: uppercase;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
+}
+
+.square-tableOne .tableOne {
+    background-color: transparent;
+}
+
+
+.left-columnOne, .right-columnOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftOne {
+    color: white;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.rightOne {
+    color: pink;
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+
+.headerOne .leftOne {
+    color: black;
+}
+
+.headerOne .rightOne {
+    color: black;
+}
