@@ -2,11 +2,14 @@ import React from "react";
 import { storyblokEditable } from "@storyblok/react/rsc";
 import Service_plans from "../Servicepricing/Service_plans";
 import Pricing_services from "../pricing/Pricing_services";
+import Aboutusbody from "../aboutus/aboutusbody";
+import Howweserve from "../howweserve/Howweserve";
+import Value from "../value/Value";
 
 const Blok_container = ({ blok }) => {
   return (
-    <div {...storyblokEditable(blok)} className="">
-      <div className="flex">
+    <div {...storyblokEditable(blok)} className="p-0 lg:px-32">
+      <div className="flex flex-col lg:flex-row">
         {blok.components &&
           blok.components.map((nestedBlok) => {
             {
@@ -23,6 +26,12 @@ const Blok_container = ({ blok }) => {
               return (
                 <Pricing_services blok={nestedBlok} key={nestedBlok._uid} />
               );
+            } else if (nestedBlok.component === "aboutusbody") {
+              return <Aboutusbody blok={nestedBlok} key={nestedBlok._uid} />;
+            } else if (nestedBlok.component === "howweserve") {
+              return <Howweserve blok={nestedBlok} key={nestedBlok._uid} />;
+            } else if (nestedBlok.component === "value") {
+              return <Value blok={nestedBlok} key={nestedBlok._uid} />;
             }
             return null;
           })}
