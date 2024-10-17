@@ -5,6 +5,8 @@ import Pricing_services from "../pricing/Pricing_services";
 import Aboutusbody from "../aboutus/aboutusbody";
 import Howweserve from "../howweserve/Howweserve";
 import Value from "../value/Value";
+import Service_optimalisation_monthly from "../servicepricing/Service_optimalisation_monthly";
+import Service_optimalisation_onetime from "../servicepricing/Service_optimalisation_onetime";
 
 const Blok_container = ({ blok }) => {
   return (
@@ -33,6 +35,12 @@ const Blok_container = ({ blok }) => {
             } else if (nestedBlok.component === "value") {
               return <Value blok={nestedBlok} key={nestedBlok._uid} />;
             }
+            else if (nestedBlok.component === "service_optimalisation_monthly") {
+               return <Service_optimalisation_monthly blok={nestedBlok} key={nestedBlok._uid} />;
+            }
+            else if (nestedBlok.component === "service_optimalisation_onetime") {
+               return <Service_optimalisation_onetime blok={nestedBlok} key={nestedBlok._uid} />;
+              }
             return null;
           })}
       </div>

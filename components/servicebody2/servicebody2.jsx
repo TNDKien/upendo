@@ -1,6 +1,8 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 import "./servicebody2.css";
+import Button from "../button/Button";
+ 
 
 const Servicebody2 = ({ blok }) => (
   <div {...storyblokEditable(blok)}>
@@ -55,11 +57,13 @@ const Servicebody2 = ({ blok }) => (
       </div>
     </div>
     <div className="buttonservice">
-      <div className="servicebodybuttondesign">
-        <div className="servicebodybutton">
-          {render(blok.servicebodybutton)}
-        </div>
-      </div>
+          {blok.button &&
+            blok.button.map((nestedBlok) => {
+              if (nestedBlok.component === "button") {
+                return <Button blok={nestedBlok} key={nestedBlok._uid} />;
+              }
+              return null;
+            })}
     </div>
   </div>
 );

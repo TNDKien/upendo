@@ -57,6 +57,8 @@ import Prices_accordion from "./FAQ/Prices_accordion";
 import Prices_cardAnnual from "./FAQ/Prices_cardAnnual";
 import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
 import Prices_cardOne from "./FAQ/Prices_cardOne";
+import Service_optimalisation_monthly from "./servicepricing/Service_optimalisation_monthly";
+import Service_optimalisation_onetime from "./servicepricing/Service_optimalisation_onetime";
 
 const components = {
   page: Page,
@@ -111,6 +113,8 @@ const components = {
   prices_cardMonthly: Prices_cardMonthly,
   prices_cardOne: Prices_cardOne,
   serviceoptimalisation_footer: Serviceoptimalisation_footer,
+  service_optimalisation_monthly: Service_optimalisation_monthly,
+  service_optimalisation_onetime: Service_optimalisation_onetime,
 
 };
 
