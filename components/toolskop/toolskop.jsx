@@ -2,14 +2,9 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 
 const Toolskop = ({ blok }) => {
-  // Check of blok bestaat, om fouten te voorkomen
-  if (!blok) {
-    return null; // Render niets als blok niet bestaat
-  }
-
   return (
     <div {...storyblokEditable(blok)}>
-      <div className="toolstext">{render(blok.toolstext)}</div>
+      <div className="px-32 pb-8 pt-16 font-mono">{render(blok.toolstext)}</div>
     </div>
   );
 };

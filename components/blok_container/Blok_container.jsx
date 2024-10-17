@@ -12,7 +12,7 @@ import Accordion from "../accordion/Accordion";
 const Blok_container = ({ blok }) => {
   return (
     <div {...storyblokEditable(blok)} className="p-0 lg:px-32">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between lg:gap-y-8">
         {blok.components &&
           blok.components.map((nestedBlok) => {
             {
