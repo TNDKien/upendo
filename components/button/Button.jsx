@@ -11,7 +11,7 @@ const Button = ({ blok }) => {
     >
       {/* Moving part */}
       <p
-        className={`z-10 p-3 px-8 m-0 absolute left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-1/3`}
+        className={`z-10 p-3 px-8 m-0 absolute  left-0 rounded-full bg-darkTeal ${textColorClass} transition-transform duration-300 ease-out group-hover:translate-x-1/3`}
       >
         <a href={`/${blok.button_ref.story?.url}`} rel="noopener noreferrer">
           {blok.button_name}
@@ -20,7 +20,7 @@ const Button = ({ blok }) => {
 
       {/* Fixed part */}
       <div
-        className={`${bgColorClass} flex items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative`}
+        className={`${bgColorClass} flex font-inter items-center justify-between text-darkTeal px-4 py-1.5 w-auto rounded-full text-3xl relative`}
       >
         <span>&rarr;</span>
         <span className={`${textColorClass} whitespace-nowrap text-2xl`}>

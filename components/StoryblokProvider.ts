@@ -59,6 +59,7 @@ import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
 import Prices_cardOne from "./FAQ/Prices_cardOne";
 import Service_optimalisation_monthly from "./servicepricing/Service_optimalisation_monthly";
 import Service_optimalisation_onetime from "./servicepricing/Service_optimalisation_onetime";
+import Accordion from "./accordion/Accordion";
 
 const components = {
   page: Page,
@@ -115,7 +116,7 @@ const components = {
   serviceoptimalisation_footer: Serviceoptimalisation_footer,
   service_optimalisation_monthly: Service_optimalisation_monthly,
   service_optimalisation_onetime: Service_optimalisation_onetime,
-
+  accordion: Accordion,
 };
 
 storyblokInit({
