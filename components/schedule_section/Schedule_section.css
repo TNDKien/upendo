@@ -1,7 +1,29 @@
+.schedule_section_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.schedule_section_wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-direction: column; 
+}
+
 .schedule_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--DarkTeal);
   border-radius: 30px;
-  padding: 40px;
+  padding: 20px;
+  width: auto;
+  box-sizing: border-box;
 }
 
 .schedule_appointment {
@@ -10,7 +32,15 @@
   font-family: "Martian Mono", monospace;
   font-weight: 500;
   font-size: 16px;
-  margin-top: 34px;
+  margin-top: 8px;
+}
+
+.DatePicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 17px;
 }
 
 .schedule_time {
@@ -20,7 +50,7 @@
   font-family: "area-normal", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 8px;
 }
 
 .schedule_timebutton {
@@ -34,14 +64,47 @@
   border-radius: 30px;
   width: 134px;
   height: 30px;
-  margin: 0 auto;
   margin-top: 16px;
 }
 
-.DatePicker {
+.schedule_button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 34px;
-  margin-bottom: 34px;
+  justify-content: center;
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: var(--LimeGreen);
+  border-radius: 30px;
+  width: 134px;
+  height: 30px;
+  margin-top: 16px;
+}
+
+.baas_van_upendo {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .schedule_section_wrapper {
+    flex-direction: row; 
+    justify-content: center;
+    padding: 80px 160px; 
+  }
+
+  .baas_van_upendo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; 
+  }
+
+  .baas_van_upendo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .schedule_section {
+    flex: 1;
+  }
 }
