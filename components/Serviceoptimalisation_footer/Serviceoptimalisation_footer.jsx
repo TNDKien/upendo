@@ -28,7 +28,7 @@ const Serviceoptimalisation_footer = ({ blok }) => {
             <div className="footer_tekst_bold">
                 {render(blok.footer_tekst_notsure)}
             </div>
-            <div className="footer_tekst_normal_sub_2">
+            <div className="footer_tekst_normal_sub">
                 {render(blok.footer_tekst_notsure_sub)}
             </div>
             <div className="servicebodybuttondesign">
