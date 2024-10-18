@@ -112,7 +112,7 @@ h1 {
   justify-content: space-between;
   width: 100%;
   left: 0;
-  background-image: linear-gradient(var(--DarkGreen), var(--DarkTeal));
+  background-image: linear-gradient(var(--DarkGreen), #052e2d);
   position: absolute;
   padding: 3rem 8rem;
   z-index: 10;
