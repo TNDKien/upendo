@@ -1,6 +1,9 @@
 Fontys Hogeschool project
+
 website: https://fontys-upendo.vercel.app/
+
 company: 2manydots
+
 website: upendo
 
 Overview
