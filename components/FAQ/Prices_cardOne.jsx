@@ -1,5 +1,6 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
 import "./Prices_cardOne.css";
+import "./Prices_intro.css";
 
 const prices_cardOne = ({ blok }) => (
   <div className="prices_cardOne" {...storyblokEditable(blok)}>
