@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 import "./Servicepricing.css";
 
-const service_optimalisation_onetime = ({ blok }) => (
+const Service_optimalisation_onetime = ({ blok }) => (
     <div className="service_optimalisation" {...storyblokEditable(blok)}>
         {/* Monthly Plans */}
         <div className="servicepricing_title">
@@ -177,4 +177,4 @@ const service_optimalisation_onetime = ({ blok }) => (
     </div>
 );
 
-export default service_optimalisation_onetime;
+export default Service_optimalisation_onetime;
