@@ -1,6 +1,6 @@
 import { storyblokEditable } from "@storyblok/react/rsc";
-import { render } from "storyblok-rich-text-react-renderer";
 import "./Prices_cardMonthly.css";
+import "./Prices_intro.css";
 
 const Prices_cardMonthly = ({ blok }) => (
   <div className="prices_cardMonthly" {...storyblokEditable(blok)}>

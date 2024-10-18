@@ -20,11 +20,11 @@ body {
 .squareOne h2 {
     margin-bottom: 10px;
     margin-left: 5px;
-    color: pink;
+    color: #f4c5ff;
 }
 
 .square-tableOne {
-    border: 2px solid pink;
+    border: 2px solid #f4c5ff;
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
 }
@@ -42,7 +42,7 @@ body {
 .square-tableOne .headerOne {
     font-weight: bold;
     font-size: 0.75rem;
-    background-color: pink;
+    background-color: #f4c5ff;
     color: #222;
     text-transform: uppercase;
     border-bottom-left-radius: 9px;
@@ -68,7 +68,7 @@ body {
 }
 
 .rightOne {
-    color: pink;
+    color: #f4c5ff;
     font-size: 0.75rem;
     text-align: left;
     padding: 10px 0;
