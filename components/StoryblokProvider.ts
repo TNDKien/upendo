@@ -48,7 +48,17 @@ import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Service
 import Prices_intro from "./FAQ/Prices_intro";
 import Button from "./button/Button";
 import Schedule from "./schedule/Schedule";
-import Intro_schedule from "./intro_schedule/Intro_schedule";
+import Cta from "./cta/Cta";
+import Blok_container from "./blok_container/Blok_container";
+import Servicepackage from "./servicepackage/Servicepackage";
+import Prices_accordion from "./FAQ/Prices_accordion";
+import Prices_cardAnnual from "./FAQ/Prices_cardAnnual";
+import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
+import Prices_cardOne from "./FAQ/Prices_cardOne";
+import Service_optimalisation_monthly from "./Servicepricing/Service_optimalisation_monthly";
+import Service_optimalisation_onetime from "./Servicepricing/Service_optimalisation_onetime";
+
+import Accordion from "./accordion/Accordion";
 import Schedule_section from "./schedule_section/Schedule_section";
 import Intro_schedule from "./intro_schedule/Intro_schedule";
 
@@ -95,7 +105,19 @@ const components = {
   intro_schedule: Intro_schedule,
   schedule_section: Schedule_section,
   schedule: Schedule,
-  intro_schedule: Intro_schedule,
+   cta: Cta,
+  blok_container: Blok_container,
+  servicebody2: Servicebody2,
+  servicebody3: Servicebody3,
+  servicepackage: Servicepackage,
+  prices_accordion: Prices_accordion,
+  prices_cardAnnual: Prices_cardAnnual,
+  prices_cardMonthly: Prices_cardMonthly,
+  prices_cardOne: Prices_cardOne,
+  serviceoptimalisation_footer: Serviceoptimalisation_footer,
+  service_optimalisation_monthly: Service_optimalisation_monthly,
+  service_optimalisation_onetime: Service_optimalisation_onetime,
+  accordion: Accordion,
 };
 
 storyblokInit({
