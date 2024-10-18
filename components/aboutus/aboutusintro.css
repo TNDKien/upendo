@@ -1,8 +1,11 @@
 .aboutussubtext {
-  color: rgb(251, 161, 224);
+  color: var(--Pink);
   font-size: 0.75rem;
-  margin-left: 5%;
+  margin-left: 128px;
   margin-top: 2.625rem;
+
+  font-family: "Martian Mono", monospace;
+  font-weight: 500;
 }
 
 .icon-holder {
