@@ -81,7 +81,7 @@
     display: block;
     margin-right: 8rem;
     padding: 2rem;
-    max-width: 50%; 
+    width: 50%; 
   }
 
   .intro_prices_img {
@@ -112,8 +112,8 @@
 
   .prices_button{
     margin-left: 1rem;
-    margin-top: -4rem;
-    margin-bottom: 6rem;
+    margin-top: -15rem;
+    margin-bottom: 16rem;
   }
 
 }
