@@ -3,7 +3,7 @@ import { render } from "storyblok-rich-text-react-renderer";
 
 const aboutusbody = ({ blok }) => (
   <div
-    className="flex flex-col p-6 gap-2 lg:w-80 lg:p-0 lg:mr-24"
+    className="flex flex-col p-6 gap-2 lg:w-80 lg:p-0 lg:mr-20"
     {...storyblokEditable(blok)}
   >
     <img
