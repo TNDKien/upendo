@@ -234,15 +234,8 @@
     margin-top: 40px;
   }
 
-  .servicepricing_blok {
-    margin-left: 100px;
-  }
-
-  .servicepricing_blok_basic {
-    margin-left: 100px;
-  }
 
   .servicepricing_blok_premium {
-    margin-left: 100px;
+    margin-bottom: 100px;
   }
 }
