@@ -58,13 +58,13 @@ const Blok_container = ({ blok }) => {
               );
             } else if (nestedBlok.component === "accordion") {
               return <Accordion blok={nestedBlok} key={nestedBlok._uid} />;
-            }else if (nestedBlok.component === "prices_cardOne") {
+            }else if (nestedBlok.component === "prices_cardone") {
               return <Prices_cardOne blok={nestedBlok} key={nestedBlok._uid} />;
              }
-             else if (nestedBlok.component === "prices_cardAnnual") {
+             else if (nestedBlok.component === "prices_cardannual") {
               return <Prices_cardAnnual blok={nestedBlok} key={nestedBlok._uid} />;
              }
-             else if (nestedBlok.component === "prices_cardMonthly") {
+             else if (nestedBlok.component === "prices_cardmonthly") {
               return <Prices_cardMonthly blok={nestedBlok} key={nestedBlok._uid} />;
              }
             return null;
