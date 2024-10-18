@@ -1,7 +1,4 @@
 .prices_intro {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   margin-top: 100px;
 }
 
@@ -38,6 +35,11 @@
   flex-direction: column; 
 }
 
+.prices_button{
+  margin-left: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 768px) {
   
   .prices_intro {
@@ -45,16 +47,20 @@
   }
 
   .prices_accent{
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
     margin-top: 7rem;
     margin-bottom: -2rem;
   }
   
-  .pricing_title {
+  .prices_title {
     font-size: 4rem;
     white-space: normal; 
     max-width: 22ch; 
     line-height: 1.2; 
+  }
+
+  .prices_paragraph{
+    font-size: 1rem;
   }
 
   .content_wrapper_prices {
@@ -75,7 +81,7 @@
     display: block;
     margin-right: 8rem;
     padding: 2rem;
-    max-width: 100%; 
+    max-width: 50%; 
   }
 
   .intro_prices_img {
@@ -84,22 +90,13 @@
   }
 
 
-  .cardOne, .cardMonthly, .cardAnnual {
-    max-width: 25%;  
-    height: 450px;   
+  .prices_cardOne, .prices_cardMonthly, .prices_cardAnnual { 
     padding: 2rem;  
-    margin-bottom: 1rem;  
+    margin-bottom: 5rem;
+    width: 450px;
   }
 
-
-  .card_imgOne, .card_imgMonthly, .card_imgAnnual {
-    max-width: 80%;
-    height: auto;
-    margin: 2.5rem auto;
-  }
-
-
-  .pricing_cards {
+  .prices_cards {
     flex-direction: row;
     gap: 4rem;  
     justify-content: center;  
@@ -109,8 +106,14 @@
     display: none;
   }
 
-  .pricing_services{
+  .prices_services{
     max-width: 45rem;
+  }
+
+  .prices_button{
+    margin-left: 1rem;
+    margin-top: -4rem;
+    margin-bottom: 6rem;
   }
 
 }

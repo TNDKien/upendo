@@ -26,7 +26,7 @@ const prices_intro = ({ blok }) => (
               </div>
             )}
     </div>
-    <div className="p-6">
+    <div className="prices_button">
           {blok.button &&
             blok.button.map((nestedBlok) => {
               if (nestedBlok.component === "button") {
