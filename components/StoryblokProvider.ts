@@ -48,8 +48,6 @@ import Serviceoptimalisation_footer from "./Serviceoptimalisation_footer/Service
 import Prices_intro from "./FAQ/Prices_intro";
 import Button from "./button/Button";
 import Schedule from "./schedule/Schedule";
-import Intro_schedule from "./intro_schedule/Intro_schedule";
-import Schedule_section from "./schedule_section/Schedule_section";
 import Cta from "./cta/Cta";
 import Blok_container from "./blok_container/Blok_container";
 import Servicepackage from "./servicepackage/Servicepackage";
@@ -61,6 +59,8 @@ import Service_optimalisation_monthly from "./Servicepricing/Service_optimalisat
 import Service_optimalisation_onetime from "./Servicepricing/Service_optimalisation_onetime";
 
 import Accordion from "./accordion/Accordion";
+import Schedule_section from "./schedule_section/Schedule_section";
+import Intro_schedule from "./intro_schedule/Intro_schedule";
 
 const components = {
   page: Page,
@@ -105,7 +105,7 @@ const components = {
   intro_schedule: Intro_schedule,
   schedule_section: Schedule_section,
   schedule: Schedule,
-  cta: Cta,
+   cta: Cta,
   blok_container: Blok_container,
   servicebody2: Servicebody2,
   servicebody3: Servicebody3,

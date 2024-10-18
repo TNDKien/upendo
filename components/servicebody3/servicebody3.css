@@ -1,5 +1,6 @@
 .servicebodyheader {
-  font-family: "Martian Mono";
+  font-family: "Martian Mono", monospace;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -20,7 +21,7 @@
 }
 
 .servicebodyheadertekst2 {
-  font-family: "Martian Mono";
+  font-family: "Martian Mono", monospace;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;

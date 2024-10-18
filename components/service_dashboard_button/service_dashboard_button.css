@@ -1,29 +1,35 @@
 .dashboard_button_design {
-    margin-top: 64px;
-    width: 286px;
-    height: 43px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: var(--Dark-Teal, #003A47);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1.5rem;
-    margin-bottom: 70px;
+  margin-top: 64px;
+  width: 286px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--Dark-Teal, #003a47);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-bottom: 70px;
 }
 
 .dashboard_button_tekst {
-    font-family: "Area Normal";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  font-family: "Area Normal";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media (min-width: 1200px) {
-    .dashboard_button_design {
-        display: flex;
-        margin-left: 42%;
-    }
+  .dashboard_button_design {
+    display: flex;
+    margin-left: 42%;
+  }
+}
 
+@media (max-width: 500px) {
+  .dashboard_button_design {
+    display: flex;
+    margin-left: 12%;
+  }
 }
