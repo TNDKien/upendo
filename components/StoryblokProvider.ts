@@ -45,6 +45,7 @@ import Prices_intro from "./FAQ/Prices_intro";
 import Button from "./button/Button";
 import Schedule from "./schedule/Schedule";
 import Schedule_section from "./schedule_section/Schedule_section";
+import Intro_schedule from "./intro_schedule/Intro_schedule";
 
 const components = {
   page: Page,
@@ -87,6 +88,7 @@ const components = {
   button: Button,
   schedule_section: Schedule_section,
   schedule: Schedule,
+  intro_schedule: Intro_schedule,
 };
 
 storyblokInit({

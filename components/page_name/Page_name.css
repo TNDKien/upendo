@@ -1,8 +1,18 @@
-/* dit word verander naar tailwind.css */
-.title {
+.page_name_title {
+  margin-top: 54px;
   font-family: "Martian Mono", monospace;
   font-weight: 500;
-  font-size: 12px;
+  display: flex;
+  justify-content: flex-start;
   color: var(--Pink);
-  padding: 24px;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media (min-width: 1200px) {
+  .page_name_title {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 72px;
+  }
 }
