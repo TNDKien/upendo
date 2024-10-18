@@ -2,9 +2,8 @@ import { render } from "storyblok-rich-text-react-renderer";
 import "./Page_name.css";
 
 const Page_name = ({ blok }) => (
-  <div className="">
-    {/* Render de Training Header */}
-    {blok.title && <div className="title">{render(blok.title)}</div>}
+  <div className="page_name_title">
+    {blok.title && <div className="page_name_title">{render(blok.title)}</div>}
   </div>
 );
 
