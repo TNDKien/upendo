@@ -182,18 +182,13 @@ border: 0;
 border-top: 1px solid #ffffff; 
 }
 
-
-/* Standaard mobiele weergave blijft hetzelfde */
-
-
-
 .intro_img_container {
   display: none; 
 }
 
 .content_wrapper {
   display: flex;
-  flex-direction: column; /* Zet paragraaf en afbeelding onder elkaar in mobiele weergave */
+  flex-direction: column; 
 }
 
 

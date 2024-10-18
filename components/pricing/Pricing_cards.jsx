@@ -14,7 +14,7 @@ const pricing_cards = ({ blok }) => (
         alt={blok.card_imgOne?.alt || "Card One Image"} 
       />
       <p className="card_paragraphOne">{blok.card_paragraphOne}</p>
-      <a href="/link-to-page-one" className="card_linkOne">
+      <a href="/follow-up-prices" className="card_linkOne">
         &gt;
       </a>
       <div>
@@ -35,7 +35,7 @@ const pricing_cards = ({ blok }) => (
         alt={blok.card_imgMonthly?.alt || "Card Monthly Image"} 
       />
       <p className="card_paragraphMonthly">{blok.card_paragraphMonthly}</p>
-      <a href="/link-to-page-one" className="card_linkMonthly">
+      <a href="/follow-up-prices" className="card_linkMonthly">
         &gt;
       </a>
       <div>
@@ -56,7 +56,7 @@ const pricing_cards = ({ blok }) => (
         alt={blok.card_imgAnnual?.alt || "Card Monthly Image"} 
       />
       <p className="card_paragraphAnnual">{blok.card_paragraphAnnual}</p>
-      <a href="/link-to-page-one" className="card_linkAnnual">
+      <a href="/follow-up-prices" className="card_linkAnnual">
         &gt;
       </a>
       <div>

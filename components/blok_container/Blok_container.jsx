@@ -8,6 +8,9 @@ import Value from "../value/Value";
 import Service_optimalisation_monthly from "../Servicepricing/Service_optimalisation_monthly";
 import Service_optimalisation_onetime from "../Servicepricing/Service_optimalisation_onetime";
 import Accordion from "../accordion/Accordion";
+import Prices_cardOne from "../FAQ/Prices_cardOne";
+import Prices_cardAnnual from "../FAQ/Prices_cardAnnual";
+import Prices_cardMonthly from "../FAQ/Prices_cardMonthly";
 
 const Blok_container = ({ blok }) => {
   return (
@@ -55,7 +58,15 @@ const Blok_container = ({ blok }) => {
               );
             } else if (nestedBlok.component === "accordion") {
               return <Accordion blok={nestedBlok} key={nestedBlok._uid} />;
-            }
+            }else if (nestedBlok.component === "prices_cardOne") {
+              return <Prices_cardOne blok={nestedBlok} key={nestedBlok._uid} />;
+             }
+             else if (nestedBlok.component === "prices_cardAnnual") {
+              return <Prices_cardAnnual blok={nestedBlok} key={nestedBlok._uid} />;
+             }
+             else if (nestedBlok.component === "prices_cardMonthly") {
+              return <Prices_cardMonthly blok={nestedBlok} key={nestedBlok._uid} />;
+             }
             return null;
           })}
       </div>
