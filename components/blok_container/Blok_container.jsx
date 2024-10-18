@@ -6,7 +6,7 @@ import Aboutusbody from "../aboutus/aboutusbody";
 import Howweserve from "../howweserve/Howweserve";
 import Value from "../value/Value";
 import Service_optimalisation_monthly from "../Servicepricing/Service_optimalisation_monthly";
-import Service_optimalisation_onetime from "../Servicepricing/Service_optimalisation_onetime";
+import Service_optimalisation_onetime from "../Servicepricing/service_optimalisation_onetime";
 import Accordion from "../accordion/Accordion";
 import Prices_cardOne from "../FAQ/Prices_cardOne";
 import Prices_cardAnnual from "../FAQ/Prices_cardAnnual";
@@ -58,15 +58,17 @@ const Blok_container = ({ blok }) => {
               );
             } else if (nestedBlok.component === "accordion") {
               return <Accordion blok={nestedBlok} key={nestedBlok._uid} />;
-            }else if (nestedBlok.component === "prices_cardone") {
+            } else if (nestedBlok.component === "prices_cardone") {
               return <Prices_cardOne blok={nestedBlok} key={nestedBlok._uid} />;
-             }
-             else if (nestedBlok.component === "prices_cardannual") {
-              return <Prices_cardAnnual blok={nestedBlok} key={nestedBlok._uid} />;
-             }
-             else if (nestedBlok.component === "prices_cardmonthly") {
-              return <Prices_cardMonthly blok={nestedBlok} key={nestedBlok._uid} />;
-             }
+            } else if (nestedBlok.component === "prices_cardannual") {
+              return (
+                <Prices_cardAnnual blok={nestedBlok} key={nestedBlok._uid} />
+              );
+            } else if (nestedBlok.component === "prices_cardmonthly") {
+              return (
+                <Prices_cardMonthly blok={nestedBlok} key={nestedBlok._uid} />
+              );
+            }
             return null;
           })}
       </div>

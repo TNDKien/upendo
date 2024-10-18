@@ -52,13 +52,13 @@ import Intro_schedule from "./intro_schedule/Intro_schedule";
 import Schedule_section from "./schedule_section/Schedule_section";
 import Cta from "./cta/Cta";
 import Blok_container from "./blok_container/Blok_container";
-import Servicepackage from "./servicepackage/Servicepackage";
+import Servicepackage from "./servicepackage/servicepackage";
 import Prices_accordion from "./FAQ/Prices_accordion";
 import Prices_cardAnnual from "./FAQ/Prices_cardAnnual";
 import Prices_cardMonthly from "./FAQ/Prices_cardMonthly";
 import Prices_cardOne from "./FAQ/Prices_cardOne";
 import Service_optimalisation_monthly from "./Servicepricing/Service_optimalisation_monthly";
-import Service_optimalisation_onetime from "./Servicepricing/Service_optimalisation_onetime";
+import Service_optimalisation_onetime from "./Servicepricing/service_optimalisation_onetime";
 import Accordion from "./accordion/Accordion";
 
 const components = {
