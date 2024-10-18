@@ -42,7 +42,6 @@
 
 @media (min-width: 1200px) {
     .plans_container {
-        margin-left: 104px;
         display: flex;
         flex-direction: column;
         max-width: 350px;

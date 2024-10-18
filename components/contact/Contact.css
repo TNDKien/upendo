@@ -3,8 +3,10 @@
   font-family: "Martian Mono", monospace;
   font-weight: 500;
   font-size: 0.75rem;
-  padding: 2rem 0.75rem;
-  margin-top: 64px;
+  padding-left: 0.75rem;
+  margin-top: 80px;
+  margin-left: 0;
+  ;
 }
 
 .title {
@@ -13,6 +15,7 @@
   font-size: 2rem;
   color: #ffffff;
   padding: 0rem 0.75rem;
+  margin-top: 64px;
 }
 
 .highlighted-word {
@@ -167,7 +170,22 @@
   background-color: #a8ff1a;
 }
 
+.contactphoto {
+  display: none;
+}
+
 @media (min-width: 1200px) {
+
+  .accent {
+    padding-top: 2rem;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .title {
+    padding: 0;
+    font-size: 64px;
+  }
 
   .form-field {
     max-width: 380px;
@@ -193,15 +211,17 @@
     background-color: #f4c5fe;
     font-size: 20px;
     color: #00222e;
-    padding: 2.5rem 2rem;
-    margin-left: 64px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+
+    /* margin-left: 64px; */
     border-bottom: 1px solid var(--DarkTeal);
   }
 
   .contact-form .form-field label {
-    margin-left: 64px;
+    /* margin-left: 64px; */
     margin-top: -16px;
-    font-size: 24px;
     color: #00222e;
     background-color: #f4c5fe;
     padding: 0rem 0.5rem;
@@ -214,12 +234,16 @@
   .contact-form .form-field textarea:focus+label {
     color: #00222e;
     top: 1rem;
-    font-size: 20px
+    /* font-size: 20px */
   }
 
   .contact-form .form-field input:focus,
   .contact-form .form-field textarea:focus {
     color: #FEFFF8;
+  }
+
+  .contactphoto {
+    display: block;
   }
 
 
