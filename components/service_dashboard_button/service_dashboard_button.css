@@ -30,6 +30,6 @@
 @media (max-width: 500px) {
   .dashboard_button_design {
     display: flex;
-    margin-left: 9%;
+    margin-left: 12%;
   }
 }
