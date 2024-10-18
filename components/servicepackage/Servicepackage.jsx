@@ -2,7 +2,7 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import { render } from "storyblok-rich-text-react-renderer";
 import "./servicepackage.css";
 
-const servicepackage = ({ blok }) => (
+const Servicepackage = ({ blok }) => (
   <div {...storyblokEditable(blok)}>
     <div className="flexboxrow2">
       <div className="flexboxfiguur"></div>
@@ -29,4 +29,4 @@ const servicepackage = ({ blok }) => (
   </div>
 );
 
-export default servicepackage;
+export default Servicepackage;
