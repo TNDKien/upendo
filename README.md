@@ -5,7 +5,7 @@
 
 ## About Upendo
 
-Upendo is a comprehensive data service platform developed in collaboration with Fontys University of Applied Sciences. We specialize in transforming complex data management processes into accessible, efficient solutions for businesses.
+Upendo is a project given by 2manydots and Fontys University of Applied Sciences. It is a data service platform that helps businesses to manage their data in a more efficient way. 2manydots, a Wordpress agency, gave the design and the content for the website. The task was to create a website that is easy to use and understand for the user.
 
 ## Core Services
 
@@ -87,7 +87,13 @@ Upendo is a comprehensive data service platform developed in collaboration with 
    yarn install
    ```
 
-4. Start the development server:
+4. add .env.local file in the root directory and add the following variables:
+
+   ```bash
+   NEXT_PUBLIC_STORYBLOK_TOKEN=your_storyblok_token
+   ```
+
+5. Start the development server:
 
    ```bash
    npm run dev
@@ -99,7 +105,7 @@ Access the application at [http://localhost:3000](http://localhost:3000)
 
 ## Deployment
 
-The application is automatically deployed to Vercel. Every push to the main branch triggers a new deployment.
+This application is automatically deployed to Vercel. Every push to the main branch triggers a new deployment.
 
 ## Links
 
@@ -215,10 +221,6 @@ The application is automatically deployed to Vercel. Every push to the main bran
 - [Pim Willemsen](https://github.com/pimwillems) - Fontys Hogeschool
 - [Pieter Dorst] - Fontys Hogeschool
 - [Ben Kemmeren] - Fontys Hogeschool
-
-## Contributing
-
-We welcome contributions! Please read our contributing guidelines before submitting pull requests.
 
 ## License
 
